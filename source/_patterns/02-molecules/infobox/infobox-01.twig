@@ -1,0 +1,44 @@
+<div class="infobox-01{{infoboxStyleModifier}}">
+
+ {% if item.sectitle %}
+     <div class="box__sectitle">
+         {{item.sectitle}}
+     </div>
+ {% endif %}
+
+{% if item.image %}
+    <div class="box__image">
+        {% include "atoms-image" with { img: item.image } %}
+    </div>
+{% endif %}
+{% if item.number %}
+    <div class="box__number">
+        {{item.number}}
+    </div>
+{% endif %}
+{% if item.date %}
+    <div class="box__date">
+        {{item.date}}
+        {% if item.date %}
+            <span class="time"> {{item.month}}</span>
+        {% endif %}
+
+    </div>
+{% endif %}
+
+{% if item.title %}
+    <div class="box__title">
+        {{item.title}}
+    </div>
+{% endif %}
+
+{% if item.description %}
+    <div class="box__desc">
+        {{item.description}}
+    </div>
+{% endif %}
+
+{% if item.imageBottom %}
+    {% include "atoms-image" with { img: item.imageBottom } %}
+{% endif %}
+</div>

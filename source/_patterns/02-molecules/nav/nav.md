@@ -1,5 +1,5 @@
 ---
-title: figure
+title: navigation
 state: inprogress
 ---
 
