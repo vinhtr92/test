@@ -1,0 +1,123 @@
+  a {
+  transition: all ease 0.3s;
+}
+
+section {
+  margin-bottom: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section {
+  padding: 50px 0;
+
+  @include media-breakpoint-up('md') {
+    padding: 150px 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+b,
+.font-weight-bold {
+  font-weight: 600;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+body {
+  font-weight: 300;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+@each $mt in 0, 20, 40, 70, 100 {
+  .mt-#{$mt} {
+    margin-top: #{$mt}px !important;
+  }
+}
+
+@each $mb in 10, 25, 40, 50, 60, 70, 80 {
+  .mb-#{$mb} {
+    margin-bottom: #{$mb}px !important;
+  }
+}
+
+@each $pt in 0, 30, 40, 60, 90, 150 {
+  .pt-#{$pt} {
+    padding-top: #{$pt}px !important;
+  }
+}
+
+@each $pb in 0, 60, 90, 100, 150 {
+  .pb-#{$pb} {
+    padding-bottom: #{$pb}px !important;
+  }
+}
+
+@each $pr in 20, 60, 130 {
+  .pr-#{$pr} {
+    padding-right: #{$pr}px !important;
+  }
+}
+
+@each $pl in 30 {
+  .pl-#{$pl} {
+    padding-left: #{$pl}px !important;
+  }
+}
+
+@each $fs in 12, 14, 16,20, 60 {
+  .fs-#{$fs} {
+    font-size: #{$fs}px !important;
+  }
+}
+
+@each $fw in 300, 400, 600 {
+  .fw-#{$fw} {
+    font-weight: #{$fw} !important;
+  }
+}
+
+@each $name in ('top', 'right', 'bottom', 'left') {
+  @each $value in 30 {
+    .position-#{$name}-#{$value} {
+      @include media-breakpoint-up(lg) {
+        #{$name}: #{$value}px !important;
+      }
+    }
+  }
+}
+
+.custom-control-indicator {
+  border: 1px solid #dbddf5;
+
+  &:focus {
+    outline: none;
+  }
+}
+.fixmargin {
+  margin-left: -15px;
+  margin-right: -15px;
+}

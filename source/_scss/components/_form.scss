@@ -1,0 +1,154 @@
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[name="value"] {
+  @extend .form-control;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+button,
+input[type="submit"] {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+.form-control {
+  margin-bottom: 30px;
+
+  &:focus {
+    box-shadow: 0 0 10px rgba($primary-color,0.75);
+  }
+}
+
+// .awe-form
+.awe-form {
+  overflow: hidden;
+  background: white;
+  padding: 2px;
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+.awe-form__note {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  margin-top: 10px;
+  display: inline-block;
+
+  > span {
+    color: $primary-color;
+    font-weight: 500;
+  }
+}
+
+.awe-form__item {
+  margin-bottom: 0;
+
+  span {
+    color: $secondary-color;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 26px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+
+// .awe-form--04
+.awe-form--04 {
+  padding: 70px 100px;
+  text-align: center;
+
+  .btn {
+    padding: 1.125rem;
+  }
+}
+
+// .awe-form--05
+.awe-form--05 {
+  margin: 0 -15px;
+
+  .awe-form__item {
+    padding: 0 15px;
+  }
+
+  .custom-control-description {
+    text-transform: inherit;
+    font-weight: 300;
+    font-size: .875rem;
+  }
+}
+
+@include media-breakpoint-up('md') {
+  // .awe-form--02
+  .awe-form--02 {
+    .awe-form__item {
+      padding-right: 15px;
+      float: left;
+      width: 50%;
+
+      &:nth-child(2n) {
+        padding-left: 15px;
+        padding-right: 0;
+      }
+    }
+
+    .awe-form__note {
+      float: right;
+      margin-top: 30px;
+    }
+  }
+
+  // .awe-form--03
+  .awe-form--03 {
+    margin: 0 -15px;
+
+    .awe-form__item {
+      margin: 0;
+      padding: 0 15px;
+      float: left;
+      width: 33.3333%;
+    }
+  }
+
+  .awe-form--05 .awe-form__item-2 {
+    width: 50%;
+    float: left;
+  }
+
+}
+
+@include media-breakpoint-up('lg') {
+  .awe-form--02 .btn + .btn {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+@include bg-variant('.bg-white', white);
+@include bg-variant('.bg-primary', $brand-primary);
+@include bg-variant('.bg-secondary', $secondary-color);
+@include bg-variant('.bg-third', $third-color);
+@include bg-variant('.bg-default', $default-bg);
+
+@include bg-variant('.bg-color-01', #f1f1f1);
+@include bg-variant('.bg-color-02', $border-color);
+@include bg-variant('.bg-color-03', $brand-info );
+@include bg-variant('.bg-color-04', $brand-warning);
+@include bg-variant('.bg-color-05', $brand-success );
+@include bg-variant('.bg-color-06', $brand-danger );
+@include bg-variant('.bg-color-07', #f7f8fd );
+@include bg-variant('.bg-color-08', $border-color-02 );
+@include bg-variant('.bg-color-09', #f4f5f9 );
+@include bg-variant('.bg-color-06', $brand-danger );
+@include bg-variant('.bg-color-facebook', #3b5998);
+@include bg-variant('.bg-color-twitter', #00aced);
+
+@include bg-variant('.bg-lighten-primary', #3955ff);

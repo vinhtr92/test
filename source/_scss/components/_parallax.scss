@@ -1,0 +1,57 @@
+.parallax {
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  > * {
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.parallax-ready {
+  background-image: none !important;
+}
+
+.parallax-mirror {
+  z-index: 0;
+  @include absolute(0,0,null,0);
+  pointer-events: none;
+
+  background-size: cover;
+  background-position: 50% 0;
+  background-image: inherit;
+  background-color: transparent;
+  background-attachment: scroll;
+}
+
+.awe-bg {
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 200px;
+
+  .awe-content {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.awe-overlay {
+  content: "";
+  background: $secondary-color;
+  opacity: 0.3;
+  @include absolute(0,0,0,0);
+}
+
+.bg-01 {
+  background-image: url('https://unsplash.it/1280/500');
+}
+
+.bg-02 {
+  background-color: $primary-color;
+}

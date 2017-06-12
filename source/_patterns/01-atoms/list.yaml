@@ -1,0 +1,18 @@
+---
+list:
+- text: item1
+- text: item2
+- text: item3
+  sublist:
+  - text: item1
+  - text: item2
+    sublist:
+    - text: item1
+    - text: item2
+      sublist:
+      - text: item1
+      - text: item2
+        sublist:
+        - text: item1
+        - text: item2
+

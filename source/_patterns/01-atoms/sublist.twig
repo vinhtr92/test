@@ -1,0 +1,10 @@
+{% for item in list %}
+    <li {% if item.class %}class="{{ item.class }}"{% endif %}>
+        {{ item.text }}
+        {% if item.sublist %}
+            <ul {% if item.sublist.class %}class="{{ item.sublist.class }}"{% endif %}>
+                {% include "atoms-sublist" with {'list': item.sublist} %}
+            </ul>
+        {% endif %}
+    </li>
+{% endfor %}

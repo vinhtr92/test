@@ -1,0 +1,72 @@
+$size: 200px !default;
+$size-border: 15px !default;
+$size-in: calc(#{$size} - #{$size-border} * 2) !default;
+$progress-bg: #c0c0c0 !default;
+$progress-in-bg: #cccccc !default;
+$progress-font-size: 3rem !default;
+$bar-color: #0260a0 !default;
+$number-color: #0275d8 !default;
+
+.progress-bar {
+  position: relative;
+  width: $size;
+  height: $size;
+  display: inline-block;
+  text-align: center;
+  background-color: $progress-bg;
+  border-radius: 100%;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $size-in;
+    height: $size-in;
+    background-color: $progress-in-bg;
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
+  }
+
+  span {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    left: 0;
+    font-size: $progress-font-size;
+    line-height: 1;
+    color: $number-color;
+    transform: translateY(-50%);
+    display: block;
+    white-space: nowrap;
+    transition: all 1s ease-out;
+  }
+
+  .slice-bar,
+  .slice-fill {
+    position: absolute;
+    width: $size;
+    height: $size;
+    top: 0;
+    left: 0;
+  }
+
+  .bar, .fill {
+    position: absolute;
+    border: 15px solid $bar-color;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transform: rotate(0deg);
+    clip: rect(0,0,0,0);
+  }
+}

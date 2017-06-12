@@ -1,0 +1,100 @@
+// Tao 1 file bem.scss nem phan nay vao
+$elementSeparator: '__';
+$modifierSeparator: '--';
+$pseudoClass: ':';
+$checkOtherM: '.test';
+@function selectorToStr($selector) {
+    $selector: inspect($selector);
+    $selector: str-slice($selector, 2, -2);
+    @return $selector;
+}
+@function getB($selector, $type) {
+    $selector: selectorToStr($selector);
+    $start: str-index($selector, $type) - 1;
+    @return str-slice($selector, 0, $start);
+}
+@mixin b($block) {
+    .#{$block} {
+        @content;
+    }
+}
+@mixin e($element) {
+    $parent: &;
+    @if str-index(selectorToStr($parent), $modifierSeparator) {
+        $block: getB($parent, $modifierSeparator);
+        @at-root {
+            #{$parent} {
+                #{$block+$elementSeparator+$element} {
+                    @content;
+                }
+            }
+        }
+    } @else if str-index(selectorToStr($parent), $pseudoClass) {
+        $block: getB($parent, $pseudoClass);
+        @at-root {
+            #{$parent} {
+                #{$block+$elementSeparator+$element} {
+                    @content;
+                }
+            }
+        }
+    } @else if str-index(selectorToStr($parent), $checkOtherM) {
+        $block: getB($parent, $checkOtherM);
+        @at-root {
+            #{$parent} {
+                #{$block+$elementSeparator+$element} {
+                    @content;
+                }
+            }
+        }
+    } @else {
+        @at-root {
+            #{$parent+$elementSeparator+$element} {
+                @content;
+            }
+        }
+    }
+}
+@mixin m($modifier) {
+    $parent: &;
+    @if str-index(selectorToStr($parent), $modifierSeparator) {
+        $block: getB($parent, $modifierSeparator);
+        @at-root {
+            #{$parent} {
+                &#{$block+$modifierSeparator+$modifier} {
+                    @content;
+                }
+            }
+        }
+    } @else {
+        @at-root {
+            &#{$modifierSeparator+$modifier} {
+                @content;
+            }
+        }
+    }
+}
+
+//////////////////////////////////////
+
+// Cach su dung nhu sau
+
+.post { // .post hoac @include b('post')
+
+    @include e('title') {  // Element
+        font-size: 40px;
+    }
+
+    @include m('dark') {  // Modifier
+        margin: 100px;
+        @include e('title') {  // Element
+            color: blue
+        }
+    }
+
+    &:hover {
+        @include e('title') {
+            color: red !important;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-width: 2px;
+  transition: all ease 0.3s;
+  outline: none !important;
+}
+
+.btn-link {
+  font-size: 0.875rem;
+  color: $primary-color;
+  font-weight: 300;
+}
+
+.btn-lg {
+  font-size: 1rem;
+}
+
+.btn-sm {
+  font-size: 0.75rem;
+}
+
+.btn-xs {
+  font-size: 0.625rem ;
+  padding: 2px 20px;
+}
+
+.btn-rounder {
+  border-radius: 20px;
+}
+
+.btn-rounder-lg {
+  border-radius: 50px;
+}
+
+.btn-outline-primary {
+  border-color: $border-color;
+  color: #000;
+
+  &:hover {
+    border-color: $primary-color;
+    color: #fff;
+  }
+}
+
+.btn-secondary:not(.btn-success) {
+  &:hover,
+  &:focus {
+    color: white;
+    background: $brand-primary;
+    border-color: $brand-primary;
+  }
+}
+
+// Style white
+.btn-white {
+  color: white;
+  border-color: white;
+
+  &:hover,
+  &:focus,
+  &:active:hover {
+    background: white;
+    color: $primary-color;
+  }
+}
+
+
+.btn-w350 {
+  min-width: 350px !important;
+}
+
+.btn-w240 {
+  min-width: 240px !important;
+}
+
+.btn-w200 {
+  min-width: 200px !important;
+}
+
+.btn-w160 {
+  min-width: 160px !important;
+}
+
+.btn-w250 {
+  min-width: 250px !important;
+}
+
+.btn-w180 {
+  min-width: 180px !important;
+}
+
+.btn-w150 {
+  min-width: 150px !important;
+}
+
+.btn-w130 {
+  min-width: 130px !important;
+}

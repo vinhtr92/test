@@ -1,0 +1,10 @@
+{% for item in list %}
+    <li {% if item.class %}class="{{ item.class }}"{% endif %}>
+        <a href="#">{{ item.text|raw }}</a>
+        {% if item.sublist %}
+            <ul class="sub-menu">
+                {% include "atoms-navlist" with {'list': item.sublist} %}
+            </ul>
+        {% endif %}
+    </li>
+{% endfor %}

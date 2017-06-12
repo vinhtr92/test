@@ -1,0 +1,9 @@
+---
+img:
+  avatar:
+    src: http://placeimg.com/100/100/people
+    alt: Avatar
+url: http://lorizzle.nl/
+navList:
+- text: <i class="fa fa-facebook" aria-hidden="true"></i>
+- text: <i class="fa fa-skype" aria-hidden="true"></i>
