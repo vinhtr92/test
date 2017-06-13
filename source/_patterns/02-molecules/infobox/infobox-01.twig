@@ -11,24 +11,38 @@
         {% include "atoms-image" with { img: item.image } %}
     </div>
 {% endif %}
+
 {% if item.number %}
     <div class="box__number">
         {{item.number}}
     </div>
 {% endif %}
-{% if item.date %}
-    <div class="box__date">
-        {{item.date}}
-        {% if item.date %}
-            <span class="time"> {{item.month}}</span>
-        {% endif %}
 
-    </div>
+{% if item.calendar %}
+    <div class="box__calendar">
+        <div class="box__date">
+            {{item.calendar.date}}
+        </div>
+        <div class="box__month">
+            {{item.calendar.month}}
+        </div>
 {% endif %}
 
 {% if item.title %}
     <div class="box__title">
         {{item.title}}
+    </div>
+{% endif %}
+
+{% if item.time %}
+    <div class="box__times">
+        {{item.time}}
+    </div>
+{% endif %}
+
+{% if item.location %}
+    <div class="box__location">
+        {{item.location}}
     </div>
 {% endif %}
 
