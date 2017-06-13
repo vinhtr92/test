@@ -1,6 +1,8 @@
 <figure class="fig{{figStyleGuide}}">
-        <img src="{{ figure.src|default('https://unsplash.it/60/60') }}" alt="{{ figure.alt|default('Image title') }}" />
-        <figcaption class="fig__cap{{figcapStyleGuide}}">
-        {{figure.figcaption}}
-        </figcaption>
+    {% include "atoms-image" with { img:figure.img } %}
+
+    <figcaption class="fig__cap{{figcapStyleGuide}}">
+    {{figure.figcaption}}
+    </figcaption>
 </figure>
+<!--Figure-->

@@ -1,0 +1,15 @@
+<div class="quote{{quoteStyleModifier}}">
+    {% if item.image %}
+     <div class="quote__img">
+        {% include "atoms-image" with { img:item.image } %}
+    </div>
+    {% endif %}
+    <h2>{{item.quote}}</h2>
+
+    {% if item.imageBottom %}
+     <div class="quote__img">
+        {% include "atoms-image" with { img:item.image } %}
+    </div>
+    {% endif %}
+</div>
+<!--Quote-->

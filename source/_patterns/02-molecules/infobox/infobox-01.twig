@@ -1,24 +1,24 @@
 <div class="infobox-01{{infoboxStyleModifier}}">
 
- {% if item.sectitle %}
-     <div class="box__sectitle">
-         {{item.sectitle}}
-     </div>
- {% endif %}
-
-{% if item.image %}
-    <div class="box__image">
-        {% include "atoms-image" with { img: item.image } %}
+    {% if item.sectitle %}
+    <div class="box__sectitle">
+        {{item.sectitle}}
     </div>
-{% endif %}
+    {% endif %}
 
-{% if item.number %}
+    {% if item.img %}
+    <div class="box__image">
+        {% include "atoms-image" with { img: item.img } %}
+    </div>
+    {% endif %}
+
+    {% if item.number %}
     <div class="box__number">
         {{item.number}}
     </div>
-{% endif %}
+    {% endif %}
 
-{% if item.calendar %}
+    {% if item.calendar %}
     <div class="box__calendar">
         <div class="box__date">
             {{item.calendar.date}}
@@ -26,33 +26,35 @@
         <div class="box__month">
             {{item.calendar.month}}
         </div>
-{% endif %}
+    </div>
+    {% endif %}
 
-{% if item.title %}
+    {% if item.title %}
     <div class="box__title">
         {{item.title}}
     </div>
-{% endif %}
+    {% endif %}
 
-{% if item.time %}
-    <div class="box__times">
+    {% if item.time %}
+    <div class="box__time">
         {{item.time}}
     </div>
-{% endif %}
+    {% endif %}
 
-{% if item.location %}
+    {% if item.location %}
     <div class="box__location">
         {{item.location}}
     </div>
-{% endif %}
+    {% endif %}
 
-{% if item.description %}
+    {% if item.description %}
     <div class="box__desc">
         {{item.description}}
     </div>
-{% endif %}
+    {% endif %}
 
-{% if item.imageBottom %}
-    {% include "atoms-image" with { img: item.imageBottom } %}
-{% endif %}
+    {% if item.imgBottom %}
+        {% include "atoms-image" with { img: item.imgBottom } %}
+    {% endif %}
 </div>
+<!--Infobox 01-->

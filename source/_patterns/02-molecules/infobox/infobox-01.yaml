@@ -1,11 +1,11 @@
 ---
 item:
   sectitle: groom
-  image:
+  img:
     src: https://unsplash.it/710/830
     alt: image
   title: samuel
-  number: 9292
+  number: 929224
   calendar:
     date: 91
     month: dect
