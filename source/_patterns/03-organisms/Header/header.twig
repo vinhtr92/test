@@ -4,9 +4,8 @@
         {% include "molecules-nav" %}
     </div>
     <div class="col-lg-4 ">
-        <h2 class="title--page">
-            tatiana & samuel
-        </h2>
+        {% set item = title %}
+        {% include "atoms-title" %}
     </div>
     <div class="col-lg-4">
         {% set navList = navList_02 %}
