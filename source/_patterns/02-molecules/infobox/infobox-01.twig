@@ -20,7 +20,7 @@
 
     {% if item.calendar %}
     <div class="box__calendar">
-        <div class="box__date">
+        <div class="box__ca">
             {{item.calendar.date}}
         </div>
         <div class="box__month">
@@ -54,7 +54,11 @@
     {% endif %}
 
     {% if item.imgBottom %}
-        {% include "atoms-image" with { img: item.imgBottom } %}
+        {% include "atoms-image" with { img: item.img} %}
+    {% endif %}
+
+    {% if item.link %}
+    {% include "atoms-link" with { link: item.link } %}
     {% endif %}
 </div>
 <!--Infobox 01-->
