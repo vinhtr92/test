@@ -1,0 +1,15 @@
+<div class="info{{infoStyleModifier}}">
+    <div class="row">
+    {% for item in info %}
+        {% if item.column %}
+        <div class="{{item.column}}">
+    {% endif %}
+
+    {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+
+    {% if item.column %}
+        </div>
+    {% endif %}
+    {% endfor %}
+
+</div>

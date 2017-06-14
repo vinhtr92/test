@@ -1,0 +1,12 @@
+---
+event:
+  sectitle: events
+  title: Cupidatat nisi adipisicing irure elit commodo dolor labore ut magna et et.
+  description: Ut sunt voluptate amet do fugiat excepteur dolore voluptate do. Voluptate mollit dolor dolore nostrud fugiat elit veniam aliquip. In minim id dolore Lorem laborum Lorem excepteur aliquip sunt velit exercitation.
+  imgBottom:
+    src: https://unsplash.it/200/300
+    alt: image
+
+section_01:
+- item:
+    title: Irure est proident tempor voluptate aute non anim do cillum pariatur amet.

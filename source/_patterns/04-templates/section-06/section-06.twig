@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            {% set item = event %}
+            {% include "molecules-infobox-01" %}
+        </div>
+        <div class="col-lg-3">
+            {% for item in section_01 %}
+                {% include "molecules-infobox-01" %}
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% for item in section_02 %}
+                {% include "molecules-infobox-01" %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

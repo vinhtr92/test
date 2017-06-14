@@ -1,0 +1,14 @@
+---
+includeFile: molecules-infobox-01
+info:
+- column: col-lg-4
+  title: Google
+  description: Cillum consectetur do fugiat irure magna ad cupidatat. Labore elit dolor eu dolore proident incididunt dolore est. Qui nisi proident et esse eiusmod occaecat nulla sint elit.
+- column: col-lg-4
+  title: Google
+  description: Cillum consectetur do fugiat irure magna ad cupidatat. Labore elit dolor eu dolore proident incididunt dolore est. Qui nisi proident et esse eiusmod occaecat nulla sint elit.
+- column: col-lg-4
+  title: Google
+  description: Cillum consectetur do fugiat irure magna ad cupidatat. Labore elit dolor eu dolore proident incididunt dolore est. Qui nisi proident et esse eiusmod occaecat nulla sint elit.
+
+

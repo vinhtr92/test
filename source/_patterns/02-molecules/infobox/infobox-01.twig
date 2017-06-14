@@ -31,7 +31,7 @@
 
     {% if item.title %}
     <div class="box__title">
-        {{item.title}}
+       <h4> {{item.title}} </h4>
     </div>
     {% endif %}
 
@@ -54,7 +54,7 @@
     {% endif %}
 
     {% if item.imgBottom %}
-        {% include "atoms-image" with { img: item.img} %}
+        {% include "atoms-image" with { img: item.imgBottom } %}
     {% endif %}
 
     {% if item.link %}
