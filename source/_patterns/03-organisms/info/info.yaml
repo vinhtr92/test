@@ -1,14 +1,25 @@
 ---
+infoStyleModifier:  " container"
 includeFile: molecules-infobox-01
+nestedContent : "true"
 info:
-- column: col-lg-4
-  title: Google
-  description: Cillum consectetur do fugiat irure magna ad cupidatat. Labore elit dolor eu dolore proident incididunt dolore est. Qui nisi proident et esse eiusmod occaecat nulla sint elit.
-- column: col-lg-4
-  title: Google
-  description: Cillum consectetur do fugiat irure magna ad cupidatat. Labore elit dolor eu dolore proident incididunt dolore est. Qui nisi proident et esse eiusmod occaecat nulla sint elit.
-- column: col-lg-4
-  title: Google
-  description: Cillum consectetur do fugiat irure magna ad cupidatat. Labore elit dolor eu dolore proident incididunt dolore est. Qui nisi proident et esse eiusmod occaecat nulla sint elit.
+- column:  col-lg-8
+  title: on my way
+  description: Voluptate esse esse ullamco ex ex non ullamco fugiat enim. Pariatur labore irure proident exercitation reprehenderit consequat cupidatat dolor velit. Lorem fugiat ullamco
+  nestedCol:
 
+  - column: col-lg-6
+    title: cokjsj
+    description: Consectetur do sint ut adipisicing in aute mollit aliqua velit magna.
+  - column: col-lg-6
+    title: cokjsjwet
+    description: Quis ea aute aliquip ea elit. Tempor sint id ea ad quis amet aliqua id dolor nulla veniam voluptate exercitation. Eu id minim eiusmod ullamco eiusmod laboris velit nostrud.
+  - column: col-lg-6
+    title: cokjsjwet
+    description: Quis ea aute aliquip ea elit. Tempor sint id ea ad quis amet aliqua id dolor nulla veniam voluptate exercitation. Eu id minim eiusmod ullamco eiusmod laboris velit nostrud.
 
+  - column: col-lg-6
+    title: cokjsjwet
+    description: Quis ea aute aliquip ea elit. Tempor sint id ea ad quis amet aliqua id dolor nulla veniam voluptate exercitation. Eu id minim eiusmod ullamco eiusmod laboris velit nostrud.
+- column: col-lg-4
+  title: gOOGLE

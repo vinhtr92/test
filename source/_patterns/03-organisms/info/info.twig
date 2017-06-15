@@ -5,11 +5,23 @@
         <div class="{{item.column}}">
     {% endif %}
 
-    {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+{% if nestedContent == true %}
+     {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+{% endif %}
+
+{% if item.nestedCol %}
+    <div class="row">
+        {% for item in item.nestedCol %}
+            <div class="{{item.column}}">
+                {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
 
     {% if item.column %}
         </div>
     {% endif %}
     {% endfor %}
-
+    </div>
 </div>
