@@ -6,14 +6,15 @@
     {% endif %}
 
 {% if nestedContent == true %}
-     {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+     {% include includeFile with { infoStyleModifier: modifierFile } %}
 {% endif %}
+<!-- content-->
 
 {% if item.nestedCol %}
     <div class="row">
         {% for item in item.nestedCol %}
             <div class="{{item.column}}">
-                {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+                {% include includeFile with { infoStyleModifier: modifierFile } %}
             </div>
         {% endfor %}
     </div>
