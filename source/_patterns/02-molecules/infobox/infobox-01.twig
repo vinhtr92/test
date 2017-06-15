@@ -19,11 +19,11 @@
     {% endif %}
 
     {% if item.calendar %}
-    <div class="box__calendar">
-        <div class="box__ca">
+    <div class="box-calendar">
+        <div class="box-calendar__date">
             {{item.calendar.date}}
         </div>
-        <div class="box__month">
+        <div class="box-calendar__month">
             {{item.calendar.month}}
         </div>
     </div>
@@ -54,7 +54,9 @@
     {% endif %}
 
     {% if item.imgBottom %}
+    <div class="box__image">
         {% include "atoms-image" with { img: item.imgBottom } %}
+    </div>
     {% endif %}
 
     {% if item.link %}

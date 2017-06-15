@@ -4,21 +4,21 @@
         {% if item.column %}
         <div class="{{item.column}}">
     {% endif %}
-
-{% if nestedContent == true %}
-     {% include includeFile with { infoStyleModifier: modifierFile } %}
-{% endif %}
-<!-- content-->
+     {% include includeFile with { infoboxStyleModifier: modifierFile } %}
 
 {% if item.nestedCol %}
     <div class="row">
         {% for item in item.nestedCol %}
             <div class="{{item.column}}">
-                {% include includeFile with { infoStyleModifier: modifierFile } %}
+                <div class="{{item.class}}">
+                {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+                </div>
             </div>
         {% endfor %}
     </div>
 {% endif %}
+
+{#su dung khi co nested column trong Bootstrap#}
 
     {% if item.column %}
         </div>
