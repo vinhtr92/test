@@ -4,21 +4,19 @@
         {% if item.column %}
         <div class="{{item.column}}">
     {% endif %}
-     {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+    {% include includeFile with { infoboxStyleModifier: modifierFile } %}
 
 {% if item.nestedCol %}
     <div class="row">
+
+        {#vong lap for cho nested column trong Bootstrap#}
         {% for item in item.nestedCol %}
             <div class="{{item.column}}">
-                <div class="{{item.class}}">
                 {% include includeFile with { infoboxStyleModifier: modifierFile } %}
-                </div>
             </div>
         {% endfor %}
     </div>
 {% endif %}
-
-{#su dung khi co nested column trong Bootstrap#}
 
     {% if item.column %}
         </div>

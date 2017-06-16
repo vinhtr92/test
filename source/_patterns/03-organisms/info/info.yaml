@@ -3,23 +3,30 @@ infoStyleModifier:  " container"
 includeFile: molecules-infobox-01
 nestedContent : "true"
 info:
-- column:  col-lg-8
-  title: on my way
+- column:  col-lg-6
+  title: Bootstrap nested column
   description: Voluptate esse esse ullamco ex ex non ullamco fugiat enim. Pariatur labore irure proident exercitation reprehenderit consequat cupidatat dolor velit. Lorem fugiat ullamco
   nestedCol:
 
   - column: col-lg-6
-    title: cokjsj
-    description: Consectetur do sint ut adipisicing in aute mollit aliqua velit magna.
+    title: title 01
+    description: Nisi sunt ex aliqua eiusmod. Fugiat ex aliquip ut voluptate Lorem in. Voluptate deserunt aliqua ipsum quis enim nulla aliquip.
   - column: col-lg-6
-    title: cokjsjwet
-    description: Quis ea aute aliquip ea elit. Tempor sint id ea ad quis amet aliqua id dolor nulla veniam voluptate exercitation. Eu id minim eiusmod ullamco eiusmod laboris velit nostrud.
+    title: title 02
+    description: Dolore consequat non est esse voluptate non id sit exercitation aliquip cillum reprehenderit ut. Laborum minim dolor excepteur incididunt eu esse tempor velit velit pariatur officia deserunt minim.
   - column: col-lg-6
-    title: cokjsjwet
-    description: Quis ea aute aliquip ea elit. Tempor sint id ea ad quis amet aliqua id dolor nulla veniam voluptate exercitation. Eu id minim eiusmod ullamco eiusmod laboris velit nostrud.
+    title: title 03
+    description: Culpa amet sunt pariatur esse. Exercitation reprehenderit incididunt veniam eiusmod magna ut. Ut cillum aliquip irure enim ad. Voluptate qui aliqua voluptate consectetur.
 
   - column: col-lg-6
-    title: cokjsjwet
-    description: Quis ea aute aliquip ea elit. Tempor sint id ea ad quis amet aliqua id dolor nulla veniam voluptate exercitation. Eu id minim eiusmod ullamco eiusmod laboris velit nostrud.
-- column: col-lg-4
-  title: gOOGLE
+    title: title 04
+    description: Eiusmod duis velit cillum occaecat Lorem quis excepteur ex ad consequat dolore cupidatat. Dolore tempor irure sint aliqua aliquip. Ad ipsum et aliqua ex irure mollit veniam nulla officia fugiat.
+- column: col-lg-6
+  title:  column  ( col-lg-4 )
+  nestedCol:
+  - column: col-lg-12
+    title: column nested ( col-lg-12 )
+    imgBottom:
+      src: https://i.stack.imgur.com/ecxjL.jpg
+      alt: bootstrap nested column
+

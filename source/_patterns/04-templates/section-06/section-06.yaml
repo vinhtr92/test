@@ -16,6 +16,9 @@ info_02:
   time: 15h30 AM
   location: Hanoi / VNM
   description: Adipisicing in incididunt enim adipisicing mollit ipsum culpa ad. Exercitation laborum adipisicing laboris aute. Non ut amet nisi cupidatat in commodo pariatur id irure.
+  link:
+    url: http://genk.vn/
+    text: genk
 
 - column: col-lg-6
   calendar:
@@ -25,6 +28,9 @@ info_02:
   time: 1h30 AM
   location: Hanoi / VNM
   description: Aliquip ipsum laborum aute nisi tempor nisi culpa. Do adipisicing ut nulla nisi aliquip est eiusmod do. Ex mollit officia duis aute. Minim pariatur cupidatat dolor est culpa cillum esse adipisicing non mollit et.
+  link:
+    url: http://genk.vn/
+    text: genk
 
 - column: col-lg-6
   calendar:
@@ -34,6 +40,9 @@ info_02:
   time: 11h30 AM
   location: Hanoi / VNM
   description: Veniam enim proident eu adipisicing magna ex. Exercitation sint ex consectetur exercitation dolor cillum do. Eiusmod eiusmod minim irure dolor quis consectetur est pariatur.
+  link:
+    url: http://genk.vn/
+    text: genk
 
 - column: col-lg-6
   calendar:
@@ -43,3 +52,6 @@ info_02:
   time: 2h30 AM
   location: Hanoi / VNM
   description: Aliqua laborum anim dolore reprehenderit. Cupidatat ut dolore do aute ad. Nulla nulla eu adipisicing voluptate proident sit quis mollit aliqua magna ipsum cupidatat incididunt amet.
+  link:
+    url: http://genk.vn/
+    text: genk
