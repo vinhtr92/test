@@ -1,7 +1,6 @@
 ---
 infoStyleModifier:  " container"
 includeFile: molecules-infobox-01
-nestedContent : "true"
 info:
 - column:  col-lg-6
   title: Bootstrap nested column

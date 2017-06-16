@@ -1,0 +1,15 @@
+---
+
+includeFile: molecules-infobox-01
+swiper:
+  - number: "01"
+    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
+    description: Nisi Lorem sint ut ullamco fugiat ipsum ad aliqua. Fugiat ullamco est proident et qui mollit et. Consequat mollit magna amet duis. Laboris Lorem incididunt ex enim labore quis ex laborum laborum duis minim voluptate.
+
+  - number: "02"
+    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
+    description: Ullamco nulla officia ad id incididunt minim ullamco magna tempor qui cillum deserunt voluptate. Cillum ea sunt consequat nostrud nisi. Ex adipisicing et ex commodo incididunt quis nostrud labore officia tempor Lorem dolore ex.
+
+  - number: "03"
+    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
+    description: Consectetur minim quis cupidatat labore sint fugiat aliqua cillum aute. Exercitation ea ex amet anim cillum ex. Ullamco ut aliqua labore qui deserunt adipisicing ut deserunt culpa.
