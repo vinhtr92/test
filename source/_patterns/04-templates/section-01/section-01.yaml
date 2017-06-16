@@ -11,11 +11,12 @@ navList_02:
 - text: Twitter
 - text: RSVP
 
+title:
+  heading: Tatiana & Samuels
+
 figure:
   img:
     src: https://unsplash.it/1920/1080
     alt: love
   figcaption: I love you more today
 
-title:
-  heading: Tatiana & Samuels

@@ -3,7 +3,6 @@ count:
   number: 450
   text: day
 info:
-
   - column: col-lg-6 text-xs-right mt-70
     sectitle: bride
     img:
@@ -13,8 +12,8 @@ info:
     description: Sint sunt consectetur magna tempor. Pariatur est anim veniam officia consequat ex irure esse aute labore nisi occaecat aliquip commodo. Irure fugiat occaecat aliqua adipisicing commodo culpa mollit aliquip amet.
     character:
       age: "25"
-      profession: nerd
-      hobby:  Dota, FPS
+      profession: medic
+      hobby:  sleep
 
   - column: col-lg-6
     sectitle: Groom
@@ -25,5 +24,5 @@ info:
     description: Aliquip deserunt dolore incididunt eu ea exercitation est. Proident ipsum ullamco consequat nulla in laboris ullamco consectetur do esse. Fugiat ullamco culpa Lorem laboris. Et sunt ut mollit aliqua veniam consequat velit.
     character:
       age: 78
-      profession: The Terminal-tor
-      hobby: gundam, PSP, super kamen rider
+      profession: medic
+      hobby: sleep
