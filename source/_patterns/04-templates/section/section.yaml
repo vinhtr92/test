@@ -1,0 +1,174 @@
+---
+section:
+  header:
+    navList:
+    - text: Couple
+    - text: History
+    - text: Groomens & Bridesmaids
+    title:
+      heading: Tatiana & Samuel
+    navList_02:
+    - text: Events
+    - text: Albums
+    - text: Blogs
+    - text: Twitter
+    - text: RSVP
+    figure:
+      img:
+        src: https://unsplash.it/1920/1080
+        alt: love
+      figcaption: I love you more today
+
+# header section
+
+section_02:
+  count:
+    number: 450
+    text: day
+  info:
+  - column: col-lg-6 text-xs-right mt-70
+    sectitle: bride
+    img:
+      src: https://unsplash.it/g/200/300
+      alt: image
+    title: tatiana
+    description: Sint sunt consectetur magna tempor. Pariatur est anim veniam officia consequat ex irure esse aute labore nisi occaecat aliquip commodo. Irure fugiat occaecat aliqua adipisicing commodo culpa mollit aliquip amet.
+    character:
+      age: "25"
+      profession: medic
+      hobby:  sleep
+  - column: col-lg-6
+    sectitle: Groom
+    img:
+      src: https://unsplash.it/200/300
+      alt: image
+    title: samuel
+    description: Aliquip deserunt dolore incididunt eu ea exercitation est. Proident ipsum ullamco consequat nulla in laboris ullamco consectetur do esse. Fugiat ullamco culpa Lorem laboris. Et sunt ut mollit aliqua veniam consequat velit.
+    character:
+      age: 78
+      profession: medic
+      hobby: sleep
+
+# section 02
+
+section_03:
+  title:
+    heading: "we will say yes in :"
+  count:
+  - number: 07
+    text: days
+  - number: 14
+    text: hours
+  - number: 19
+    text: minute
+  - number: 07
+    text: seconds
+
+# section 03
+
+section_04:
+  title:
+    heading: history
+  swiper:
+  - number: "01"
+    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
+    description: Nisi Lorem sint ut ullamco fugiat ipsum ad aliqua. Fugiat ullamco est proident et qui mollit et.
+  - number: "02"
+    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
+    description: Ullamco nulla officia ad id incididunt minim ullamco magna tempor qui cillum deserunt voluptate. Cillum ea sunt consequat nostrud nisi. Ex adipisicing et ex
+  - number: "03"
+    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
+    description: Consectetur minim quis cupidatat labore sint fugiat aliqua cillum aute.
+
+# section 04
+
+section_05:
+  quote:
+    quote: Nisi anim proident irure .
+    imgBottom:
+      src: https://unsplash.it/350
+      alt: image
+  swiper:
+  - title: Et consectetur consequat
+    imgBottom:
+      src: https://unsplash.it/200
+      alt: image.
+  - title: Ut fugiat in velit minim culpa.
+    imgBottom:
+      src: https://unsplash.it/201
+      alt: image.
+  - title: Exercitation labore et sint
+    imgBottom:
+      src: https://unsplash.it/202
+      alt: image.
+  swiper_02:
+  - title: Et consectetur consequat
+    imgBottom:
+      src: https://unsplash.it/203
+      alt: image.
+  - title: Ut fugiat in velit minim culpa.
+    imgBottom:
+      src: https://unsplash.it/204
+      alt: image.
+  - title: Exercitation labore et sint
+    imgBottom:
+      src: https://unsplash.it/205
+      alt: image.
+
+# section 05
+
+section_06:
+  info_01:
+    sectitle: events
+    title: Dolor qui cillum occaecat dolore voluptate adipisicing.
+    description: Aliqua magna laborum sint elit fugiat eu aliqua labore sunt incididunt proident. Ex officia sint ullamco culpa fugiat. Sunt anim magna qui irure magna.
+    imgBottom:
+      src: https://unsplash.it/200/300
+      alt: image
+  info_02:
+  - column: col-lg-6
+    calendar:
+      date: "09"
+      month: dect
+    title: Sunt occaecat in aute sunt magna est ad.
+    time: 15h30 AM
+    location: Hanoi / VNM
+    description: Adipisicing in incididunt enim adipisicing mollit ipsum culpa ad. Exercitation laborum adipisicing laboris aute. Non ut amet nisi cupidatat in commodo pariatur id irure.
+    link:
+      url: http://genk.vn/
+      text: genk
+  - column: col-lg-6
+    calendar:
+      date: "07"
+      month: dect
+    title: Eiusmod et elit et anim mollit aliqua esse consequat duis.
+    time: 1h30 AM
+    location: Hanoi / VNM
+    description: Aliquip ipsum laborum aute nisi tempor nisi culpa. Do adipisicing ut nulla nisi aliquip est eiusmod do. Ex mollit officia duis aute. Minim pariatur cupidatat dolor est culpa cillum esse adipisicing non mollit et.
+    link:
+      url: http://genk.vn/
+      text: genk
+  - column: col-lg-6
+    calendar:
+      date: "10"
+      month: dect
+    title: Veniam commodo ipsum et eu duis.
+    time: 11h30 AM
+    location: Hanoi / VNM
+    description: Veniam enim proident eu adipisicing magna ex. Exercitation sint ex consectetur exercitation dolor cillum do. Eiusmod eiusmod minim irure dolor quis consectetur est pariatur.
+    link:
+      url: http://genk.vn/
+      text: genk
+  - column: col-lg-6
+    calendar:
+      date: "12"
+      month: dect
+    title: Sint amet sunt mollit aliqua qui est commodo ipsum aliqua.
+    time: 2h30 AM
+    location: Hanoi / VNM
+    description: Aliqua laborum anim dolore reprehenderit. Cupidatat ut dolore do aute ad. Nulla nulla eu adipisicing voluptate proident sit quis mollit aliqua magna ipsum cupidatat incididunt amet.
+    link:
+      url: http://genk.vn/
+      text: genk
+
+# section 06

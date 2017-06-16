@@ -1,14 +1,14 @@
 <div class="row">
     <div class="col-lg-4">
-        {% set navList = navList_01 %}
+        {% set navList = header.navList %}
         {% include "molecules-nav" %}
     </div>
-    <div class="col-lg-4 ">
-        {% set item = title %}
+    <div class="col-lg-4 text-xs-center">
+        {% set item = header.title %}
         {% include "atoms-title" %}
     </div>
-    <div class="col-lg-4">
-        {% set navList = navList_02 %}
+    <div class="col-lg-4 text-xs-right">
+        {% set navList = header.navList_02 %}
         {% include "molecules-nav" %}
     </div>
 </div>
