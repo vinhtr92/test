@@ -1,7 +1,7 @@
 ---
 section_title:
   heading: "we will say yes in : "
-count:
+section_count:
 - number: 07
   text: days
 - number: 14

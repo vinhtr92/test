@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row text-xs-center">
-        {% include "atoms-title" with {item: section_title} %}
+        {% include "atoms-title" with {item: section_title } %}
         <div class="h1">
-            {% for item in count %}
+            {% for item in section_count %}
                 {% include "molecules-count"  %}
             {% endfor %}
         </div>

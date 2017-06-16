@@ -2,7 +2,8 @@
 count:
   number: 450
   text: day
-info:
+
+section:
   - column: col-lg-6 text-xs-right mt-70
     sectitle: bride
     img:
