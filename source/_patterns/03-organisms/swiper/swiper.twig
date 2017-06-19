@@ -1,26 +1,39 @@
 <div class="swiper{{swiperStyleModifier}}">
+    {% if swiper_data.sectitle %}
+        {% include "atoms-sectitle" %}
+    {% endif %}
     <div class="swiper-container ">
-        <div  data-init="swiper" data-loop="true" data-next-button=".swiper-btn--next" data-prev-button=".swiper-btn--prev" data-pagination=".swiper-pagination" data-slide-to-clicked-slide="true" data-slides-per-view="3" data-space-between="50">
+        <div  data-init="swiper" data-loop="true" data-next-button=".swiper-btn--next" data-prev-button=".swiper-btn--prev" data-pagination=".swiper-pagination" data-slide-to-clicked-slide="true" data-slides-per-view= "{{swiper_data.perview|default('3') }}" data-space-between="{{swiper_data.space|default('30')}}">
 
             <div class="swiper-wrapper">
                 {% for item in swiper %}
                 <div class="swiper-slide">
                     <div class="carousel__item">
-                        <div class="row">
-
+                            {% if item.sectitle %}
+                                {% include "atoms-sectitle" with {sectitle:item.sectitle }%}
+                            {% endif %}
+                            {% if item.img %}
+                                {% include "atoms-image" with {img: item.img } %}
+                            {% endif %}
                             {% include includeFile with { infoboxStyleModifier: modifierFile } %}
-                        </div>
+                            {% if item.imgBottom %}
+                                {% include "atoms-image" with { img: item.imgBottom } %}
+                            {% endif %}
+
+                            {% if item.infobox_02 %}
+                                {% include "molecules-infobox-02" with {item: item.infobox_02 } %}
+                            {% endif %}
                     </div>
                 </div>
                 {% endfor %}
             </div>
         </div>
 
-        {% if pagination == true %}
-            <div class="swiper-pagination"></div>
+        {% if swiper_data.pagination == true %}
+            <div class="swiper-pagination swiper-pagination--02"></div>
         {% endif %}
 
-        {% if swiper_btn == true %}
+        {% if swiper_data.button == true %}
             <div class="swiper-btn swiper-btn--next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
             <div class="swiper-btn swiper-btn--prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
         {% endif %}

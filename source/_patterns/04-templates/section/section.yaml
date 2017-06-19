@@ -27,13 +27,13 @@ section_02:
     text: day
   info:
   - column: col-lg-6 text-xs-right mt-70
-    sectitle: bride
+    sectitle: Bride
     img:
-      src: https://unsplash.it/g/200/300
-      alt: image
-    title: tatiana
+      src: https://unsplash.it/g/200/301
+      alt: Bride
+    title: Tatiana
     description: Sint sunt consectetur magna tempor. Pariatur est anim veniam officia consequat ex irure esse aute labore nisi occaecat aliquip commodo. Irure fugiat occaecat aliqua adipisicing commodo culpa mollit aliquip amet.
-    character:
+    infobox_02:
       age: "25"
       profession: medic
       hobby:  sleep
@@ -41,19 +41,18 @@ section_02:
     sectitle: Groom
     img:
       src: https://unsplash.it/200/300
-      alt: image
-    title: samuel
+      alt: Groom
+    title: Samuel
     description: Aliquip deserunt dolore incididunt eu ea exercitation est. Proident ipsum ullamco consequat nulla in laboris ullamco consectetur do esse. Fugiat ullamco culpa Lorem laboris. Et sunt ut mollit aliqua veniam consequat velit.
-    character:
-      age: 78
+    infobox_02:
+      age: 248
       profession: medic
       hobby: sleep
 
 # section 02
 
 section_03:
-  title:
-    heading: "we will say yes in :"
+  sectitle: "we will say yes in :"
   count:
   - number: 07
     text: days
@@ -67,8 +66,7 @@ section_03:
 # section 03
 
 section_04:
-  title:
-    heading: history
+  sectitle: Our Story
   swiper:
   - number: "01"
     title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
@@ -83,34 +81,36 @@ section_04:
 # section 04
 
 section_05:
+  sectitle: Sit laboris voluptate
+  sectitle_02: Sunt duis voluptate
   quote:
     quote: Nisi anim proident irure .
     imgBottom:
       src: https://unsplash.it/350
       alt: image
   swiper:
-  - title: Et consectetur consequat
+  - title: Et consectetur
     imgBottom:
       src: https://unsplash.it/200
       alt: image.
-  - title: Ut fugiat in velit minim culpa.
+  - title: Ut fugiat in
     imgBottom:
       src: https://unsplash.it/201
       alt: image.
-  - title: Exercitation labore et sint
+  - title: Exercitation
     imgBottom:
       src: https://unsplash.it/202
       alt: image.
   swiper_02:
-  - title: Et consectetur consequat
+  - title: Et consectetur
     imgBottom:
       src: https://unsplash.it/203
       alt: image.
-  - title: Ut fugiat in velit minim culpa.
+  - title: Ut fugiat
     imgBottom:
       src: https://unsplash.it/204
       alt: image.
-  - title: Exercitation labore et sint
+  - title: Exercitation
     imgBottom:
       src: https://unsplash.it/205
       alt: image.
@@ -172,3 +172,41 @@ section_06:
       text: genk
 
 # section 06
+
+section_07:
+  title:
+    heading: albums
+
+  swiper_data:
+    perview: "1"
+  swiper:
+  - img:
+      src: https://unsplash.it/1810/1000
+  - img:
+      src: https://unsplash.it/1810/1001
+  - img:
+      src: https://unsplash.it/1810/1002
+  - img:
+      src: https://unsplash.it/1810/1003
+
+# section 07
+
+section_08:
+  title:
+    heading: blogs
+  info:
+  - img:
+      src: https://unsplash.it/300
+    column: col-lg-4
+    time: mar 9, 2018
+    description: Eiusmod est veniam adipisicing esse minim aliquip. Id sunt proident adipisicing ut minim ipsum exercitation anim incididunt. Ullamco do occaecat cupidatat aute exercitation deserunt sint elit proident amet excepteur irure ex duis. Nulla dolor velit exercitation dolor.
+  - img:
+      src: https://unsplash.it/301
+    column: col-lg-4
+    time: mar 9, 2018
+    description: Do est sit ex anim aliquip sit enim qui ex aute. In enim sint proident tempor eiusmod magna et. Exercitation eu ea quis qui nostrud nisi aute commodo. Adipisicing adipisicing deserunt occaecat nisi cupidatat enim pariatur.
+  - img:
+      src: https://unsplash.it/302
+    column: col-lg-4
+    time: mar 9, 2018
+    description: Labore in culpa non elit. Lorem esse quis nulla eu in dolor ut pariatur pariatur velit culpa. Elit laboris cillum ipsum adipisicing officia. Quis consectetur sit proident nulla exercitation Lorem magna.

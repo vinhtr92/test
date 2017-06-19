@@ -1,14 +1,16 @@
-<div class="row">
-    <div class="col-lg-4">
-        {% set navList = header.navList %}
-        {% include "molecules-nav" %}
+<header class="header{{headerStyleModifier}}">
+    <div class="row">
+        <div class="col-lg-4">
+            {% set navList = header.navList %}
+            {% include "molecules-nav" %}
+        </div>
+        <div class="col-lg-4 text-xs-center">
+            {% set item = header.title %}
+            {% include "molecules-title" %}
+        </div>
+        <div class="col-lg-4 text-xs-right">
+            {% set navList = header.navList_02 %}
+            {% include "molecules-nav" %}
+        </div>
     </div>
-    <div class="col-lg-4 text-xs-center">
-        {% set item = header.title %}
-        {% include "atoms-title" %}
-    </div>
-    <div class="col-lg-4 text-xs-right">
-        {% set navList = header.navList_02 %}
-        {% include "molecules-nav" %}
-    </div>
-</div>
+</header>

@@ -1,0 +1,9 @@
+<div class="title{{titleStyleModifier}}">
+    <h3>{{item.heading|default('title')}}
+    </h3>
+{% if item.description %}
+    <div class="title__description">
+    {{item.description}}
+    </div>
+{% endif %}
+</div>

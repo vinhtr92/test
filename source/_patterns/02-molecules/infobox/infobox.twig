@@ -1,15 +1,5 @@
-<div class="infobox-01{{infoboxStyleModifier}}">
-    {% if item.sectitle %}
-    <div class="box__sectitle">
-        {{item.sectitle}}
-    </div>
-    {% endif %}
+<div class="infobox{{infoboxStyleModifier}}">
 
-    {% if item.img %}
-    <div class="box__image">
-        {% include "atoms-image" with { img: item.img } %}
-    </div>
-    {% endif %}
 
     {% if item.number %}
     <div class="box__number">
@@ -52,18 +42,10 @@
     </div>
     {% endif %}
 
-    {% if item.imgBottom %}
-    <div class="box__image">
-        {% include "atoms-image" with { img: item.imgBottom } %}
-    </div>
-    {% endif %}
-
     {% if item.link %}
     {% include "atoms-link" with { link: item.link } %}
     {% endif %}
 
-    {% if item.character %}
-        {% include "molecules-infobox-02" with { item: item.character } %}
-    {% endif %}
+<!--Infobox -->
 </div>
-<!--Infobox 01-->
+

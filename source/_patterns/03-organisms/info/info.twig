@@ -4,15 +4,31 @@
         {% if item.column %}
         <div class="{{item.column}}">
     {% endif %}
+    {% if item.sectitle %}
+        {% include "atoms-sectitle" with {sectitle:item.sectitle }%}
+    {% endif %}
+    {% if item.img %}
+        {% include "atoms-image" with {img: item.img } %}
+    {% endif %}
     {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+    {% if item.imgBottom %}
+        {% include "atoms-image" with { img: item.imgBottom } %}
+    {% endif %}
+
+    {% if item.infobox_02 %}
+        {% include "molecules-infobox-02" with {item: item.infobox_02 } %}
+    {% endif %}
 
 {% if item.nestedCol %}
     <div class="row">
-
         {#vong lap for cho nested column trong Bootstrap#}
         {% for item in item.nestedCol %}
             <div class="{{item.column}}">
                 {% include includeFile with { infoboxStyleModifier: modifierFile } %}
+
+                 {% if item.infobox_02 %}
+                    {% include "molecules-infobox-02" with {item: item.infobox_02 } %}
+                {% endif %}
             </div>
         {% endfor %}
     </div>

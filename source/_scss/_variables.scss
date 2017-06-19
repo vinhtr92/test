@@ -1,7 +1,9 @@
 // Colors
 $primary-color                            : #2e4bfd;
-$secondary-color                          : #1c1c1c;
-$third-color                              : #787878;
+$secondary-color                          : #452b3b;
+$third-color                              : #6d8670;
+$text-color                               : #7f6d83;
+$text-second-color                        : #cfc0c4;
 
 $brand-primary                            : $primary-color;
 $brand-success                            : #57d03b;
@@ -12,7 +14,7 @@ $brand-danger                             : #e94a4a;
 
 // Body
 $body-bg                                  : #fff;
-$body-color                               : $third-color;
+// $body-color                               : $third-color;
 $default-bg                               : #fafafa;
 
 $border-color                             : #e8e8e8;
@@ -31,8 +33,8 @@ $link-hover-decoration                    : none;
 
 
 // Typography
-$font-family-sans-serif                   : 'Montserrat', sans-serif;
-$font-family-serif                        : 'Montserrat', sans-serif;
+$font-family-sans-serif                   : 'Tenor Sans', sans-serif;
+$font-family-serif                        : 'Tenor Sans', sans-serif;
 $font-family-base                         : $font-family-sans-serif;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
