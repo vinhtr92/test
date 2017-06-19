@@ -1,0 +1,35 @@
+.count {
+  .count__number {
+    font-weight: 400;
+    font-family: 'Italiana';
+    color: $third-color;
+    @include rem ((
+      font-size: 50px
+    ));
+
+
+      @include media-breakpoint-up(md) {
+      @include rem ((
+        font-size: 100px,
+      ))
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include rem ((
+      font-size: 180px,
+    ));
+    }
+  }
+
+  .count__text {
+    @include media-breakpoint-up(lg){
+      @include rem ((
+        font-size: 14px,
+
+        position: relative,
+        bottom: 30px,
+        right: 30px
+    ));
+    }
+  }
+}

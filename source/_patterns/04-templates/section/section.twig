@@ -61,6 +61,7 @@
         <!--section 05-->
     </section>
     <section>
+        {% include "atoms-sectitle" with {sectitle:section_06.sectitle} %}
     <div class="row">
         <div class="col-lg-4">
             {% set item = section_06.info_01 %}
@@ -84,10 +85,7 @@
     <!--section 07-->
     </section>
     <section>
-    <div class="text-xs-left">
-        {% set item = section_08.title %}
-        {% include "molecules-title" %}
-    </div>
+    {% include "atoms-sectitle" with {sectitle:section_08.sectitle} %}
     {% set info = section_08.info %}
     {% include "organisms-info" with { includeFile:"molecules-infobox"} %}
     <!--section 08-->

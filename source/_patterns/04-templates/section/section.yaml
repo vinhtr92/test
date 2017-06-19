@@ -118,8 +118,8 @@ section_05:
 # section 05
 
 section_06:
+  sectitle: events
   info_01:
-    sectitle: events
     title: Dolor qui cillum occaecat dolore voluptate adipisicing.
     description: Aliqua magna laborum sint elit fugiat eu aliqua labore sunt incididunt proident. Ex officia sint ullamco culpa fugiat. Sunt anim magna qui irure magna.
     imgBottom:
@@ -192,8 +192,7 @@ section_07:
 # section 07
 
 section_08:
-  title:
-    heading: blogs
+  sectitle: blogs
   info:
   - img:
       src: https://unsplash.it/300
