@@ -179,19 +179,15 @@ section_07:
   swiper_data:
     perview: "1"
     pagination: true
-    # button: true
-    direction: vertical
-    # autoheight: true
-    # height: 500px
   swiper:
-  - img:
-      src: https://unsplash.it/1810/1000
   - img:
       src: https://unsplash.it/1810/1001
   - img:
       src: https://unsplash.it/1810/1002
   - img:
       src: https://unsplash.it/1810/1003
+  - img:
+      src: https://unsplash.it/1810/100
 
 # section 07
 
