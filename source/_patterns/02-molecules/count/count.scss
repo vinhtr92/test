@@ -1,14 +1,13 @@
 .count {
   .count__number {
     font-weight: 400;
-    font-family: 'Italiana';
+    font-family: 'Italiana',sans-serif;
     color: $third-color;
     @include rem ((
       font-size: 50px
     ));
 
-
-      @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(md) {
       @include rem ((
         font-size: 100px,
       ))
@@ -30,6 +29,44 @@
         bottom: 30px,
         right: 30px
     ));
+    }
+  }
+}
+
+.count--02 {
+  display: block;
+
+  .count__number {
+    font-family: 'Bombshell Pro';
+
+    @include rem ((
+      font-size: 150px
+    ));
+
+    @include media-breakpoint-up (lg) {
+      @include rem ((
+      font-size: 300px
+    ));
+    }
+  }
+
+  .count__text {
+
+    @include rem ((
+      text-transform: uppercase,
+      font-size: 20px,
+
+      display: block,
+      position: relative,
+      bottom: 40px,
+    ));
+
+    @include media-breakpoint-up (lg) {
+      @include rem ((
+        bottom: 150px,
+        left: 130px,
+        font-size: 36px,
+      ));
     }
   }
 }

@@ -1,11 +1,4 @@
 
-.sectitle {
-  font-size: 1rem;
-  font-weight: 400;
-
-  color: $third-color;
-}
-
 .infobox {
   .box_sectitle {
     font-family: 'Tenor Sans',sans-serif;
@@ -19,11 +12,11 @@
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
 
+    color: $secondary-color;
+
     @include rem ((
       font-size: 36px,
     ));
-
-    color: $secondary-color;
   }
 
   .box__desc {
@@ -31,42 +24,15 @@
     line-height: 1.875;
 
     @include rem ((
-      font-size: 18px,
+      font-size: 18px
     ))
   }
 }
-/*.infobox {
-  .box__sectitle {
-    font-family: 'Tenor Sans';
-    font-size: $font-size-base;
-    font-weight: 400;
 
-    color: $third-color;
-
+.infobox--02 {
+  .box__title h4 {
     @include rem ((
-      margin-bottom: 16px,
+      font-size: 60px
     ));
   }
-
-  .box__image {
-    @include rem ((
-      margin-bottom: 50px,
-    ));
-  }
-
-  .box__title {
-    h4 {
-      @include rem ((
-        font-size: 60px,
-        font-family: 'Italiana',
-        font-weight: 400,
-
-        color: $secondary-color,
-      ));
-    }
-  }
-
-  .box__desc {
-
-  }
-}*/
+}

@@ -1,0 +1,40 @@
+.fig--02 {
+  position: relative;
+
+  .fig__cap {
+    @include rem ((
+      font-size: 30px,
+      font-weight: 400,
+      font-family: "Italiana",
+      text-align: center,
+
+      color: white,
+      background-color: $secondary-color,
+      width: 100%,
+    ));
+
+    @include media-breakpoint-up (sm) {
+      @include rem ((
+        font-size: 50px,
+
+        color: $text-second-color,
+        background-color: inherit,
+        position: absolute,
+        width: 620px,
+        top: 45%,
+        left: 50%,
+        transform: translate(-50%, -50%),
+      ));
+    }
+
+    @include media-breakpoint-up (lg) {
+      @include rem ((
+        font-size: 130px,
+        line-height: 120px,
+        top: 50%,
+        left: 50%,
+        transform: translate(-50%, -50%),
+      ));
+    }
+  }
+}

@@ -8,3 +8,11 @@
     background-size: cover;
     background-position: center;
 }
+
+.swiper--02 {
+  .swiper-pagination {
+    @include rem ((
+      bottom: 10px,
+    ));
+  }
+}

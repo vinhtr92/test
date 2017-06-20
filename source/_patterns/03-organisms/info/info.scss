@@ -1,0 +1,27 @@
+.sectitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $third-color;
+}
+
+.sectitle--02 {
+  @include rem ((
+    font-family: 'Bombshell Pro',
+    font-size: 50px,
+  ));
+
+  @include media-breakpoint-up (md) {
+    @include rem((
+      font-size: 100px,
+  ))
+  }
+  @include media-breakpoint-up (lg) {
+    @include rem((
+      font-size: 150px,
+
+      position: relative,
+      top: 90px,
+      z-index: 1000,
+  ))
+  }
+}

@@ -2,7 +2,7 @@
     {% set header = section.header %}
     {% include "organisms-header" %}
     {% set figure = section.header.figure %}
-    {% include "molecules-figure" %}
+    {% include "molecules-figure" with { figureStyleModifier:" fig--02"} %}
     <!-- header section-->
 </div>
 
@@ -10,10 +10,10 @@
     <section>
     <div class="text-xs-center">
         {% set item = section_02.count %}
-        {% include "molecules-count" %}
+        {% include "molecules-count" with { countStyleModifier:" count--02"} %}
     </div>
     {% set info = section_02.info %}
-    {% include "organisms-info" with { includeFile: "molecules-infobox" } %}
+    {% include "organisms-info" with { includeFile: "molecules-infobox", modifierFile: " infobox--02" } %}
     <!-- section 02 -->
     </section>
 
@@ -76,12 +76,12 @@
     <!--section 06-->
     </section>
     <section>
-    {% set item = section_07.title %}
-    {% include "molecules-title" %}
+
+    {% include "atoms-sectitle" with {sectitle: section_07.sectitle, sectitleStyleModifier: " sectitle--02" } %}
 
     {% set swiper_data = section_07.swiper_data %}
     {% set swiper = section_07.swiper %}
-    {% include "organisms-swiper" with { includeFile: "molecules-infobox"} %}
+    {% include "organisms-swiper" with { includeFile: "molecules-infobox", swiperStyleModifier: " swiper--02"} %}
     <!--section 07-->
     </section>
     <section>

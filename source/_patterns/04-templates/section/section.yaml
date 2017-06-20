@@ -23,8 +23,8 @@ section:
 
 section_02:
   count:
-    number: 450
-    text: day
+    number: 480
+    text: days love
   info:
   - column: col-lg-6 text-xs-right mt-70
     sectitle: Bride
@@ -174,11 +174,15 @@ section_06:
 # section 06
 
 section_07:
-  title:
-    heading: albums
+  sectitle: albums
 
   swiper_data:
     perview: "1"
+    pagination: true
+    # button: true
+    direction: vertical
+    # autoheight: true
+    # height: 500px
   swiper:
   - img:
       src: https://unsplash.it/1810/1000
