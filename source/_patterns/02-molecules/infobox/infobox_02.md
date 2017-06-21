@@ -1,5 +1,5 @@
 ---
-title: infobox 02
+title: infobox_02
 state: inprogress
 ---
 

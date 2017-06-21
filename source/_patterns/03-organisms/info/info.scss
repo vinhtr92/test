@@ -2,12 +2,15 @@
   font-size: 1rem;
   font-weight: 400;
   color: $third-color;
+  text-transform: uppercase;
+  letter-spacing: .3rem
 }
 
 .sectitle--02 {
   @include rem ((
     font-family: 'Bombshell Pro',
     font-size: 50px,
+    text-transform: inherit,
   ));
 
   @include media-breakpoint-up (md) {
@@ -23,5 +26,43 @@
       top: 90px,
       z-index: 1000,
   ))
+  }
+}
+
+.info {
+  .sectitle {
+    @include rem ((
+      margin: 40px 15px 15px 15px,
+  ));
+
+  img {
+    margin-bottom: 50px,
+  }
+
+  .infobox {
+    @include rem ((
+      margin-bottom: 30px,
+    ));
+  }
+}
+
+
+// decoration item
+.row {
+  position: relative; //position relative cho decoration item
+}
+
+.deco {
+  @include rem ((
+    Position: absolute,
+    left: 10%,
+    top: 19%,
+    z-index: 10,
+    display: none,
+  ));
+
+    @include media-breakpoint-up (lg) {
+      display: inherit;
+    }
   }
 }

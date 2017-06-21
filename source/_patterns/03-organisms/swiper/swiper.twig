@@ -4,8 +4,12 @@
     {% endif %}
     <div class="swiper-container ">
         <div  data-init="swiper" data-loop="true" data-next-button=".swiper-btn--next" data-prev-button=".swiper-btn--prev" data-pagination=".swiper-pagination" data-slide-to-clicked-slide="true"
-        data-slides-per-view= "{{swiper_data.perview|default('3') }}" data-space-between="{{swiper_data.space|default('30')}}" data-direction={{swiper_data.direction|default('horizontal')}} data-auto-height="{{swiper_data.autoheight|default('false')}}"
-        data-height="{{swiper_data.height}}" >
+        data-slides-per-view= "{{swiper_data.perview|default('3') }}" data-space-between="{{swiper_data.space|default('30')}}" data-direction={{swiper_data.direction|default('horizontal')}}
+        data-md-items="{{swiper_data.md}}"
+        data-lg-items="{{swiper_data.lg}}"
+        data-xl-items="{{swiper_data.xl}}"
+        data-height="{{swiper_data.height}}"
+        >
 
             <div class="swiper-wrapper">
                 {% for item in swiper %}

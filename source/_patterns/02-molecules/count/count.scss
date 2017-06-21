@@ -55,7 +55,9 @@
     @include rem ((
       text-transform: uppercase,
       font-size: 20px,
-
+      font-family: "Italiana",
+      font-weight: 400,
+      letter-spacing: .5px,
       display: block,
       position: relative,
       bottom: 40px,
@@ -63,8 +65,8 @@
 
     @include media-breakpoint-up (lg) {
       @include rem ((
-        bottom: 150px,
-        left: 130px,
+        bottom: 160px,
+        left: 110px,
         font-size: 36px,
       ));
     }

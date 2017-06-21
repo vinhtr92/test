@@ -46,6 +46,10 @@
     {% include "atoms-link" with { link: item.link } %}
     {% endif %}
 
+    {% if item.infobox_02 %}
+        {% include "molecules-infobox_02" with { item:item.infobox_02} %}
+    {% endif %}
+
 <!--Infobox -->
 </div>
 

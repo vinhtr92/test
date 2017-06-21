@@ -15,7 +15,7 @@ section:
     - text: RSVP
     figure:
       img:
-        src: https://unsplash.it/1920/1080
+        src: ../../assets/images-demo/hero.jpg
         alt: love
       figcaption: I love you more today
 
@@ -26,10 +26,18 @@ section_02:
     number: 480
     text: days love
   info:
-  - column: col-lg-6 text-xs-right mt-70
+  - column: col-lg-6 text-md-right mt-200
     sectitle: Bride
+    sectitleclass: " text-md-left"
+    type: bride
+    decoration:
+      item:
+        class: deco
+        img:
+          src: ../../assets/images-demo/decoration/deco.png
+
     img:
-      src: https://unsplash.it/g/200/301
+      src: ../../assets/images-demo/wedding/bride2.jpg
       alt: Bride
     title: Tatiana
     description: Sint sunt consectetur magna tempor. Pariatur est anim veniam officia consequat ex irure esse aute labore nisi occaecat aliquip commodo. Irure fugiat occaecat aliqua adipisicing commodo culpa mollit aliquip amet.
@@ -39,8 +47,9 @@ section_02:
       hobby:  sleep
   - column: col-lg-6
     sectitle: Groom
+    type: groom
     img:
-      src: https://unsplash.it/200/300
+      src: ../../assets/images-demo/wedding/groom.jpg
       alt: Groom
     title: Samuel
     description: Aliquip deserunt dolore incididunt eu ea exercitation est. Proident ipsum ullamco consequat nulla in laboris ullamco consectetur do esse. Fugiat ullamco culpa Lorem laboris. Et sunt ut mollit aliqua veniam consequat velit.
@@ -88,6 +97,8 @@ section_05:
     imgBottom:
       src: https://unsplash.it/350
       alt: image
+  swiper_data:
+    md: 2
   swiper:
   - title: Et consectetur
     imgBottom:
@@ -177,8 +188,9 @@ section_07:
   sectitle: albums
 
   swiper_data:
-    perview: "1"
+    perview: 1
     pagination: true
+
   swiper:
   - img:
       src: https://unsplash.it/1810/1001
@@ -187,7 +199,7 @@ section_07:
   - img:
       src: https://unsplash.it/1810/1003
   - img:
-      src: https://unsplash.it/1810/100
+      src: https://unsplash.it/1810/1005
 
 # section 07
 

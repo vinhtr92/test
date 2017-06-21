@@ -30,9 +30,15 @@
 }
 
 .infobox--02 {
+
   .box__title h4 {
-    @include rem ((
-      font-size: 60px
-    ));
+    text-transform:uppercase;
+
+    @include media-breakpoint-up (lg) {
+      @include rem ((
+        font-size: 60px,
+        text-transform:uppercase,
+      ));
+    }
   }
 }

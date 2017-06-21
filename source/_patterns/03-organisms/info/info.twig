@@ -1,6 +1,11 @@
 <div class="info{{infoStyleModifier}}">
-    <div class="row">
+    <div class="row{{rowStyleModifier}}">
     {% for item in info %}
+        {% if item.decoration %}
+            <div class="{{item.decoration.item.class}}">
+                {% include "atoms-image" with { img:item.decoration.item.img } %}
+            </div>
+        {% endif %}
         {% if item.column %}
         <div class="{{item.column}}">
     {% endif %}
@@ -10,15 +15,13 @@
     {% if item.img %}
         {% include "atoms-image" with {img: item.img } %}
     {% endif %}
+    {#<div class="{{item.type}}">#}
     {% include includeFile with { infoboxStyleModifier: modifierFile } %}
     {% if item.imgBottom %}
         {% include "atoms-image" with { img: item.imgBottom } %}
     {% endif %}
 
-    {% if item.infobox_02 %}
-        {% include "molecules-infobox-02" with {item: item.infobox_02 } %}
-    {% endif %}
-
+    {#</div>#}
 {% if item.nestedCol %}
     <div class="row">
         {#vong lap for cho nested column trong Bootstrap#}

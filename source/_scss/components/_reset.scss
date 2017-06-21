@@ -52,7 +52,7 @@ body {
   color: $secondary-color;
 }
 
-@each $mt in 0, 20, 40, 70, 100 {
+@each $mt in 0, 20, 40, 70, 100, 150, 200 {
   .mt-#{$mt} {
     margin-top: #{$mt}px !important;
   }
