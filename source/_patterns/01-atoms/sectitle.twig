@@ -1,3 +1,6 @@
-<div class="sectitle{{sectitleStyleModifier}}{{item.sectitleclass}}">
-    {{sectitle|default('SECTITLE')}}
+<div class="sectitle{{sectitleStyleModifier}}{{sectitle.class}}">
+    {{sectitle.text|default('SECTITLE')}}
 </div>
+{#
+sectitle.class truyen class vao atom sectitle trong yaml, tuy bien khi can thiet
+#}

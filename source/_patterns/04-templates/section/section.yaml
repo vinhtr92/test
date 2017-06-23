@@ -25,17 +25,26 @@ section_02:
   count:
     number: 480
     text: days love
+  sectitle_02:
+    text: "we'll say yes in :"
+  count_02:
+  - number: 07
+    text: days
+  - number: 14
+    text: hours
+  - number: 19
+    text: minute
+  - number: 7
+    text: seconds
   info:
   - column: col-lg-6 text-md-right mt-200
-    sectitle: Bride
-    sectitleclass: " text-md-left"
-    type: bride
+    sectitle:
+      text: Bride
+      class: " text-lg-left"
+    StyleModifier: " bride"
     decoration:
-      item:
-        class: deco
         img:
           src: ../../assets/images-demo/decoration/deco.png
-
     img:
       src: ../../assets/images-demo/wedding/bride2.jpg
       alt: Bride
@@ -46,90 +55,107 @@ section_02:
       profession: medic
       hobby:  sleep
   - column: col-lg-6
-    sectitle: Groom
-    type: groom
+    sectitle:
+      text: Groom
+    StyleModifier: " groom"
     img:
       src: ../../assets/images-demo/wedding/groom.jpg
       alt: Groom
     title: Samuel
     description: Aliquip deserunt dolore incididunt eu ea exercitation est. Proident ipsum ullamco consequat nulla in laboris ullamco consectetur do esse. Fugiat ullamco culpa Lorem laboris. Et sunt ut mollit aliqua veniam consequat velit.
     infobox_02:
-      age: 248
+      age: 24
       profession: medic
       hobby: sleep
 
 # section 02
 
 section_03:
-  sectitle: "we will say yes in :"
-  count:
-  - number: 07
-    text: days
-  - number: 14
-    text: hours
-  - number: 19
-    text: minute
-  - number: 07
-    text: seconds
-
-# section 03
-
-section_04:
-  sectitle: Our Story
+  sectitle:
+    text: Our Story
+  swiper_data:
+    pagination_02: true
+    perviewMd: "1"
+    perviewLg: "2"
   swiper:
   - number: "01"
     title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
-    description: Nisi Lorem sint ut ullamco fugiat ipsum ad aliqua. Fugiat ullamco est proident et qui mollit et.
+    description: Nisi Lorem sint ut ullamco fugiat ipsum ad aliqua. Fugiat ullamco est proident et qui mollit et.Nisi Lorem sint ut ullamco fugiat ipsum ad aliqua. Fugiat ullamco est proident et qui mollit et
   - number: "02"
     title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
     description: Ullamco nulla officia ad id incididunt minim ullamco magna tempor qui cillum deserunt voluptate. Cillum ea sunt consequat nostrud nisi. Ex adipisicing et ex
   - number: "03"
     title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
-    description: Consectetur minim quis cupidatat labore sint fugiat aliqua cillum aute.
+    description: Veniam magna non non id est. Mollit incididunt ex tempor enim amet labore nulla. Fugiat ex minim consequat est. Quis ut officia commodo esse. Reprehenderit
+# section 03
+
+section_04:
+  sectitle:
+    text: Groomsmen
+    class: " text-xs-center text-sm-left"
+  sectitle_02:
+    text: Bridesmaids
+    class: " text-xs-center text-sm-left text-lg-right "
+  quote:
+    text: For you see, each day I love you more today more than yesterday and less than tomorrow.
+    imgBottom:
+      src: ../../assets/images-demo/decoration/deco_03.png
+      alt: image
+  decoration:
+    img:
+      src:  ../../assets/images-demo/decoration/deco.png
+      alt: deco image
+  swiper_data:
+    perview : 3
+    space: "7.15%" #tuong duong 100px, dat %  de co responsive
+  swiper:
+  - title: Abraham
+    imgBottom:
+      src: ../../assets/images-demo/wedding/groom/groom.jpg
+      alt: image.
+  - title: Adrian
+    imgBottom:
+      src: ../../assets/images-demo/wedding/groom/groom_02.jpg
+      alt: image.
+  - title: Ahmed
+    imgBottom:
+      src: ../../assets/images-demo/wedding/groom/groom_03.jpg
+      alt: image.
+  - title: Alex
+    imgBottom:
+      src: ../../assets/images-demo/wedding/groom/groom_04.jpg
+      alt: image.
+  - title: Lucas
+    imgBottom:
+      src: ../../assets/images-demo/wedding/groom/groom_05.jpg
+      alt: image.
+  swiper_02:
+  - title: Emma
+    imgBottom:
+      src: ../../assets/images-demo/wedding/bride/bride.jpg
+      alt: image.
+  - title: Olivia
+    imgBottom:
+      src: ../../assets/images-demo/wedding/bride/bride_02.jpg
+      alt: image.
+  - title: Sophia
+    imgBottom:
+      src: ../../assets/images-demo/wedding/bride/bride_03.jpg
+      alt: image.
+  - title: Ava
+    imgBottom:
+      src: ../../assets/images-demo/wedding/bride/bride_04.jpg
+      alt: image.
+  - title: Emily
+    imgBottom:
+      src: ../../assets/images-demo/wedding/bride/bride_05.jpg
+      alt: image.
 
 # section 04
 
 section_05:
-  sectitle: Sit laboris voluptate
-  sectitle_02: Sunt duis voluptate
-  quote:
-    quote: Nisi anim proident irure .
-    imgBottom:
-      src: https://unsplash.it/350
-      alt: image
-  swiper_data:
-    md: 2
-  swiper:
-  - title: Et consectetur
-    imgBottom:
-      src: https://unsplash.it/200
-      alt: image.
-  - title: Ut fugiat in
-    imgBottom:
-      src: https://unsplash.it/201
-      alt: image.
-  - title: Exercitation
-    imgBottom:
-      src: https://unsplash.it/202
-      alt: image.
-  swiper_02:
-  - title: Et consectetur
-    imgBottom:
-      src: https://unsplash.it/203
-      alt: image.
-  - title: Ut fugiat
-    imgBottom:
-      src: https://unsplash.it/204
-      alt: image.
-  - title: Exercitation
-    imgBottom:
-      src: https://unsplash.it/205
-      alt: image.
-
-# section 05
-
-section_06:
-  sectitle: events
+  sectitle:
+    text: events
   info_01:
     title: Dolor qui cillum occaecat dolore voluptate adipisicing.
     description: Aliqua magna laborum sint elit fugiat eu aliqua labore sunt incididunt proident. Ex officia sint ullamco culpa fugiat. Sunt anim magna qui irure magna.
@@ -182,15 +208,17 @@ section_06:
       url: http://genk.vn/
       text: genk
 
-# section 06
+# section 05
 
-section_07:
-  sectitle: albums
-
+section_06:
+  sectitle:
+    text: albums
   swiper_data:
     perview: 1
-    pagination: true
-
+    perviewMd: 1
+    perviewLg: 1
+    perviewXl: 1
+    pagination_02: true
   swiper:
   - img:
       src: https://unsplash.it/1810/1001
@@ -201,10 +229,11 @@ section_07:
   - img:
       src: https://unsplash.it/1810/1005
 
-# section 07
+# section 06
 
-section_08:
-  sectitle: blogs
+section_07:
+  sectitle:
+    text: blogs
   info:
   - img:
       src: https://unsplash.it/300

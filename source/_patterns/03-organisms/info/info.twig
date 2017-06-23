@@ -2,9 +2,7 @@
     <div class="row{{rowStyleModifier}}">
     {% for item in info %}
         {% if item.decoration %}
-            <div class="{{item.decoration.item.class}}">
-                {% include "atoms-image" with { img:item.decoration.item.img } %}
-            </div>
+            {% include "atoms-decoration" with { decoration: item.decoration} %}
         {% endif %}
         {% if item.column %}
         <div class="{{item.column}}">

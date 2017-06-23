@@ -1,0 +1,42 @@
+.quote {
+    width: auto;
+
+  h2 {
+    @include rem ((
+      font-family: 'Italiana',
+      font-weight: 400,
+      font-size: 30px,
+      color: $secondary-color,
+      line-height: 30px,
+      letter-spacing: .05rem,
+      text-transform: uppercase,
+    ));
+  }
+
+  .quote__img img{
+    @include rem ((
+      height: auto,
+      width: 150px,
+      transform: translateY(-30px),
+    ));
+  }
+
+  @include media-breakpoint-up (lg) {
+    @include rem ((
+      width: 1088px,
+    ));
+    h2 {
+      @include rem ((
+        font-size: 80px,
+        line-height: 90px,
+      ))
+    }
+
+    .quote__img img {
+      @include rem ((
+        width: 300px,
+        transform: translateY(-70px),
+      ))
+    }
+  }
+}

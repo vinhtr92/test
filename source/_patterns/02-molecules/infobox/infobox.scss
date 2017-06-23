@@ -5,14 +5,14 @@
     font-size: $font-size-base;
     font-weight: 400;
 
-    color: $third-color;
+    color: $primary-color;
   }
 
   .box__title h4 {
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
 
-    color: $secondary-color;
+    color: $primary-color;
 
     @include rem ((
       font-size: 36px,
@@ -21,16 +21,14 @@
 
   .box__desc {
     color: $text-color;
-    line-height: 1.875;
-
     @include rem ((
-      font-size: 18px
+      font-size: 18px,
+      line-height: 30px
     ))
   }
 }
 
 .infobox--02 {
-
   .box__title h4 {
     text-transform:uppercase;
 
@@ -38,7 +36,61 @@
       @include rem ((
         font-size: 60px,
         text-transform:uppercase,
+        margin-bottom: 10px,
       ));
+    }
+  }
+
+  .box__desc {
+    @include media-breakpoint-up (lg) {
+      @include rem ((
+        margin-bottom: 30px,
+      ));
+    }
+  }
+}
+
+.infobox--03 {
+  .box__number {
+    @include rem ((
+      font-size: 50px,
+      font-family: 'Bombshell Pro',
+      font-weight: bold,
+      color: $secondary-color,
+    ));
+  }
+
+  .box__title h4{
+    @include rem ((
+      text-transform: uppercase,
+      color: $default-color,
+      font-size: 24px,
+    ));
+  }
+
+  .box__desc {
+    @include rem ((
+      font-size: 15px,
+      line-height: 26px,
+      color: $text-third-color,
+    ))
+  }
+
+  @include media-breakpoint-up (xl) {
+    .box__number {
+      @include rem ((
+        font-size: 150px,
+        position: relative,
+        top: 90px,
+        z-index: -10,
+      ));
+    }
+
+    .box__title h4 {
+      @include rem ((
+        font-size: 36px,
+        z-index: 10,
+      ))
     }
   }
 }

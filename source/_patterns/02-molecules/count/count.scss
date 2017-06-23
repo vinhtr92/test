@@ -2,7 +2,7 @@
   .count__number {
     font-weight: 400;
     font-family: 'Italiana',sans-serif;
-    color: $third-color;
+    color: $secondary-color;
     @include rem ((
       font-size: 50px
     ));
@@ -24,9 +24,10 @@
     @include media-breakpoint-up(lg){
       @include rem ((
         font-size: 14px,
+        text-transform:uppercase,
 
         position: relative,
-        bottom: 30px,
+        bottom: 5px,
         right: 30px
     ));
     }

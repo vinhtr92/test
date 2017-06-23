@@ -1,7 +1,7 @@
 .sectitle {
   font-size: 1rem;
   font-weight: 400;
-  color: $third-color;
+  color: $secondary-color;
   text-transform: uppercase;
   letter-spacing: .3rem
 }
@@ -29,40 +29,140 @@
   }
 }
 
-.info {
+.info--02 {
+  @include rem ((
+    margin-bottom: 50px,
+  ));
+
   .sectitle {
     @include rem ((
       margin: 40px 15px 15px 15px,
-  ));
-
-  img {
-    margin-bottom: 50px,
-  }
-
-  .infobox {
-    @include rem ((
-      margin-bottom: 30px,
     ));
   }
+
+  @include media-breakpoint-up (lg) {
+  @include rem ((
+    margin-bottom: 280px,
+  ));
+
+    img {
+      @include rem ((
+        margin-bottom: 50px,
+    ));
+  }
+
+    .groom {
+      @include rem ((
+        margin: 0 100px,
+      ));
+    }
+
+    .bride {
+      @include rem ((
+        margin-left: 200px,
+      ));
+    }
+  }
 }
+
+
 
 
 // decoration item
 .row {
   position: relative; //position relative cho decoration item
 }
-
 .deco {
-  @include rem ((
-    Position: absolute,
-    left: 10%,
-    top: 19%,
-    z-index: 10,
-    display: none,
-  ));
+  display: none;
+  position: absolute;
+  z-index: 10;
 
-    @include media-breakpoint-up (lg) {
-      display: inherit;
+  @include media-breakpoint-up (xl) {
+    display: inherit;
+  }
+}
+
+//section 02
+.section--02 {
+  .deco {
+    @include rem ((
+    left: 10%,
+    top: 17%,
+  ));
+  }
+}
+
+//section 03
+.section--03 {
+  .sectitle {
+    @include rem ((
+      position: relative,
+      top: 10px,
+      font-weight: bold,
+    ));
+  }
+
+  @include media-breakpoint-up (lg) {
+    .sectitle {
+      @include rem ((
+        position: relative,
+        top: 150px,
+      ));
+    }
+  }
+
+  background-image: url("../../assets/images-demo/swiper/swiper-bg.jpg");
+  background-size: cover;
+}
+
+//secion 04
+
+.section--04 {
+  .sectitle {
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+  }
+
+  @media (max-width: 435px) {
+    .sectitle {
+      color: $default-color;
+      background-color: $primary-color;
+    }
+  }
+
+  @include media-breakpoint-up (lg) {
+    .quote {
+      @include rem ((
+        margin: 280px auto 200px auto,
+      ));
+    }
+
+    .deco {
+      @include rem ((
+        bottom: -70px,
+        right: -30px,
+      ))
+    }
+
+// thuoc tinh text align cua sectitle trong section 04 duoc dat trong yaml
+    .sectitle {
+      @include rem ((
+        line-height: unset,
+        letter-spacing: inherit,
+
+        position: relative,
+        top: 60px,
+        margin-left: 1.5rem,
+        margin-right: 1.5rem,
+      ))
+    }
+
+    .row {
+      @include rem  ((
+        margin-bottom: 80px,
+      ));
     }
   }
 }
+
+

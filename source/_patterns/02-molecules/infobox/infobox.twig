@@ -1,5 +1,7 @@
-<div class="infobox{{infoboxStyleModifier}}">
-
+<div class="infobox{{infoboxStyleModifier}}{{item.StyleModifier}}">
+ {#
+    item.StyleModifier dung de them StyleModifier vao Class trong yaml
+ #}
 
     {% if item.number %}
     <div class="box__number">

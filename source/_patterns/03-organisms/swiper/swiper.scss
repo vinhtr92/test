@@ -1,18 +1,75 @@
-.parallax-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 130%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
+// pagination style 03
+
+.swiper-pagination--03 {
+  width: 100%;
+
+  .swiper-pagination-bullet {
+    margin: 0 7px;
+    width: 15px;
+    height: 15px;
+    background-color: $border-color;
+    border: 1px solid $default-color;
+    padding: 6px;
+  }
 }
 
+
 .swiper--02 {
+  .swiper__item {
+    @include rem ((
+      margin-bottom: 15px,
+      margin-right: 15px,
+    ));
+  }
+
+  @include media-breakpoint-up (lg ) {
+    .swiper-wrapper {
+      @include rem ((
+        height: 1000px,
+      ))
+    }
+
+    .swiper__item {
+      @include rem ((
+        position: absolute,
+        bottom: 50px,
+      ));
+    }
+
+    .swiper-pagination {
+      @include rem ((
+        position: absolute,
+        bottom: 15px,
+      ));
+      .swiper-pagination-bullet {
+        @include rem ((
+          margin: 0 10px,
+        ));
+      }
+    }
+  }
+}
+
+.swiper--03 {
   .swiper-pagination {
     @include rem ((
       bottom: 10px,
+    ));
+  }
+}
+
+.swiper--04 {
+  img {
+    max-width: auto;
+  }
+  @include media-breakpoint-up(xl){
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .swiper__item {
+    @include rem ((
     ));
   }
 }
