@@ -4,14 +4,13 @@
     font-family: 'Tenor Sans',sans-serif;
     font-size: $font-size-base;
     font-weight: 400;
-
     color: $primary-color;
   }
 
   .box__title h4 {
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
-
+    text-transform:uppercase;
     color: $primary-color;
 
     @include rem ((
@@ -19,15 +18,56 @@
     ));
   }
 
+  .box__time,
+  .box__location {
+    @include rem ((
+      font-size: 16px,
+      text-transform: uppercase,
+      font-weight: 400,
+      letter-spacing: 0.4rem,
+      line-height: 24px,
+      color: $secondary-color,
+    ));
+  }
+
+  .box__time {
+    @include rem ((
+      margin: 10px 0px 5px 0px,
+    ));
+  }
+
   .box__desc {
     color: $text-color;
     @include rem ((
       font-size: 18px,
-      line-height: 30px
+      line-height: 30px,
+      margin-bottom: 5px,
     ))
+  }
+
+
+  @include media-breakpoint-up(lg) {
+    .box__location {
+      @include rem ((
+        margin-bottom: 35px,
+      ));
+    }
+
+    .box__time {
+      @include rem ((
+       margin-bottom: 15px,
+      ))
+    }
+
+    .box__desc {
+      @include rem ((
+        margin-bottom: 40px,
+      ));
+    }
   }
 }
 
+// Style 02
 .infobox--02 {
   .box__title h4 {
     text-transform:uppercase;
@@ -35,7 +75,6 @@
     @include media-breakpoint-up (lg) {
       @include rem ((
         font-size: 60px,
-        text-transform:uppercase,
         margin-bottom: 10px,
       ));
     }
@@ -50,6 +89,7 @@
   }
 }
 
+// Style 03
 .infobox--03 {
   .box__number {
     @include rem ((
@@ -73,6 +113,7 @@
       font-size: 15px,
       line-height: 26px,
       color: $text-third-color,
+      margin-bottom: 0,
     ))
   }
 
@@ -91,6 +132,84 @@
         font-size: 36px,
         z-index: 10,
       ))
+    }
+  }
+}
+
+// Style 04
+.infobox--04 {
+  @include media-breakpoint-up (lg) {
+    .box__title h4 {
+      @include rem ((
+        font-size: 48px,
+        line-height: 55px,
+        margin-bottom: 40px,
+      ));
+    }
+
+    .box__desc {
+      @include rem ((
+        margin-bottom: 55px,
+      ));
+    }
+  }
+}
+
+.infobox--05 {
+  .box__title {
+    @include rem ((
+      transform: translateY(10px),
+    ));
+  }
+
+  .box-event__date {
+    @include rem ((
+      font-family: "Bombshell Pro",
+      font-size: 70px,
+      color: $secondary-color,
+      display: inline,
+      opacity: .5,
+    ));
+  }
+
+  .box-event__month {
+    @include rem ((
+      text-transform: uppercase,
+      display: inline-block,
+      transform: translate(-30px,10px),
+    ));
+  }
+
+  .box-event {
+    @include rem ((
+      transform: translateY(30px),
+    ));
+  }
+
+  @include media-breakpoint-up (lg) {
+    .box-event {
+      @include rem ((
+        transform: translateY(100px),
+      ));
+    }
+
+    .box-event__date {
+      @include rem ((
+        font-size: 150px,
+      ));
+    }
+
+    .box__title,
+    .box__desc {
+      @include rem ((
+        margin-bottom: 30px,
+      ));
+    }
+
+    .box-event__month {
+      @include rem ((
+        transform: translate(-70px,-50px),
+      ));
     }
   }
 }

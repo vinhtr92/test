@@ -9,13 +9,13 @@
     </div>
     {% endif %}
 
-    {% if item.calendar %}
-    <div class="box-calendar">
-        <div class="box-calendar__date">
-            {{item.calendar.date}}
+    {% if item.event %}
+    <div class="box-event">
+        <div class="box-event__date">
+            {{item.event.date}}
         </div>
-        <div class="box-calendar__month">
-            {{item.calendar.month}}
+        <div class="box-event__month">
+            {{item.event.month}}
         </div>
     </div>
     {% endif %}

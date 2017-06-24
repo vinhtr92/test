@@ -60,7 +60,7 @@
 
 .swiper--04 {
   img {
-    max-width: auto;
+    max-width: 100%;
   }
   @include media-breakpoint-up(xl){
     img {
@@ -69,7 +69,6 @@
   }
 
   .swiper__item {
-    @include rem ((
-    ));
+
   }
 }

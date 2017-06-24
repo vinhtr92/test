@@ -107,7 +107,7 @@ section_04:
       alt: deco image
   swiper_data:
     perview : 3
-    space: "7.15%" #tuong duong 100px, dat %  de co responsive
+    space: "3%" #tuong duong 100px, dat %  de co responsive
   swiper:
   - title: Abraham
     imgBottom:
@@ -157,56 +157,56 @@ section_05:
   sectitle:
     text: events
   info_01:
-    title: Dolor qui cillum occaecat dolore voluptate adipisicing.
-    description: Aliqua magna laborum sint elit fugiat eu aliqua labore sunt incididunt proident. Ex officia sint ullamco culpa fugiat. Sunt anim magna qui irure magna.
+    title: A hundred hearts would be too few to carry all my love for you
+    description: Tzo Ai will be the primary contact for all the vendors involved and manage the entire planning process.
     imgBottom:
-      src: https://unsplash.it/200/300
+      src: ../../assets/images-demo/decoration/deco_04.png
       alt: image
   info_02:
-  - column: col-lg-6
-    calendar:
+  - column: col-md-6
+    event:
       date: "09"
       month: dect
-    title: Sunt occaecat in aute sunt magna est ad.
+    title: Wedding
     time: 15h30 AM
     location: Hanoi / VNM
-    description: Adipisicing in incididunt enim adipisicing mollit ipsum culpa ad. Exercitation laborum adipisicing laboris aute. Non ut amet nisi cupidatat in commodo pariatur id irure.
+    description: Tzo Ai will be the primary contact for all the vendors involved and manage the entire planning process.
     link:
       url: http://genk.vn/
-      text: genk
-  - column: col-lg-6
-    calendar:
+      text: View map__
+  - column: col-md-6
+    event:
       date: "07"
       month: dect
-    title: Eiusmod et elit et anim mollit aliqua esse consequat duis.
+    title: bachelorette .
     time: 1h30 AM
     location: Hanoi / VNM
-    description: Aliquip ipsum laborum aute nisi tempor nisi culpa. Do adipisicing ut nulla nisi aliquip est eiusmod do. Ex mollit officia duis aute. Minim pariatur cupidatat dolor est culpa cillum esse adipisicing non mollit et.
+    description: She will make sure that the design of the wedding is cohesive and thoughtful, and that no detail is missed.
     link:
       url: http://genk.vn/
-      text: genk
-  - column: col-lg-6
-    calendar:
+      text: View map__
+  - column: col-md-6
+    event:
       date: "10"
       month: dect
-    title: Veniam commodo ipsum et eu duis.
+    title: Family party.
     time: 11h30 AM
     location: Hanoi / VNM
-    description: Veniam enim proident eu adipisicing magna ex. Exercitation sint ex consectetur exercitation dolor cillum do. Eiusmod eiusmod minim irure dolor quis consectetur est pariatur.
+    description: For couples that have done most of their wedding planning, but want someone experienced to take over and make sure everything goes smoothly on the wedding day
     link:
       url: http://genk.vn/
-      text: genk
-  - column: col-lg-6
-    calendar:
+      text: View map__
+  - column: col-md-6
+    event:
       date: "12"
       month: dect
-    title: Sint amet sunt mollit aliqua qui est commodo ipsum aliqua.
+    title: Ceremony & Reception.
     time: 2h30 AM
     location: Hanoi / VNM
-    description: Aliqua laborum anim dolore reprehenderit. Cupidatat ut dolore do aute ad. Nulla nulla eu adipisicing voluptate proident sit quis mollit aliqua magna ipsum cupidatat incididunt amet.
+    description: We planned our wedding over the course of one-and-a-half years and have had the privilege of getting to know Tzo
     link:
       url: http://genk.vn/
-      text: genk
+      text: View map__
 
 # section 05
 
@@ -221,14 +221,33 @@ section_06:
     pagination_02: true
   swiper:
   - img:
-      src: https://unsplash.it/1810/1001
+      src: ../../assets/images-demo/gallery/gallery01.jpg
   - img:
-      src: https://unsplash.it/1810/1002
+      src: ../../assets/images-demo/gallery/gallery02.jpg
   - img:
-      src: https://unsplash.it/1810/1003
+      src: ../../assets/images-demo/gallery/gallery03.jpg
   - img:
-      src: https://unsplash.it/1810/1005
-
+      src: ../../assets/images-demo/gallery/gallery04.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery05.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery06.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery07.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery08.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery09.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery10.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery11.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery12.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery13.jpg
+  - img:
+      src: ../../assets/images-demo/gallery/gallery14.jpg
 # section 06
 
 section_07:
@@ -236,17 +255,26 @@ section_07:
     text: blogs
   info:
   - img:
-      src: https://unsplash.it/300
+      src: ../../assets/images-demo/blog/blog-01.jpg
     column: col-lg-4
     time: mar 9, 2018
-    description: Eiusmod est veniam adipisicing esse minim aliquip. Id sunt proident adipisicing ut minim ipsum exercitation anim incididunt. Ullamco do occaecat cupidatat aute exercitation deserunt sint elit proident amet excepteur irure ex duis. Nulla dolor velit exercitation dolor.
+    description: Does hearing the words “wedding planning” give you a slight panic attack? Being stressed by planning your wedding is definitely normal
+    link:
+      url: gooogle.com
+      text: read more__
   - img:
-      src: https://unsplash.it/301
+      src: ../../assets/images-demo/blog/blog-02.jpg
     column: col-lg-4
     time: mar 9, 2018
-    description: Do est sit ex anim aliquip sit enim qui ex aute. In enim sint proident tempor eiusmod magna et. Exercitation eu ea quis qui nostrud nisi aute commodo. Adipisicing adipisicing deserunt occaecat nisi cupidatat enim pariatur.
+    description: Lavender and Indigo French Wedding at Cabanes Bartherotte Chelsea and Hugues both work closely with
+    link:
+      url: gooogle.com
+      text: read more__
   - img:
-      src: https://unsplash.it/302
+      src: ../../assets/images-demo/blog/blog-03.jpg
     column: col-lg-4
     time: mar 9, 2018
-    description: Labore in culpa non elit. Lorem esse quis nulla eu in dolor ut pariatur pariatur velit culpa. Elit laboris cillum ipsum adipisicing officia. Quis consectetur sit proident nulla exercitation Lorem magna.
+    description: Does hearing the words “wedding planning” give you a slight panic attack? Being stressed by planning your wedding is definitely normal
+    link:
+      url: gooogle.com
+      text: read more__
