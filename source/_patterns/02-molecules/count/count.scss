@@ -34,6 +34,7 @@
   }
 }
 
+//  Style 02
 .count--02 {
   display: block;
 
@@ -52,7 +53,6 @@
   }
 
   .count__text {
-
     @include rem ((
       text-transform: uppercase,
       font-size: 20px,

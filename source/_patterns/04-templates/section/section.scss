@@ -5,3 +5,18 @@ font-weight: normal;
 src: url("../fonts/Bombshell Pro.woff") format("woff"),
 }
 
+//section 01
+.section-01 {
+  .deco {
+    @include rem ((
+    left: 10%,
+    top: 17%,
+  ));
+  }
+
+  .info {
+    @include media-breakpoint-up (xl) {
+      @include fluid1400();
+    }
+  }
+}

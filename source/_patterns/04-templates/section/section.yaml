@@ -21,11 +21,11 @@ section:
 
 # header section
 
-section_02:
+section_01:
   count:
     number: 480
     text: days love
-  sectitle_02:
+  sectitle:
     text: "we'll say yes in :"
   count_02:
   - number: 07
@@ -37,11 +37,10 @@ section_02:
   - number: 7
     text: seconds
   info:
-  - column: col-lg-6 text-md-right mt-200
+  - column: col-lg-6 text-md-right mt-300
     sectitle:
       text: Bride
       class: " text-lg-left"
-    StyleModifier: " bride"
     decoration:
         img:
           src: ../../assets/images-demo/decoration/deco.png
@@ -57,7 +56,7 @@ section_02:
   - column: col-lg-6
     sectitle:
       text: Groom
-    StyleModifier: " groom"
+    class: " pl-100"
     img:
       src: ../../assets/images-demo/wedding/groom.jpg
       alt: Groom
@@ -70,7 +69,7 @@ section_02:
 
 # section 02
 
-section_03:
+section_02:
   sectitle:
     text: Our Story
   swiper_data:
@@ -87,9 +86,9 @@ section_03:
   - number: "03"
     title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
     description: Veniam magna non non id est. Mollit incididunt ex tempor enim amet labore nulla. Fugiat ex minim consequat est. Quis ut officia commodo esse. Reprehenderit
-# section 03
+# section 02
 
-section_04:
+section_03:
   sectitle:
     text: Groomsmen
     class: " text-xs-center text-sm-left"
@@ -107,7 +106,7 @@ section_04:
       alt: deco image
   swiper_data:
     perview : 3
-    space: "3%" #tuong duong 100px, dat %  de co responsive
+    space: "3%"  #dat %  de co responsive
   swiper:
   - title: Abraham
     imgBottom:
@@ -151,9 +150,9 @@ section_04:
       src: ../../assets/images-demo/wedding/bride/bride_05.jpg
       alt: image.
 
-# section 04
+# section 03
 
-section_05:
+section_04:
   sectitle:
     text: events
   info_01:
@@ -208,9 +207,9 @@ section_05:
       url: http://genk.vn/
       text: View map__
 
-# section 05
+# section 04
 
-section_06:
+section_05:
   sectitle:
     text: albums
   swiper_data:
@@ -250,7 +249,7 @@ section_06:
       src: ../../assets/images-demo/gallery/gallery14.jpg
 # section 06
 
-section_07:
+section_06:
   sectitle:
     text: blogs
   info:

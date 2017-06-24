@@ -155,10 +155,12 @@
   }
 }
 
+// Style 5
 .infobox--05 {
   .box__title {
     @include rem ((
-      transform: translateY(10px),
+      position: relative,
+      top: 10px,
     ));
   }
 
@@ -176,20 +178,24 @@
     @include rem ((
       text-transform: uppercase,
       display: inline-block,
-      transform: translate(-30px,10px),
+      position:relative,
+      // transform: translate(-30px,10px),
+      top: 10px,
+      right: 30px,
     ));
   }
 
   .box-event {
     @include rem ((
-      transform: translateY(30px),
+      position: relative,
+      top: 30px,
     ));
   }
 
   @include media-breakpoint-up (lg) {
     .box-event {
       @include rem ((
-        transform: translateY(100px),
+        top: 100px,
       ));
     }
 
@@ -208,7 +214,8 @@
 
     .box-event__month {
       @include rem ((
-        transform: translate(-70px,-50px),
+      top: -50px,
+      right: 70px,
       ));
     }
   }

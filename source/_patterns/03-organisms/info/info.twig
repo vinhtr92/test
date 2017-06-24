@@ -13,7 +13,7 @@
     {% if item.img %}
         {% include "atoms-image" with {img: item.img } %}
     {% endif %}
-    {#<div class="{{item.type}}">#}
+
     {% include includeFile with { infoboxStyleModifier: modifierFile } %}
     {% if item.imgBottom %}
         {% include "atoms-image" with { img: item.imgBottom } %}

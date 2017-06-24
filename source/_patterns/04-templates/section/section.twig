@@ -9,54 +9,55 @@
  </div>
 
 </div>
-<section class="section--02">
-    <div class="container">
+<div class="section-01">
+    <div class="container-fluid">
     <div class="text-xs-center">
-        {% set item = section_02.count %}
+        {% set item = section_01.count %}
         {% include "molecules-count" with { countStyleModifier:" count--02"} %}
     </div>
-    {% set info = section_02.info %}
+    {% set info = section_01.info %}
     {% include "organisms-info" with {infoStyleModifier: " info--02", rowStyleModifier: " no-gutters", includeFile: "molecules-infobox", modifierFile: " infobox--02" } %}
 
     <div class="text-xs-center">
-        {% include "atoms-sectitle" with {sectitle: section_02.sectitle_02, sectitleStyleModifier:" sectitle--03" } %}
+        {% include "atoms-sectitle" with {sectitle: section_01.sectitle, sectitleStyleModifier:" sectitle--03" } %}
         <div class="count-container">
-            {% for item in section_02.count_02 %}
+            {% for item in section_01.count_02 %}
                 {% include "molecules-count"  %}
             {% endfor %}
         </div>
     </div>
-    <!-- section 02 -->
-</section>
+    <!-- section 01 -->
+</div>
 
-<section class="section--03">
-    <div class="container">
+<div class="section-02">
+    <div class="container-fluid">
         <div class="text-xs-center">
-        {% include "atoms-sectitle" with {sectitle: section_03.sectitle } %}
+        {% include "atoms-sectitle" with {sectitle: section_02.sectitle } %}
         </div>
 
-        {% set swiper_data = section_03.swiper_data %}
-        {% set swiper = section_03.swiper %}
+        {% set swiper_data = section_02.swiper_data %}
+        {% set swiper = section_02.swiper %}
         {% include "organisms-swiper" with {includeFile:"molecules-infobox",modifierFile: " infobox--03" ,swiperStyleModifier: " swiper--02" } %}
     </div>
-    <!--section 03-->
-</section>
-<div class="section--04">
+    <!--section 02-->
+</div>
+
+<div class="section-03">
     <div class="container-fluid ">
         <div class="text-xs-center">
-            {% include "molecules-quote" with {item: section_04.quote} %}
+            {% include "molecules-quote" with {item: section_03.quote} %}
         </div>
         <div class="groom">
             <div class="row">
                 <div class="col-lg-9  ">
-                    {% set swiper_data = section_04.swiper_data %}
-                    {% set swiper = section_04.swiper %}
-                    {% include "organisms-swiper" with { includeFile:"molecules-infobox",swiperStyleModifier:" swiper--04"  } %}
-                    {% include "atoms-decoration" with { decoration:section_04.decoration} %}
+                    {% set swiper_data = section_03.swiper_data %}
+                    {% set swiper = section_03.swiper %}
+                    {% include "organisms-swiper" with { includeFile:"molecules-infobox"} %}
+                    {% include "atoms-decoration" with { decoration:section_03.decoration} %}
 
                 </div>
                 <div class="col-lg-3 ">
-                    {% include "atoms-sectitle" with {sectitle: section_04.sectitle} %}
+                    {% include "atoms-sectitle" with {sectitle: section_03.sectitle} %}
                 </div>
             </div>
         </div>
@@ -64,59 +65,58 @@
             <div class="row">
 
                 <div class="col-lg-9 push-lg-3 ">
-                    {% set swiper_data = section_04.swiper_data %}
-                    {% set swiper = section_04.swiper_02 %}
+                    {% set swiper_data = section_03.swiper_data %}
+                    {% set swiper = section_03.swiper_02 %}
                     {% include "organisms-swiper" with { includeFile:"molecules-infobox", swiperStyleModifier:" swiper--04" } %}
                 </div>
 
                 <div class="col-lg-3 pull-lg-9">
-                    {% include "atoms-sectitle" with {sectitle : section_04.sectitle_02 } %}
+                    {% include "atoms-sectitle" with {sectitle : section_03.sectitle_02 } %}
                 </div>
             </div>
         </div>
 </div>
-    <!--section 04-->
+    <!--section 03-->
 </div>
 
-
-<div class="section--05">
-    <div class="container">
-        {% include "atoms-sectitle" with {sectitle:section_05.sectitle} %}
+<div class="section-04">
+    <div class="container-fluid">
+        {% include "atoms-sectitle" with {sectitle:section_04.sectitle} %}
         <div class="row">
             <div class="col-lg-4">
-                {% set item = section_05.info_01 %}
+                {% set item = section_04.info_01 %}
                 {% include "molecules-infobox" with {infoboxStyleModifier:" infobox--04"} %}
-                {% include "atoms-image" with { img:section_05.info_01.imgBottom  }%}
+                {% include "atoms-image" with { img:section_04.info_01.imgBottom  }%}
             </div>
 
             <div class="col-lg-8">
-                {% set info = section_05.info_02 %}
+                {% set info = section_04.info_02 %}
                 {% include "organisms-info" with { includeFile: "molecules-infobox" ,modifierFile: " infobox--05"} %}
             </div>
         </div>
     </div>
+    <!--section 04-->
+</div>
+
+
+<div class="section-05">
+    <div class="container-fluid">
+        {% include "atoms-sectitle" with {sectitle: section_05.sectitle, sectitleStyleModifier: " sectitle--02" } %}
+
+        {% set swiper_data = section_05.swiper_data %}
+        {% set swiper = section_05.swiper %}
+        {% include "organisms-swiper" with { includeFile: "molecules-infobox", swiperStyleModifier: " swiper--03"} %}
+    </div>
     <!--section 05-->
 </div>
 
-
-<div class="section--06">
+<div class="section-06">
     <div class="container-fluid">
-        {% include "atoms-sectitle" with {sectitle: section_06.sectitle, sectitleStyleModifier: " sectitle--02" } %}
-
-        {% set swiper_data = section_06.swiper_data %}
-        {% set swiper = section_06.swiper %}
-        {% include "organisms-swiper" with { includeFile: "molecules-infobox", swiperStyleModifier: " swiper--03"} %}
-    </div>
-    <!--section 06-->
-</div>
-
-<div class="section--07">
-    <div class="container">
-    {% include "atoms-sectitle" with {sectitle:section_07.sectitle} %}
-    {% set info = section_07.info %}
+    {% include "atoms-sectitle" with {sectitle:section_06.sectitle} %}
+    {% set info = section_06.info %}
     {% include "organisms-info" with { includeFile:"molecules-infobox"} %}
     </div>
-    <!--section 07-->
+    <!--section 06-->
 </div>
 
 

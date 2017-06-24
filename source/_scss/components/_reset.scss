@@ -52,7 +52,7 @@ body {
   color: $secondary-color;
 }
 
-@each $mt in 0, 20, 40, 70, 100, 150, 200 {
+@each $mt in 0, 20, 40, 70, 100, 150, 200, 300 {
   .mt-#{$mt} {
     margin-top: #{$mt}px !important;
   }
@@ -82,7 +82,7 @@ body {
   }
 }
 
-@each $pl in 30 {
+@each $pl in 30,100,150 {
   .pl-#{$pl} {
     padding-left: #{$pl}px !important;
   }

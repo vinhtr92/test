@@ -1,7 +1,4 @@
-<div class="infobox{{infoboxStyleModifier}}{{item.StyleModifier}}">
- {#
-    item.StyleModifier dung de them StyleModifier vao Class trong yaml
- #}
+<div class="infobox{{infoboxStyleModifier}}{{item.class}}">
 
     {% if item.number %}
     <div class="box__number">
@@ -44,13 +41,15 @@
     </div>
     {% endif %}
 
+    {% if item.infobox_02 %}
+        {% include "molecules-infobox_02" with { item:item.infobox_02} %}
+    {% endif %}
+
     {% if item.link %}
     {% include "atoms-link" with { link: item.link } %}
     {% endif %}
 
-    {% if item.infobox_02 %}
-        {% include "molecules-infobox_02" with { item:item.infobox_02} %}
-    {% endif %}
+
 
 <!--Infobox -->
 </div>

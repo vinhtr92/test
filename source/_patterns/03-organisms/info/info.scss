@@ -1,3 +1,14 @@
+
+/*  CUSTOM MIXIN  */
+@mixin fluid1400 {
+  @include rem ((
+    width: 1410px,
+    max-width: 100%,
+    margin-left: auto,
+    margin-right: auto,
+  ))
+}
+
 .sectitle {
   font-size: 1rem;
   font-weight: 400;
@@ -36,7 +47,7 @@
 
   .sectitle {
     @include rem ((
-      margin: 40px 15px 15px 15px,
+      margin-bottom: 20px,
     ));
   }
 
@@ -51,49 +62,46 @@
     ));
   }
 
-    .groom {
-      @include rem ((
-        margin: 0 100px,
-      ));
-    }
-
-    .bride {
-      @include rem ((
-        margin-left: 200px,
-      ));
-    }
   }
 }
-
-
-
-
 // decoration item
 .row {
-  position: relative; //position relative cho decoration item
+  position: relative;
+  //position relative cho decoration item
 }
 .deco {
+  /* khi vao breakpoint < xl class deco tu an*/
   display: none;
   position: absolute;
   z-index: 10;
 
   @include media-breakpoint-up (xl) {
     display: inherit;
+
+  }
+}
+/*  SECTION  */
+
+//section 01
+.section-01 {
+  /*position cho class deco trong section -01*/
+  .deco {
+    @include rem ((
+    left: 10%,
+    top: 20%,
+  ));
+  }
+
+  .info {
+    @include media-breakpoint-up (xl) {
+      /* dat with cho info la 1400px, theo thiet ke*/
+      @include fluid1400;
+    }
   }
 }
 
 //section 02
-.section--02 {
-  .deco {
-    @include rem ((
-    left: 10%,
-    top: 17%,
-  ));
-  }
-}
-
-//section 03
-.section--03 {
+.section-02 {
   .sectitle {
     @include rem ((
       position: relative,
@@ -105,7 +113,6 @@
   @include media-breakpoint-up (lg) {
     .sectitle {
       @include rem ((
-        position: relative,
         top: 150px,
       ));
     }
@@ -115,15 +122,16 @@
   background-size: cover;
 }
 
-//secion 04
-.section--04 {
+//secion 03
+.section-03 {
   @include rem ((
     padding-bottom: 50px,
   ));
 
   .sectitle {
     line-height: 2.5rem;
-    letter-spacing: .1rem;
+    letter-spacing: .3rem;
+    position: relative;
   }
 
   @media (max-width: 435px) {
@@ -144,7 +152,7 @@
         line-height: unset,
         letter-spacing: .3rem,
 
-        transform: translate(0, 75px),
+        top: 75px,
         margin-left: 3.5rem,
         margin-right: 3.5rem,
       ))
@@ -161,7 +169,7 @@
     .deco {
       @include rem ((
         bottom: -70px,
-        right: -30px,
+        right: 30px,
       ))
     }
 
@@ -198,8 +206,8 @@
   }
 }
 
-//section 05
-.section--05 {
+//section 04
+.section-04 {
     @include rem ((
       padding-top: 220px,
     ));
@@ -211,6 +219,7 @@
   .infobox--05 {
     @include rem ((
       margin-bottom: 20px,
+      position: relative,
     ));
   }
 
@@ -221,19 +230,19 @@
 
     .infobox--05 {
       @include rem ((
-         transform: translate(0, -150px),
+         top :-150px,
       ));
     }
   }
 }
 
-.section--05,
-.section--06,
-.section--07 {
+.section-04,
+.section-05,
+.section-06 {
   background-color: $default-color;
 }
 //section 06
-.section--06 {
+.section-05 {
   @include rem ((
    padding-bottom: 40px,
   ));
@@ -257,8 +266,8 @@
 }
 
 
-//section 07
-.section--07 {
+//section 06
+.section-06 {
   .sectitle {
     @include rem ((
       margin: 30px 0,
