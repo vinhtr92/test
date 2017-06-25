@@ -19,6 +19,10 @@
         {% include "atoms-image" with { img: item.imgBottom } %}
     {% endif %}
 
+    {% if item.infobox_02 %}
+        {% include "molecules-infobox_02" with {item: item.infobox_02 } %}
+    {% endif %}
+
     {#</div>#}
 {% if item.nestedCol %}
     <div class="row">
@@ -28,7 +32,7 @@
                 {% include includeFile with { infoboxStyleModifier: modifierFile } %}
 
                  {% if item.infobox_02 %}
-                    {% include "molecules-infobox-02" with {item: item.infobox_02 } %}
+                    {% include "molecules-infobox_02" with {item: item.infobox_02 } %}
                 {% endif %}
             </div>
         {% endfor %}

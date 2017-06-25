@@ -1,6 +1,7 @@
 
 /*  CUSTOM MIXIN  */
-@mixin fluid1400 {
+
+@mixin container-width {
   @include rem ((
     width: 1410px,
     max-width: 100%,
@@ -8,6 +9,12 @@
     margin-right: auto,
   ))
 }
+
+.container-width {
+  @include container-width;
+}
+
+/*  SECTITLE  */
 
 .sectitle {
   font-size: 1rem;
@@ -40,9 +47,11 @@
   }
 }
 
+/*  INFO  */
+
 .info--02 {
   @include rem ((
-    margin-bottom: 50px,
+    margin-bottom: 90px,
   ));
 
   .sectitle {
@@ -53,7 +62,7 @@
 
   @include media-breakpoint-up (lg) {
   @include rem ((
-    margin-bottom: 280px,
+    margin-bottom: 190px,
   ));
 
     img {
@@ -69,36 +78,86 @@
   position: relative;
   //position relative cho decoration item
 }
-.deco {
-  /* khi vao breakpoint < xl class deco tu an*/
+
+[class*="deco"] {
   display: none;
   position: absolute;
   z-index: 10;
 
   @include media-breakpoint-up (xl) {
     display: inherit;
-
   }
 }
+
+
 /*  SECTION  */
 
 //section 01
 .section-01 {
-  /*position cho class deco trong section -01*/
-  .deco {
-    @include rem ((
-    left: 10%,
-    top: 20%,
-  ));
+  .container {
+    @include container-width;
   }
 
+  .deco {
+    @include rem ((
+      left: 10%,
+      top: 18%,
+    ));
+  }
+
+  .deco-2 {
+    @include rem ((
+      left: 80px,
+    ));
+  }
+
+  .groom,
+  .bride {
+    @include rem ((
+    margin-bottom: 40px,
+    ))
+  }
+
+  @include media-breakpoint-up (lg) {
+    @include rem ((
+      padding-bottom: 150px,
+    ));
+
+    .groom {
+      @include rem ((
+        margin-left: 50px,
+      ));
+    }
+
+    .sectitle--03 {
+      @include rem ((
+        position: relative,
+        top: 50px,
+      ));
+    }
+  }
   .info {
     @include media-breakpoint-up (xl) {
-      /* dat with cho info la 1400px, theo thiet ke*/
-      @include fluid1400;
+    .bride {
+      float: right;
+    }
+
+    .groom,
+    .bride {
+      @include rem ((
+        width: 450px,
+      ));
+    }
+
+    .groom {
+      @include rem ((
+        margin-left: 100px,
+        ))
+      }
     }
   }
 }
+
 
 //section 02
 .section-02 {
@@ -169,20 +228,20 @@
     .deco {
       @include rem ((
         bottom: -70px,
-        right: 30px,
-      ))
+        right: -30px,
+      ));
     }
 
-    .bride,
-    .groom {
+    .bride-swiper,
+    .groom-swiper {
       position: relative;
     }
 
-    .bride {
-      left: 12.73333%;
+    .bride-swiper {
+      left: 12.7%;
     }
 
-    .groom {
+    .groom-swiper {
       right: 15%;
 
       .swiper__item {
@@ -208,9 +267,13 @@
 
 //section 04
 .section-04 {
-    @include rem ((
-      padding-top: 220px,
-    ));
+  @include rem ((
+    padding-top: 220px,
+  ));
+
+  .container {
+    @include container-width;
+  }
 
   img {
     max-width: 100%

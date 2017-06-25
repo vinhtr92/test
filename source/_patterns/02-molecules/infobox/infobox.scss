@@ -7,7 +7,7 @@
     color: $primary-color;
   }
 
-  .box__title h4 {
+  h2.box__title {
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
     text-transform:uppercase;
@@ -69,8 +69,9 @@
 
 // Style 02
 .infobox--02 {
-  .box__title h4 {
-    text-transform:uppercase;
+  h2.box__title {
+    text-transform: uppercase;
+    margin-bottom: 0;
 
     @include media-breakpoint-up (lg) {
       @include rem ((
@@ -83,7 +84,7 @@
   .box__desc {
     @include media-breakpoint-up (lg) {
       @include rem ((
-        margin-bottom: 30px,
+        margin-bottom: 25px,
       ));
     }
   }
@@ -100,7 +101,7 @@
     ));
   }
 
-  .box__title h4{
+  h2.box__title{
     @include rem ((
       text-transform: uppercase,
       color: $default-color,
@@ -127,7 +128,7 @@
       ));
     }
 
-    .box__title h4 {
+    h2.box__title {
       @include rem ((
         font-size: 36px,
         z-index: 10,
@@ -139,7 +140,7 @@
 // Style 04
 .infobox--04 {
   @include media-breakpoint-up (lg) {
-    .box__title h4 {
+    h2.box__title {
       @include rem ((
         font-size: 48px,
         line-height: 55px,

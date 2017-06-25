@@ -1,4 +1,8 @@
 .count {
+  display:inline-block;
+  position:relative;
+  // right: 70px;
+
   .count__number {
     font-weight: 400;
     font-family: 'Italiana',sans-serif;
@@ -16,7 +20,8 @@
     @include media-breakpoint-up(lg) {
       @include rem ((
       font-size: 180px,
-    ));
+      left: 40px,
+      ));
     }
   }
 
@@ -28,7 +33,7 @@
 
         position: relative,
         bottom: 5px,
-        right: 30px
+        right: 55px
     ));
     }
   }

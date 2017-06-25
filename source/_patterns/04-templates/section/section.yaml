@@ -37,7 +37,7 @@ section_01:
   - number: 7
     text: seconds
   info:
-  - column: col-lg-6 text-md-right mt-300
+  - column: col-lg-6 text-lg-right mt-300
     sectitle:
       text: Bride
       class: " text-lg-left"
@@ -45,9 +45,10 @@ section_01:
         img:
           src: ../../assets/images-demo/decoration/deco.png
     img:
-      src: ../../assets/images-demo/wedding/bride2.jpg
+      src: ../../assets/images-demo/wedding/bride.jpg
       alt: Bride
     title: Tatiana
+    class: " bride"
     description: Sint sunt consectetur magna tempor. Pariatur est anim veniam officia consequat ex irure esse aute labore nisi occaecat aliquip commodo. Irure fugiat occaecat aliqua adipisicing commodo culpa mollit aliquip amet.
     infobox_02:
       age: "25"
@@ -56,7 +57,7 @@ section_01:
   - column: col-lg-6
     sectitle:
       text: Groom
-    class: " pl-100"
+    class: " groom"
     img:
       src: ../../assets/images-demo/wedding/groom.jpg
       alt: Groom
@@ -66,6 +67,11 @@ section_01:
       age: 24
       profession: medic
       hobby: sleep
+    decoration_btm:
+      img:
+        src: ../../assets/images-demo/decoration/deco_05.png
+      class: deco-2
+
 
 # section 02
 
