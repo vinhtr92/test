@@ -19,8 +19,12 @@
         {% include "atoms-image" with { img: item.imgBottom } %}
     {% endif %}
 
-    {% if item.infobox_02 %}
-        {% include "molecules-infobox_02" with {item: item.infobox_02 } %}
+    {% if item.personal %}
+        {% include "molecules-personal"%}
+    {% endif %}
+
+    {% if item.decoration_btm %}
+        {% include "atoms-decoration" with { decoration: item.decoration_btm} %}
     {% endif %}
 
     {#</div>#}
@@ -31,8 +35,8 @@
             <div class="{{item.column}}">
                 {% include includeFile with { infoboxStyleModifier: modifierFile } %}
 
-                 {% if item.infobox_02 %}
-                    {% include "molecules-infobox_02" with {item: item.infobox_02 } %}
+                 {% if item.personal %}
+                    {% include "molecules-personal"  %}
                 {% endif %}
             </div>
         {% endfor %}

@@ -3,15 +3,20 @@
         {% include "atoms-sectitle" %}
     {% endif %}
     <div class="swiper-container ">
-        <div  data-init="swiper" data-loop="true" data-next-button=".swiper-btn--next" data-prev-button=".swiper-btn--prev" data-pagination=".swiper-pagination" data-slide-to-clicked-slide="true"
+        <div  data-init="swiper" data-loop="true" data-next-button=".swiper-btn--next" data-prev-button=".swiper-btn--prev" data-pagination=".swiper-pagination"
+
         data-space-between="{{swiper_data.space|default('30')}}"
         data-md-items="{{swiper_data.perviewMd|default('2')}}"
         data-lg-items="{{swiper_data.perviewLg|default('3')}}"
         data-xl-items="{{swiper_data.perviewXl|default('3')}}"
         data-slides-per-view= "{{swiper_data.perview|default('3') }}"
         data-height="{{swiper_data.height}}"
+        data-auto-height="{{swiper_data.autoHeight|default("false")}}"
         data-center-slides="{{swiper_data.center|default('false')}}"
         data-direction="{{swiper_data.direction|default('horizontal')}}"
+        {% if swiper_data.sync %}
+            data-swiper-sync="#{{swiper_data.sync.id}}"
+        {% endif %}
         >
 
             <div class="swiper-wrapper">
@@ -29,8 +34,8 @@
                                 {% include "atoms-image" with { img: item.imgBottom } %}
                             {% endif %}
 
-                            {% if item.infobox_02 %}
-                                {% include "molecules-infobox_02" with {item: item.infobox_02 } %}
+                            {% if item.personal %}
+                                {% include "molecules-personal" with {item: item.personal } %}
                             {% endif %}
                     </div>
                 </div>
@@ -38,17 +43,52 @@
             </div>
         </div>
 
-        {% if swiper_data.pagination == true %}
-            <div class="swiper-pagination swiper-pagination--02"></div>
-        {% endif %}
-
         {% if swiper_data.pagination_02 == true %}
             <div class="swiper-pagination swiper-pagination--03"></div>
         {% endif %}
 
+        {% if swiper_data.sync %}
+            <div id="{{swiper_data.sync.id}}" class="swiper__date" data-init="swiper"
+            data-loop="true"
+            data-speed="{{swiper_data.sync.speed|default('300')}}"
+            data-touch-ratio="1",
+            data-speed="{{swiper_data.speed|default('300')}}"
+            data-swiper-autoplay="{{swiper_data.sync.autoplay}}"
+            data-pagination=".swiper-pagination" data-slide-to-clicked-slide="true"
+            data-space-between="{{swiper_data.sync.space|default('30')}}"
+            data-md-items="{{swiper_data.sync.perviewMd|default('2')}}"
+            data-lg-items="{{swiper_data.sync.perviewLg|default('3')}}"
+            data-xl-items="{{swiper_data.sync.perviewXl|default('3')}}"
+            data-slides-per-view= "{{swiper_data.sync.perview|default('3') }}">
+
+            <div class="swiper-wrapper">
+                {% for item in swiper_sync %}
+                    <div class="swiper-slide">
+                        <div class="swiper__item">
+                            {% if item.img %}
+                                {% include "atoms-image" with {img: item.img } %}
+                            {% endif %}
+                            {% include includeFileSync with { infoboxStyleModifier: modifierFileSync } %}
+                            {% if item.imgBottom %}
+                                {% include "atoms-image" with { img: item.imgBottom } %}
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            </div>
+        {% endif %}
+
+        {% if swiper_data.pagination == true %}
+            <div class="swiper-pagination swiper-pagination--02"></div>
+        {% endif %}
         {% if swiper_data.button == true %}
             <div class="swiper-btn swiper-btn--next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
             <div class="swiper-btn swiper-btn--prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+        {% endif %}
+        {% if swiper_data.button_2 == true %}
+            <div class="swiper-btn swiper-btn--next"><img src="https://png.icons8.com/long-arrow-up/win10/48" title="Long Arrow Up" width="48" height="48"></div>
+            <div class="swiper-btn swiper-btn--prev"><img src="https://png.icons8.com/long-arrow-down/win10/48" title="Long Arrow Down" width="48" height="48"></i></div>
         {% endif %}
     </div>
 </div>

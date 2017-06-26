@@ -41,8 +41,8 @@
     </div>
     {% endif %}
 
-    {% if item.infobox_02 %}
-        {% include "molecules-infobox_02" with { item:item.infobox_02} %}
+    {% if item.personal %}
+        {% include "molecules-personal" with { item:item.personal} %}
     {% endif %}
 
     {% if item.link %}

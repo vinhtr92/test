@@ -3,14 +3,14 @@
 
 @mixin container-width {
   @include rem ((
-    width: 1410px,
+    width: 1400px,
     max-width: 100%,
     margin-left: auto,
     margin-right: auto,
   ))
 }
 
-.container-width {
+.w1400px {
   @include container-width;
 }
 
@@ -26,24 +26,23 @@
 
 .sectitle--02 {
   @include rem ((
-    font-family: 'Bombshell Pro',
-    font-size: 50px,
     text-transform: inherit,
+    letter-spacing: 0,
+    font-family: 'Italiana',
+    font-size: 50px,
   ));
 
   @include media-breakpoint-up (md) {
     @include rem((
+      font-family: 'Bombshell Pro',
       font-size: 100px,
-  ))
+    ))
   }
+  
   @include media-breakpoint-up (lg) {
     @include rem((
       font-size: 150px,
-
-      position: relative,
-      top: 90px,
-      z-index: 1000,
-  ))
+    ))
   }
 }
 
@@ -94,10 +93,6 @@
 
 //section 01
 .section-01 {
-  .container {
-    @include container-width;
-  }
-
   .deco {
     @include rem ((
       left: 10%,
@@ -169,7 +164,10 @@
     ));
   }
 
-  @include media-breakpoint-up (lg) {
+  @include media-breakpoint-up (xl) {
+    @include rem ((
+      height: 1000px,
+    ));
     .sectitle {
       @include rem ((
         top: 150px,
@@ -192,6 +190,12 @@
     letter-spacing: .3rem;
     position: relative;
   }
+
+  .quote {
+    @include rem ((
+      margin: 100px auto,
+     ));
+   }
 
   @media (max-width: 435px) {
     .sectitle {
@@ -271,14 +275,6 @@
     padding-top: 220px,
   ));
 
-  .container {
-    @include container-width;
-  }
-
-  img {
-    max-width: 100%
-  }
-
   .infobox--05 {
     @include rem ((
       margin-bottom: 20px,
@@ -286,15 +282,51 @@
     ));
   }
 
-  @include media-breakpoint-up (lg) {
-    img {
-      max-width: none;
-    }
+  .cross-line {
+    display: none;
+    margin: 0;
+    padding: 0;
+  };
 
+  @include media-breakpoint-up (lg) {
+    .infobox--04 {
+      @include rem ((
+        margin-right: 50px,
+    ))
+  }
     .infobox--05 {
       @include rem ((
          top :-150px,
+         margin-right: 50px,
       ));
+    }
+  }
+
+  @include media-breakpoint-up (xl) {
+    .infobox--04 {
+      @include rem ((
+        margin-right: 150px,
+      ))
+    }
+    .infobox--05 {
+      @include rem ((
+         top :-150px,
+         margin-right: 150px,
+      ));
+    }
+
+    .cross-line {
+      @include rem ((
+        display: inherit,
+        position: relative,
+        top: 520px,
+        right: 70px,
+        opacity: .5,
+      ));
+
+      .vertical {
+        transform: rotate(90deg);
+      }
     }
   }
 }
@@ -304,25 +336,40 @@
 .section-06 {
   background-color: $default-color;
 }
+
 //section 06
 .section-05 {
   @include rem ((
    padding-bottom: 40px,
   ));
 
-  img {
-    width: auto;
+  .sectitle {
+    @include rem ((
+      position: relative,
+      z-index: 10,
+      top: 0,
+      padding-left: 20px,
+    ));
   }
 
-  @include media-breakpoint-up (lg ){
+  @include media-breakpoint-up (md) {
+    @include rem ((
+      left: 50px,
+      top: 90px,
+    ));
+  }
+
+
+  @include media-breakpoint-up (xl ){
     @include rem ((
       padding-bottom: 140px,
+      height: 1200px,
     ));
 
-    img {
+    .sectitle {
       @include rem ((
-        width: 1920px,
-        height: auto,
+        top: 90px,
+        left: 240px,
       ));
     }
   }

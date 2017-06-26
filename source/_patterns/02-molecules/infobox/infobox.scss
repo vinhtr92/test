@@ -144,7 +144,7 @@
       @include rem ((
         font-size: 48px,
         line-height: 55px,
-        margin-bottom: 40px,
+        margin-bottom: 20px,
       ));
     }
 
@@ -180,9 +180,8 @@
       text-transform: uppercase,
       display: inline-block,
       position:relative,
-      // transform: translate(-30px,10px),
-      top: 10px,
-      right: 30px,
+      top: 20px,
+      left: -30px,
     ));
   }
 
@@ -191,6 +190,12 @@
       position: relative,
       top: 30px,
     ));
+  }
+
+  a {
+    @include rem ((
+      font-size: 12px,
+    ))
   }
 
   @include media-breakpoint-up (lg) {
@@ -206,17 +211,24 @@
       ));
     }
 
-    .box__title,
+    .box__title {
+      @include rem ((
+        margin-bottom: 20px,
+      ));
+    }
+
     .box__desc {
       @include rem ((
-        margin-bottom: 30px,
-      ));
+        font-size: 15px,
+        line-height: 26px,
+        margin-bottom: 10px,
+      ))
     }
 
     .box-event__month {
       @include rem ((
-      top: -50px,
-      right: 70px,
+      top: -160px,
+      left: 144px,
       ));
     }
   }

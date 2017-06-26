@@ -10,38 +10,41 @@
 
 </div>
 <div class="section-01">
-    <div class="container">
-        <div class="text-xs-center">
-            {% set item = section_01.count %}
-            {% include "molecules-count" with { countStyleModifier:" count--02"} %}
-        </div>
-
-        {% set info = section_01.info %}
-        {% include "organisms-info" with {infoStyleModifier: " info--02", rowStyleModifier: " no-gutters", includeFile: "molecules-infobox", modifierFile: " infobox--02" } %}
-
-        <div class="text-xs-center">
-            {% include "atoms-sectitle" with {sectitle: section_01.sectitle, sectitleStyleModifier:" sectitle--03" } %}
-            <div class="count-container">
-                {% for item in section_01.count_02 %}
-                    {% include "molecules-count"  %}
-                {% endfor %}
+    <div class="w1400px">
+        <div class="container-fluid">
+            <div class="text-xs-center">
+                {% set item = section_01.count %}
+                {% include "molecules-count" with { countStyleModifier:" count--02"} %}
             </div>
+
+            {% set info = section_01.info %}
+            {% include "organisms-info" with {infoStyleModifier: " info--02", rowStyleModifier: " no-gutters", includeFile: "molecules-infobox", modifierFile: " infobox--02" } %}
+
+            <div class="text-xs-center">
+                {% include "atoms-sectitle" with {sectitle: section_01.sectitle, sectitleStyleModifier:" sectitle--03" } %}
+                <div class="count-container">
+                    {% for item in section_01.count_02 %}
+                        {% include "molecules-count"  %}
+                    {% endfor %}
+                </div>
+            </div>
+        <!-- section 01 -->
         </div>
-    <!-- section 01 -->
     </div>
 </div>
 
 <div class="section-02">
+    <div class="w1400px">
     <div class="container-fluid">
         <div class="text-xs-center">
         {% include "atoms-sectitle" with {sectitle: section_02.sectitle } %}
         </div>
-
         {% set swiper_data = section_02.swiper_data %}
         {% set swiper = section_02.swiper %}
-        {% include "organisms-swiper" with {includeFile:"molecules-infobox",modifierFile: " infobox--03" ,swiperStyleModifier: " swiper--02" } %}
+        {% include "organisms-swiper" with {includeFile:"molecules-infobox",modifierFile: " infobox--03" , includeFileSync: "molecules-infobox" ,swiperStyleModifier: " swiper--02" } %}
     </div>
     <!--section 02-->
+    </div>
 </div>
 
 <div class="section-03">
@@ -82,7 +85,8 @@
 </div>
 
 <div class="section-04">
-    <div class="container">
+    <div class="w1400px">
+    <div class="container-fluid">
         {% include "atoms-sectitle" with {sectitle:section_04.sectitle} %}
         <div class="row">
             <div class="col-lg-5">
@@ -91,10 +95,10 @@
                 {% include "atoms-image" with { img:section_04.info_01.imgBottom  }%}
             </div>
 
-            <span class="deco-3">
+            <div class="cross-line">
                 <hr>
                 <hr class="vertical">
-            </span>
+            </div>
 
             <div class="col-lg-7">
                 {% set info = section_04.info_02 %}
@@ -103,16 +107,23 @@
         </div>
     </div>
     <!--section 04-->
+    </div>
 </div>
 
 
 <div class="section-05">
     <div class="container-fluid">
         {% include "atoms-sectitle" with {sectitle: section_05.sectitle, sectitleStyleModifier: " sectitle--02" } %}
-
+        <div class="hidden-lg-down">
         {% set swiper_data = section_05.swiper_data %}
         {% set swiper = section_05.swiper %}
         {% include "organisms-swiper" with { includeFile: "molecules-infobox", swiperStyleModifier: " swiper--03"} %}
+        </div>
+        <div class="hidden-xl-up">
+            {% set swiper_data = section_05.swiper_data_2 %}
+            {% set swiper = section_05.swiper %}
+            {% include "organisms-swiper" with { includeFile: "molecules-infobox", swiperStyleModifier: " swiper--03"} %}
+        </div>
     </div>
     <!--section 05-->
 </div>
