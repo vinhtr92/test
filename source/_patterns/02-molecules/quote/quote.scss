@@ -17,7 +17,7 @@
     @include rem ((
       height: auto,
       width: 150px,
-      transform: translateY(-30px),
+      margin-top: -40px,
     ));
   }
 
@@ -35,7 +35,7 @@
     .quote__img img {
       @include rem ((
         width: 300px,
-        transform: translateY(-70px),
+        margin-top: -70px,
       ))
     }
   }

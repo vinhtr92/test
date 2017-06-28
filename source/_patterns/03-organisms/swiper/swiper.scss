@@ -1,10 +1,13 @@
 // pagination style 03
 
 .swiper-pagination--03 {
-  width: 100%;
+  width: 110%;
 
   .swiper-pagination-bullet {
-    margin: 0 210px;
+    margin-right: 440px;
+    float:left;
+
+
     width: 20px;
     height: 20px;
     background-color: $border-color;
@@ -20,42 +23,55 @@
 
 .swiper--02 {
   .swiper-pagination {
-      @include rem ((
-    margin-top: 40px,
+    display: none;
+  }
 
-  ));
+  .infobox {
+    @include rem ((
+      margin-bottom: 16px,
+    ))
+  }
+
+  .box__time {
+    color: white;
   }
 
   @include media-breakpoint-up (xl) {
-    .swiper-container {
-      @include rem ((
-        position: relative,
-        margin-top: 400px,
-      ));
-    }
-
     .swiper-pagination {
       @include rem ((
-        margin-top: 35px,
+        display: initial,
+        margin-top: -10px,
       ))
     }
 
-    .swiper__date {
+    .swiper__sync {
       @include rem ((
-        margin-top: 65px,
-        text-align: center,
+        position: relative,
+        top: 10px,
       ));
+    }
+
+    .box__time {
+      color: $secondary-color;
+    }
+
+    h2.box__title,
+    .box__desc {
+      @include rem ((
+        margin-right: 100px,
+      ))
+
     }
   }
 }
 
 .swiper--03 {
-        .swiper-btn {
-        @include rem ((
-          border: 0,
-          border-radius: 5px,
-        ))
-      }
+  .swiper-btn {
+    @include rem ((
+      border: 0,
+      border-radius: 5px,
+    ))
+   }
 
   @include media-breakpoint-up (xl) {
     .swiper-container {

@@ -18,7 +18,7 @@
             </div>
 
             {% set info = section_01.info %}
-            {% include "organisms-info" with {infoStyleModifier: " info--02", rowStyleModifier: " no-gutters", includeFile: "molecules-infobox", modifierFile: " infobox--02" } %}
+            {% include "organisms-info" with { rowStyleModifier: " no-gutters", includeFile: "molecules-infobox" } %}
 
             <div class="text-xs-center">
                 {% include "atoms-sectitle" with {sectitle: section_01.sectitle, sectitleStyleModifier:" sectitle--03" } %}
@@ -35,14 +35,12 @@
 
 <div class="section-02">
     <div class="w1400px">
-    <div class="container-fluid">
         <div class="text-xs-center">
         {% include "atoms-sectitle" with {sectitle: section_02.sectitle } %}
         </div>
         {% set swiper_data = section_02.swiper_data %}
         {% set swiper = section_02.swiper %}
         {% include "organisms-swiper" with {includeFile:"molecules-infobox",modifierFile: " infobox--03" , includeFileSync: "molecules-infobox" ,swiperStyleModifier: " swiper--02" } %}
-    </div>
     <!--section 02-->
     </div>
 </div>
@@ -129,13 +127,14 @@
 </div>
 
 <div class="section-06">
-    <div class="container-fluid">
-    {% include "atoms-sectitle" with {sectitle:section_06.sectitle} %}
-    {% set info = section_06.info %}
-    {% include "organisms-info" with { includeFile:"molecules-infobox"} %}
+    <div class="w1400px">
+        <div class="container-fluid">
+        {% include "atoms-sectitle" with {sectitle:section_06.sectitle} %}
+        {% set info = section_06.info %}
+        {% include "organisms-info" with { includeFile:"molecules-infobox"} %}
+        </div>
+        <!--section 06-->
     </div>
-    <!--section 06-->
 </div>
-
 
 

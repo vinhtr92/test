@@ -80,23 +80,19 @@ section_02:
     text: Our Story
 
   swiper_data:
-    perviewMd: "1"
-    perviewLg: "2"
-    perviewXl: "3"
     pagination_02: "true"
+    center: "true"
     sync:
       id: timeline
-      perviewLg: "2"
-      perviewMd: "1"
   swiper:
   - number: "01"
-    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
+    title: The White Dress That Changed Wedding History Forever
     description: Nisi Lorem sint ut ullamco fugiat ipsum ad aliqua. Fugiat ullamco est proident et qui mollit et.Nisi Lorem sint ut ullamco fugiat ipsum ad aliqua. Fugiat ullamco est proident et qui mollit et
   - number: "02"
-    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
-    description: Ullamco nulla officia ad id incididunt minim ullamco magna tempor qui cillum deserunt voluptate. Cillum ea sunt consequat nostrud nisi. Ex adipisicing et ex
+    title: Many desktop publishing packages and web page editors
+    description: By about 250 years ago, the notion of love matches gained traction, Coontz said, meaning marriage was based on love and possibly sexual desire. But mutual attraction in marriage wasn't important until about a century ago.
   - number: "03"
-    title: Aliquip reprehenderit nostrud magna occaecat dolore laboris.
+    title: The White Dress That Changed Wedding History Forever
     description: Veniam magna non non id est. Mollit incididunt ex tempor enim amet labore nulla. Fugiat ex minim consequat est. Quis ut officia commodo esse. Reprehenderit
 
 swiper_sync:
@@ -108,10 +104,9 @@ swiper_sync:
 section_03:
   sectitle:
     text: Groomsmen
-    class: " text-xs-center text-sm-left"
   sectitle_02:
     text: Bridesmaids
-    class: " text-xs-center text-sm-left text-lg-right "
+    class: " text-lg-right"
   quote:
     text: For you see, each day I love you more today more than yesterday and less than tomorrow.
     imgBottom:
@@ -183,7 +178,7 @@ section_04:
     event:
       date: "09"
       month: dect
-    title: Wedding
+    title: wedding cremony
     time: 15h30 AM
     location: Hanoi / VNM
     description: Tzo Ai will be the primary contact for all the vendors involved and manage the entire planning process.
@@ -194,7 +189,7 @@ section_04:
     event:
       date: "07"
       month: dect
-    title: bachelorette .
+    title: bachelorette
     time: 1h30 AM
     location: Hanoi / VNM
     description: She will make sure that the design of the wedding is cohesive and thoughtful, and that no detail is missed.
@@ -230,7 +225,7 @@ section_05:
   sectitle:
     text: album
   swiper_data:
-    height: 1200
+    height: 1000
     perview: 1
     perviewMd: 1
     perviewLg: 1
@@ -253,10 +248,6 @@ section_05:
       src: ../../assets/images-demo/gallery/gallery02.jpg
   - img:
       src: ../../assets/images-demo/gallery/gallery03.jpg
-  - img:
-      src: ../../assets/images-demo/gallery/gallery04.jpg
-  - img:
-      src: ../../assets/images-demo/gallery/gallery05.jpg
 
 # section 06
 
@@ -266,25 +257,25 @@ section_06:
   info:
   - img:
       src: ../../assets/images-demo/blog/blog-01.jpg
-    column: col-lg-4
+    column: col-lg-4 col-md-6
     time: mar 9, 2018
     description: Does hearing the words “wedding planning” give you a slight panic attack? Being stressed by planning your wedding is definitely normal
     link:
       url: gooogle.com
-      text: read more__
+      text: __ Read more
   - img:
       src: ../../assets/images-demo/blog/blog-02.jpg
-    column: col-lg-4
+    column: col-lg-4 col-md-6
     time: mar 9, 2018
     description: Lavender and Indigo French Wedding at Cabanes Bartherotte Chelsea and Hugues both work closely with
     link:
       url: gooogle.com
-      text: read more__
+      text: __ Read more
   - img:
       src: ../../assets/images-demo/blog/blog-03.jpg
-    column: col-lg-4
+    column: col-lg-4 col-md-12 text-md-center text-lg-left
     time: mar 9, 2018
     description: Does hearing the words “wedding planning” give you a slight panic attack? Being stressed by planning your wedding is definitely normal
     link:
       url: gooogle.com
-      text: read more__
+      text: __ Read more

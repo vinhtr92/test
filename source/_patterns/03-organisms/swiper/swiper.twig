@@ -16,8 +16,8 @@
         data-direction="{{swiper_data.direction|default('horizontal')}}"
         {% if swiper_data.sync %}
             data-swiper-sync="#{{swiper_data.sync.id}}"
-        {% endif %}
-        >
+        {% endif %}      >
+
 
             <div class="swiper-wrapper">
                 {% for item in swiper %}
@@ -48,7 +48,7 @@
         {% endif %}
 
         {% if swiper_data.sync %}
-            <div id="{{swiper_data.sync.id}}" class="swiper__date" data-init="swiper"
+            <div id="{{swiper_data.sync.id}}" class="swiper__sync" data-init="swiper"
             data-loop="true"
             data-speed="{{swiper_data.sync.speed|default('300')}}"
             data-touch-ratio="1",
@@ -82,6 +82,7 @@
         {% if swiper_data.pagination == true %}
             <div class="swiper-pagination swiper-pagination--02"></div>
         {% endif %}
+
         {% if swiper_data.button == true %}
             <div class="swiper-btn swiper-btn--next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
             <div class="swiper-btn swiper-btn--prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>

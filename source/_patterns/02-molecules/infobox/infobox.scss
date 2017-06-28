@@ -1,12 +1,7 @@
 
 .infobox {
-  .box_sectitle {
-    font-family: 'Tenor Sans',sans-serif;
-    font-size: $font-size-base;
-    font-weight: 400;
-    color: $primary-color;
-  }
-
+  position: relative;
+  
   h2.box__title {
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
@@ -20,19 +15,13 @@
 
   .box__time,
   .box__location {
-    @include rem ((
-      font-size: 16px,
-      text-transform: uppercase,
-      font-weight: 400,
-      letter-spacing: 0.4rem,
-      line-height: 24px,
-      color: $secondary-color,
-    ));
+    @extend %font-bold;
+    line-height: unset !important;
   }
 
   .box__time {
     @include rem ((
-      margin: 10px 0px 5px 0px,
+      margin-top: 10px,
     ));
   }
 
@@ -45,23 +34,23 @@
     ))
   }
 
+  a {
+    @include rem ((
+      font-size: 12px,
+    ))
+  }
+
 
   @include media-breakpoint-up(lg) {
     .box__location {
       @include rem ((
-        margin-bottom: 35px,
+        margin-bottom: 25px,
       ));
-    }
-
-    .box__time {
-      @include rem ((
-       margin-bottom: 15px,
-      ))
     }
 
     .box__desc {
       @include rem ((
-        margin-bottom: 40px,
+        margin-bottom: 24px,
       ));
     }
   }
@@ -72,20 +61,21 @@
   h2.box__title {
     text-transform: uppercase;
     margin-bottom: 0;
+  }
 
-    @include media-breakpoint-up (lg) {
+  @include media-breakpoint-up (lg) {
+    h2.box__title {
       @include rem ((
         font-size: 60px,
         margin-bottom: 10px,
       ));
     }
-  }
 
-  .box__desc {
-    @include media-breakpoint-up (lg) {
+    .box__desc {
       @include rem ((
+        margin-right: 0,
         margin-bottom: 25px,
-      ));
+      ))
     }
   }
 }
@@ -106,6 +96,7 @@
       text-transform: uppercase,
       color: $default-color,
       font-size: 24px,
+
     ));
   }
 
@@ -132,6 +123,13 @@
       @include rem ((
         font-size: 36px,
         z-index: 10,
+        margin-bottom: 30px,
+      ))
+    }
+
+    .box__desc {
+      @include rem ((
+        margin-bottom: 80px,
       ))
     }
   }
@@ -179,9 +177,9 @@
     @include rem ((
       text-transform: uppercase,
       display: inline-block,
-      position:relative,
-      top: 20px,
-      left: -30px,
+      position:absolute,
+      top: 60px,
+      left: 50px,
     ));
   }
 
@@ -201,7 +199,8 @@
   @include media-breakpoint-up (lg) {
     .box-event {
       @include rem ((
-        top: 100px,
+        top: -120px,
+        position: absolute,
       ));
     }
 
@@ -222,13 +221,14 @@
         font-size: 15px,
         line-height: 26px,
         margin-bottom: 10px,
+        margin-right: 0,
       ))
     }
 
     .box-event__month {
       @include rem ((
-      top: -160px,
-      left: 144px,
+      top: 65px,
+      left: 160px,
       ));
     }
   }
