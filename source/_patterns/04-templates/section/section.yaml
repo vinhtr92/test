@@ -249,7 +249,7 @@ section_05:
   - img:
       src: ../../assets/images-demo/gallery/gallery03.jpg
 
-# section 06
+# section 05
 
 section_06:
   sectitle:
@@ -279,3 +279,10 @@ section_06:
     link:
       url: gooogle.com
       text: __ Read more
+
+# section 06
+
+section_07:
+  title:
+    heading: will you attend?
+    description: Please sign your RSVP

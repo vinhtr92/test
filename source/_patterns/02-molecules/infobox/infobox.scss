@@ -1,7 +1,7 @@
 
 .infobox {
   position: relative;
-  
+
   h2.box__title {
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
@@ -22,6 +22,7 @@
   .box__time {
     @include rem ((
       margin-top: 10px,
+      margin-bottom: 15px,
     ));
   }
 
@@ -188,6 +189,10 @@
       position: relative,
       top: 30px,
     ));
+  }
+
+  .box__time {
+    margin-bottom: 0;
   }
 
   a {

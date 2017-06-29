@@ -18,10 +18,10 @@
             </div>
 
             {% set info = section_01.info %}
-            {% include "organisms-info" with { rowStyleModifier: " no-gutters", includeFile: "molecules-infobox" } %}
+            {% include "organisms-info" with {infoStyleModifier:" info--03" ,rowStyleModifier: " no-gutters", includeFile: "molecules-infobox", modifierFile:" infobox--02" } %}
 
             <div class="text-xs-center">
-                {% include "atoms-sectitle" with {sectitle: section_01.sectitle, sectitleStyleModifier:" sectitle--03" } %}
+                {% include "atoms-sectitle" with {sectitle: section_01.sectitle } %}
                 <div class="count-container">
                     {% for item in section_01.count_02 %}
                         {% include "molecules-count"  %}
@@ -100,7 +100,7 @@
 
             <div class="col-lg-7">
                 {% set info = section_04.info_02 %}
-                {% include "organisms-info" with { includeFile: "molecules-infobox" ,modifierFile: " infobox--05"} %}
+                {% include "organisms-info" with { includeFile: "molecules-infobox" ,modifierFile: " infobox--05", infoStyleModifier: " info--02"} %}
             </div>
         </div>
     </div>
@@ -135,6 +135,10 @@
         </div>
         <!--section 06-->
     </div>
+</div>
+
+<div class="section-07">
+    {% include "molecules-title" with {title:section_07.title }%}
 </div>
 
 

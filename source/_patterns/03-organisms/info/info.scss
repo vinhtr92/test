@@ -1,5 +1,5 @@
 
-/*  Placeholder  */
+/*  PLACE HOLDER */
 
  %container-width {
   @include rem ((
@@ -31,7 +31,7 @@
 
 .sectitle--02 {
   @include rem ((
-    text-transform: inherit,
+    text-transform: initial,
     letter-spacing: 0,
     font-family: 'Italiana',
     font-size: 50px,
@@ -51,13 +51,10 @@
   }
 }
 
-/*  INFO  */
+/*DECORATION*/
 
-
-// decoration item
 .row {
   position: relative;
-  //position relative cho decoration item
 }
 
 [class*="deco"] {
@@ -70,14 +67,13 @@
   }
 }
 
-
 /*  SECTION  */
 
 //section 01
 .section-01 {
   .info {
     @include rem ((
-      margin-bottom: 90px,
+
       margin-top: -300px,
     ));
   }
@@ -88,79 +84,29 @@
     ))
   }
 
-  .deco {
-    @include rem ((
-      left: 10%,
-      top: 18%,
-    ));
-  }
-
-  .deco-2 {
-    @include rem ((
-      left: 80px,
-    ));
-  }
-
-  .groom,
-  .bride {
-    @include rem ((
-    margin-bottom: 40px,
-    ))
-  }
-
   @include media-breakpoint-up (lg) {
-    .groom {
-      @include rem ((
-        margin-left: 50px,
-      ));
-    }
-
-    img {
-      @include rem ((
-        margin-bottom: 50px,
-       ));
-     }
-
-    .sectitle--03 {
-      @include rem ((
-        position: relative,
-        top: 50px,
-      ));
-    }
-
     .info {
       @include rem ((
         margin-top: -35px,
+        margin-bottom: 230px,
       ))
     }
   }
 
   @include media-breakpoint-up (xl) {
-    .bride {
-      float: right;
-    }
-
-    .groom,
-    .bride {
-      @include rem ((
-        width: 450px,
-      ));
-    }
-
-    .groom {
-      @include rem ((
-        margin-left: 100px,
-      ))
-    }
-
     .count--02 {
       @include rem ((
         margin-top: -110px,
       ))
     }
+
+    .count-container {
+      @include rem ((
+        margin-top: -50px,
+      ));
+    }
   }
 }
-
 
 //section 02
 .section-02 {
@@ -190,7 +136,7 @@
   @include media-breakpoint-up (xl) {
     @include rem ((
       height: 1080px,
-       background-image: url("../../assets/images-demo/swiper/swiper-bg.png"),
+      background-image: url("../../assets/images-demo/swiper/swiper-bg.png"),
     ));
 
     .sectitle {
@@ -251,7 +197,6 @@
 
     .sectitle {
       top: 4rem;
-
     }
 
     .deco {
@@ -296,12 +241,6 @@
 
 //section 04
 .section-04 {
-  .infobox--05 {
-    @include rem ((
-      margin-bottom: 40px,
-    ));
-  }
-
   .cross-line {
     display: none;
   };
@@ -310,14 +249,7 @@
     .infobox--04 {
       @include rem ((
         margin-right: 50px,
-    ))
-  }
-    .infobox--05 {
-      @include rem ((
-         margin-right: 0,
-         margin-bottom: 200px,
-         max-height: 200px,
-      ));
+      ))
     }
   }
 
@@ -327,15 +259,7 @@
         margin-right: 150px,
       ))
     }
-    .infobox--05 {
-      @include rem ((
-         left: 15px,
-         top :-15px,
-         margin-right: 140px,
-         margin-bottom: 370px,
 
-      ));
-    }
 
     .cross-line {
       @include rem ((
@@ -344,6 +268,7 @@
         top: 420px,
         right: 50px,
         opacity: .5,
+        z-index: 0,
       ));
 
       .vertical {
@@ -361,10 +286,6 @@
 
 //section 05
 .section-05 {
-  @include rem ((
-  //  padding-bottom: 60px,
-  ));
-
   .sectitle {
     @include rem ((
       position: relative,
@@ -373,14 +294,6 @@
       padding-left: 20px,
     ));
   }
-
-  @include media-breakpoint-up (md) {
-    @include rem ((
-      left: 50px,
-      top: 90px,
-    ));
-  }
-
 
   @include media-breakpoint-up (xl ){
     @include rem ((
@@ -403,36 +316,12 @@
     ));
   }
 
-  .infobox {
-    @include rem ((
-      margin-bottom: 50px,
-    ));
-  }
-
   @include media-breakpoint-up (lg) {
     .sectitle {
       @include rem ((
         margin-bottom: 60px,
-    ));
-  }
-
-    img {
-      @include rem ((
-        margin-bottom: 30px,
       ));
     }
-
-    .infobox {
-      @include rem ((
-        margin-right: 80px,
-      ));
-    }
-  }
-
-  .box__time {
-    @include rem ((
-      margin-bottom: 15px,
-    ))
   }
 }
 
@@ -484,5 +373,124 @@
       padding-bottom: 200px,
       padding-top: 180px,
     ));
+  }
+}
+
+
+/* INFO */
+.info {
+  .infobox {
+    @include rem ((
+      margin-bottom: 50px,
+    ));
+  }
+
+  @include media-breakpoint-up (lg) {
+    img {
+      @include rem ((
+        margin-bottom: 30px,
+      ));
+    }
+
+    .infobox {
+      @include rem ((
+        margin-right: 80px,
+      ));
+    }
+  }
+}
+
+// Style 2
+.info--02 {
+  .infobox--05 {
+    @include rem ((
+      margin-bottom: 40px,
+    ));
+  }
+
+  @include media-breakpoint-up (lg) {
+    .infobox--05 {
+      @include rem ((
+         margin-right: 0,
+         margin-bottom: 200px,
+         max-height: 200px,
+      ));
+    }
+  }
+
+  @include media-breakpoint-up (xl) {
+    .infobox--05 {
+      @include rem ((
+         left: 15px,
+         top :-15px,
+         margin-right: 140px,
+         margin-bottom: 370px,
+      ));
+    }
+  }
+}
+
+// Style 3
+.info--03 {
+  .infobox {
+    margin-right: 0;
+  }
+
+  .deco {
+    @include rem ((
+      left: 10%,
+      top: 18%,
+    ));
+  }
+
+  .deco-2 {
+    @include rem ((
+      left: 80px,
+    ));
+  }
+
+  .groom,
+  .bride {
+    @include rem ((
+    margin-bottom: 40px,
+    ))
+  }
+  @include media-breakpoint-up (lg) {
+    .sectitle {
+      @include rem ((
+        margin-bottom: 10px,
+      ));
+    }
+
+    .groom {
+      @include rem ((
+        margin-left: 50px,
+      ));
+    }
+
+    img {
+      @include rem ((
+        margin-bottom: 50px,
+       ));
+     }
+  }
+
+  @include media-breakpoint-up (xl) {
+    .bride {
+      float: right;
+    }
+
+    .groom,
+    .bride {
+      @include rem ((
+        width: 450px,
+      ));
+    }
+
+    .groom {
+      @include rem ((
+        margin-left: 100px,
+      ))
+    }
   }
 }

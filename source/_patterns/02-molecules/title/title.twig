@@ -1,9 +1,9 @@
 <div class="title{{titleStyleModifier}}">
-    <h3>{{item.heading|default('title')}}
+    <h3>{{title.heading|default('title')}}
     </h3>
-{% if item.description %}
-    <div class="title__description">
-    {{item.description}}
+{% if title.description %}
+    <div class="title__desc">
+    {{title.description}}
     </div>
 {% endif %}
 </div>
