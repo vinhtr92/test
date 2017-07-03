@@ -16,7 +16,6 @@
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: $secondary-color;
-  line-height: 2.5rem;
 }
 
 .w1400px {
@@ -182,7 +181,9 @@
 
   @include media-breakpoint-up (lg) {
     .sectitle {
-      top: 3rem;
+      @include rem ((
+        margin-top:60px,
+      ));
       margin-left: 3.5rem;
       margin-right: 3.5rem;
     }
@@ -196,7 +197,9 @@
     }
 
     .sectitle {
-      top: 4rem;
+      @include rem ((
+        margin-top:70px,
+      ))
     }
 
     .deco {
@@ -296,13 +299,10 @@
   }
 
   @include media-breakpoint-up (xl ){
-    @include rem ((
-      height: 1000px,
-    ));
-
     .sectitle {
       @include rem ((
-        left: 240px,
+        margin-left: 240px,
+        line-height: 0.3,
       ));
     }
   }
@@ -324,6 +324,25 @@
     }
   }
 }
+
+//section 07
+.section-07 {
+  @include media-breakpoint-up (lg) {
+    .form-bg {
+      background-color: #CFC0C5;
+      @include rem ((
+        height: 900px,
+      ));
+
+      form {
+        padding-top: 90px;
+      }
+    }
+  }
+
+}
+
+
 
 /* SPACE BETWEEN SECTION*/
 .section-01 {
@@ -371,7 +390,7 @@
   @include media-breakpoint-up (lg) {
     @include rem ((
       padding-bottom: 200px,
-      padding-top: 180px,
+      padding-top: 20px,
     ));
   }
 }
@@ -494,3 +513,123 @@
     }
   }
 }
+
+/* FORM */
+.section-07 {
+
+
+
+  h4 {
+    @include rem ((
+      font-size: 18px,
+      font-weight: 400,
+      color: $primary-color,
+    ))
+  }
+}
+
+/*FORM*/
+
+#attend-form {
+  .form-control,
+  select,
+  textarea,
+  input {
+    display: block;
+    width: 100%;
+    padding: 1.1875rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: $primary-color;
+    background-color: initial;
+    background-image: none;
+    background-clip: padding-box;
+    border: 0px solid #e8e8e8;
+    border-bottom: 1px solid #BCB8BD;
+    border-radius: 0px;
+
+    //focus
+    &:focus {
+      box-shadow: none;
+    }
+
+    // placeholder
+    &::placeholder {
+      color: $primary-color;
+    }
+  }
+
+  // hide radio for custom style
+/*  input[type="radio"] {
+    display: none;
+  }*/
+}
+
+.form-bg {
+  @extend %container-width;
+  background-color: #CFC0C5;
+}
+
+// custom button style 01
+.btn-style-01 {
+  @include rem ((
+    font-family: "Italiana",
+    font-size: 36px,
+    border: 0px,
+    border-bottom: 2px solid ,
+    border-radius: 0,
+    background-color: initial,
+    color: $secondary-color,
+  ));
+
+  &:hover {
+    background-color: initial;
+    color: $primary-color;
+    transition: all .3s;
+    border-bottom: 5px solid;
+  }
+}
+
+
+.control {
+  @include rem ((
+    font-size: 18px,
+    position: relative,
+    display: block,
+    margin-bottom: 15px,
+    padding-left: 30px,
+    cursor: pointer,
+  ))
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  @include rem ((
+    position: absolute,
+    top: 2px,
+    left: 0,
+    width: 20px,
+    height: 20px,
+    border: 2px solid $secondary-color,
+    transition: 0.3s all,
+  ))
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator,
+.control input:checked ~ .control__indicator {
+	background: $secondary-color;
+  transition: 0.3s all;
+}
+

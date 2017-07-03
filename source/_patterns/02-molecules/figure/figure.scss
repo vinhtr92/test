@@ -31,7 +31,7 @@
     @include media-breakpoint-up (lg) {
       @include rem ((
         font-size: 130px,
-        line-height: 120px,
+        line-height: calc(120/130),
         top: 50%,
         left: 50%,
         transform: translate(-50%, -50%),

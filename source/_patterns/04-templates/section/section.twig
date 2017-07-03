@@ -1,34 +1,29 @@
 <div class="container-fluid">
     <header>
-        {% set header = section.header %}
-        {% include "organisms-header" %}
+        {% set header = section.header %} {% include "organisms-header" %}
     </header>
-        {% set figure = section.header.figure %}
-        {% include "molecules-figure" with { figureStyleModifier:" fig--02"} %}
-        <!-- header section-->
- </div>
+    {% set figure = section.header.figure %} {% include "molecules-figure" with { figureStyleModifier:" fig--02"} %}
+    <!-- header section-->
+</div>
 
 </div>
 <div class="section-01">
     <div class="w1400px">
         <div class="container-fluid">
             <div class="text-xs-center">
-                {% set item = section_01.count %}
-                {% include "molecules-count" with { countStyleModifier:" count--02"} %}
+                {% set item = section_01.count %} {% include "molecules-count" with { countStyleModifier:" count--02"} %}
             </div>
 
-            {% set info = section_01.info %}
-            {% include "organisms-info" with {infoStyleModifier:" info--03" ,rowStyleModifier: " no-gutters", includeFile: "molecules-infobox", modifierFile:" infobox--02" } %}
+            {% set info = section_01.info %} {% include "organisms-info" with {infoStyleModifier:" info--03" ,rowStyleModifier: " no-gutters",
+            includeFile: "molecules-infobox", modifierFile:" infobox--02" } %}
 
             <div class="text-xs-center">
                 {% include "atoms-sectitle" with {sectitle: section_01.sectitle } %}
                 <div class="count-container">
-                    {% for item in section_01.count_02 %}
-                        {% include "molecules-count"  %}
-                    {% endfor %}
+                    {% for item in section_01.count_02 %} {% include "molecules-count" %} {% endfor %}
                 </div>
             </div>
-        <!-- section 01 -->
+            <!-- section 01 -->
         </div>
     </div>
 </div>
@@ -36,12 +31,11 @@
 <div class="section-02">
     <div class="w1400px">
         <div class="text-xs-center">
-        {% include "atoms-sectitle" with {sectitle: section_02.sectitle } %}
+            {% include "atoms-sectitle" with {sectitle: section_02.sectitle } %}
         </div>
-        {% set swiper_data = section_02.swiper_data %}
-        {% set swiper = section_02.swiper %}
-        {% include "organisms-swiper" with {includeFile:"molecules-infobox",modifierFile: " infobox--03" , includeFileSync: "molecules-infobox" ,swiperStyleModifier: " swiper--02" } %}
-    <!--section 02-->
+        {% set swiper_data = section_02.swiper_data %} {% set swiper = section_02.swiper %} {% include "organisms-swiper" with {includeFile:"molecules-infobox",modifierFile:
+        " infobox--03" , includeFileSync: "molecules-infobox" ,swiperStyleModifier: " swiper--02" } %}
+        <!--section 02-->
     </div>
 </div>
 
@@ -54,10 +48,9 @@
             <div class="row">
 
                 <div class="col-lg-9  ">
-                    {% set swiper_data = section_03.swiper_data %}
-                    {% set swiper = section_03.swiper %}
-                    {% include "organisms-swiper" with { includeFile:"molecules-infobox"} %}
-                    {% include "atoms-decoration" with { decoration:section_03.decoration} %}
+                    {% set swiper_data = section_03.swiper_data %} {% set swiper = section_03.swiper %} {% include "organisms-swiper" with {
+                    includeFile:"molecules-infobox"} %} {% include "atoms-decoration" with { decoration:section_03.decoration}
+                    %}
                 </div>
                 <div class="col-lg-3 ">
                     {% include "atoms-sectitle" with {sectitle: section_03.sectitle} %}
@@ -68,9 +61,8 @@
             <div class="row">
 
                 <div class="col-lg-9 push-lg-3 ">
-                    {% set swiper_data = section_03.swiper_data %}
-                    {% set swiper = section_03.swiper_02 %}
-                    {% include "organisms-swiper" with { includeFile:"molecules-infobox", swiperStyleModifier:" swiper--04" } %}
+                    {% set swiper_data = section_03.swiper_data %} {% set swiper = section_03.swiper_02 %} {% include "organisms-swiper" with
+                    { includeFile:"molecules-infobox", swiperStyleModifier:" swiper--04" } %}
                 </div>
 
                 <div class="col-lg-3 pull-lg-9">
@@ -78,33 +70,32 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
     <!--section 03-->
 </div>
 
 <div class="section-04">
     <div class="w1400px">
-    <div class="container-fluid">
-        {% include "atoms-sectitle" with {sectitle:section_04.sectitle} %}
-        <div class="row">
-            <div class="col-lg-5">
-                {% set item = section_04.info_01 %}
-                {% include "molecules-infobox" with {infoboxStyleModifier:" infobox--04"} %}
-                {% include "atoms-image" with { img:section_04.info_01.imgBottom  }%}
-            </div>
+        <div class="container-fluid">
+            {% include "atoms-sectitle" with {sectitle:section_04.sectitle} %}
+            <div class="row">
+                <div class="col-lg-5">
+                    {% set item = section_04.info_01 %} {% include "molecules-infobox" with {infoboxStyleModifier:" infobox--04"} %} {% include
+                    "atoms-image" with { img:section_04.info_01.imgBottom }%}
+                </div>
 
-            <div class="cross-line">
-                <hr>
-                <hr class="vertical">
-            </div>
+                <div class="cross-line">
+                    <hr>
+                    <hr class="vertical">
+                </div>
 
-            <div class="col-lg-7">
-                {% set info = section_04.info_02 %}
-                {% include "organisms-info" with { includeFile: "molecules-infobox" ,modifierFile: " infobox--05", infoStyleModifier: " info--02"} %}
+                <div class="col-lg-7">
+                    {% set info = section_04.info_02 %} {% include "organisms-info" with { includeFile: "molecules-infobox" ,modifierFile: "
+                    infobox--05", infoStyleModifier: " info--02"} %}
+                </div>
             </div>
         </div>
-    </div>
-    <!--section 04-->
+        <!--section 04-->
     </div>
 </div>
 
@@ -113,14 +104,12 @@
     <div class="container-fluid">
         {% include "atoms-sectitle" with {sectitle: section_05.sectitle, sectitleStyleModifier: " sectitle--02" } %}
         <div class="hidden-lg-down">
-        {% set swiper_data = section_05.swiper_data %}
-        {% set swiper = section_05.swiper %}
-        {% include "organisms-swiper" with { includeFile: "molecules-infobox", swiperStyleModifier: " swiper--03"} %}
+            {% set swiper_data = section_05.swiper_data %} {% set swiper = section_05.swiper %} {% include "organisms-swiper" with {
+            includeFile: "molecules-infobox", swiperStyleModifier: " swiper--03"} %}
         </div>
         <div class="hidden-xl-up">
-            {% set swiper_data = section_05.swiper_data_2 %}
-            {% set swiper = section_05.swiper %}
-            {% include "organisms-swiper" with { includeFile: "molecules-infobox", swiperStyleModifier: " swiper--03"} %}
+            {% set swiper_data = section_05.swiper_data_2 %} {% set swiper = section_05.swiper %} {% include "organisms-swiper" with
+            { includeFile: "molecules-infobox", swiperStyleModifier: " swiper--03"} %}
         </div>
     </div>
     <!--section 05-->
@@ -129,16 +118,71 @@
 <div class="section-06">
     <div class="w1400px">
         <div class="container-fluid">
-        {% include "atoms-sectitle" with {sectitle:section_06.sectitle} %}
-        {% set info = section_06.info %}
-        {% include "organisms-info" with { includeFile:"molecules-infobox"} %}
+            {% include "atoms-sectitle" with {sectitle:section_06.sectitle} %} {% set info = section_06.info %} {% include "organisms-info"
+            with { includeFile:"molecules-infobox"} %}
         </div>
         <!--section 06-->
     </div>
 </div>
 
 <div class="section-07">
-    {% include "molecules-title" with {title:section_07.title }%}
+    <div class="container-fluid">
+        <div class="form--02"></div>
+        {% include "molecules-title" with {title:section_07.title }%} {% import 'form.twig' as form %}
+        <div class="form-bg">
+            <form id="attend-form" action="#" method="post">
+                <div class="row offset-md-4 pull-md-2">
+                    <fieldset class="form-group">
+                        <p class="form__item col-md-6">
+                            {{ form.text('attend-form-name',null, 'Your name *') }}
+                        </p>
+
+                        <p class="form__item col-md-6">
+                            {{ form.email('attend-form-email', null, 'Your Email *') }}
+                        </p>
+                    </fieldset>
+
+                    <fieldset class="form-group form-inline radio-choice">
+                        <h4> Will you attend? </h4>
+                        <div class="form-group form-inline radio-choice">
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <label for="attend-form-radio-1" class="control control--radio">Yes, I will be there
+                                        <input type="radio" name="attend-form-radio" id="attend-form-radio-1" tabindex="2" value="I will come">
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <label for="attend-form-radio-2" class="control control--radio">Sorry, I can't come
+                                        <input type="radio" name="attend-form-radio" id="attend-form-radio-2" tabindex="3" value="No, I can not come">
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group  ">
+                        <p class="form__item col-md-6 form-check">
+                            <select class="form-control" name="attend-form-select-choice" id="attend-form-select-choice">
+                            <option selected value="I eat anything">I eat anything</option>
+                            <option value="I eat vegetarian food">I eat vegetarian food</option>
+                        </select>
+                        </p>
+
+                        <p class="form__item col-md-6">
+                            <textarea class="form-control" form="attend-form" name="attend-form-notes" rows="1" placeholder="Notes"></textarea>
+                        </
+                        p>
+                    </fieldset>
+
+                    <div class="text-xs-center">
+                        <button type="submit" class="btn-style-01">Sign your RSVP</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-
-
