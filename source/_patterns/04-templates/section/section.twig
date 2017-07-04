@@ -127,24 +127,24 @@
 
 <div class="section-07">
     <div class="container-fluid">
-        <div class="form--02"></div>
-        {% include "molecules-title" with {title:section_07.title }%} {% import 'form.twig' as form %}
+        {% include "molecules-title" with {title:section_07.title }%}
+        {% import 'form.twig' as form %}
         <div class="form-bg">
             <form id="attend-form" action="#" method="post">
                 <div class="row offset-md-4 pull-md-2">
                     <fieldset class="form-group">
                         <p class="form__item col-md-6">
-                            {{ form.text('attend-form-name',null, 'Your name *') }}
+                            {{ form.text('attend-form-name',null, 'Your Name ') }}
                         </p>
 
                         <p class="form__item col-md-6">
-                            {{ form.email('attend-form-email', null, 'Your Email *') }}
+                            {{ form.email('attend-form-email', null, 'Your Email ') }}
                         </p>
                     </fieldset>
 
-                    <fieldset class="form-group form-inline radio-choice">
+                    <fieldset class="form-group form-inline radio-choice col-lg-12">
                         <h4> Will you attend? </h4>
-                        <div class="form-group form-inline radio-choice">
+                        <div class="form-group form-inline">
 
                             <div class="form-group">
                                 <div class="form-check">
@@ -164,25 +164,37 @@
                         </div>
                     </fieldset>
 
-                    <fieldset class="form-group  ">
+                    <fieldset class="form-group col-lg-12  ">
                         <p class="form__item col-md-6 form-check">
                             <select class="form-control" name="attend-form-select-choice" id="attend-form-select-choice">
-                            <option selected value="I eat anything">I eat anything</option>
-                            <option value="I eat vegetarian food">I eat vegetarian food</option>
-                        </select>
+                                <option selected value="I eat anything">I eat anything</option>
+                                <option value="I eat vegetarian food">I eat vegetarian food</option>
+                            </select>
                         </p>
 
                         <p class="form__item col-md-6">
                             <textarea class="form-control" form="attend-form" name="attend-form-notes" rows="1" placeholder="Notes"></textarea>
-                        </
-                        p>
+                        </p>
                     </fieldset>
 
                     <div class="text-xs-center">
-                        <button type="submit" class="btn-style-01">Sign your RSVP</button>
+                        <button type="submit" class="btn-attend">Sign your RSVP</button>
                     </div>
                 </div>
             </form>
         </div>
+    </div>
+</div>
+
+<div class="section-08">
+    <div class="wedding mx-auto">
+        {% set wedding = section_08.wedding %}
+        <div class="wedding__date">{{wedding.date}}</div>
+        <div class="wedding__time">{{wedding.time}}
+
+        </div>
+        <div class="wedding__couple">{{wedding.couple.bride}}<span>&</span>{{wedding.couple.groom}}</div>
+
+        {% include "atoms-decoration" with {decoration:section_08.decoration} %}
     </div>
 </div>

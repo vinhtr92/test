@@ -286,3 +286,16 @@ section_07:
   title:
     heading: will you attend?
     description: Please sign your RSVP
+
+# section 07
+
+section_08:
+  wedding:
+    date: "09"
+    time: OCT/2018
+    couple:
+      bride: Tatiana
+      groom: Samuel
+  decoration:
+    img:
+      src: ../../assets/images-demo/decoration/deco_06.png
