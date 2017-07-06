@@ -1,0 +1,14 @@
+---
+menu:
+  class: " navbar-toggleable-md navbar-light bg-faded"
+  id: "main-menu"
+  couple: " Tatiana & Samuel"
+  navList:
+  - text: Couple
+  - text: History
+  - text: Groomens & Bridesmaids
+  navList_02:
+  - text: Couple
+  - text: History
+  - text: Groomens & Bridesmaids
+

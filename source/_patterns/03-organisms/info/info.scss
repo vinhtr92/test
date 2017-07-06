@@ -154,6 +154,11 @@
 
 //secion 03
 .section-03 {
+  .container-fluid {
+    overflow: hidden;
+    //fix loi khoang trang ben ngoai container-fluid
+  }
+
   .sectitle {
     position: relative;
   }
@@ -169,6 +174,7 @@
       color: $default-color;
       background-color: $primary-color;
       text-align: center !important;
+      line-height: 3;
     }
 
     .infobox {
@@ -327,22 +333,53 @@
 
 //section 07
 .section-07 {
+  #attend-form {
+    @include rem ((
+      padding:20px ,
+    ))
+  }
+
   @include media-breakpoint-up (lg) {
+    .title {
+      @include rem ((
+        position:relative,
+        top: 170px,
+        z-index: 10,
+        margin-left: auto,
+        margin-right: auto,
+      ))
+    }
     .form-bg {
-      background-color: #CFC0C5;
       @include rem ((
         height: 900px,
       ));
 
-      form {
-        padding-top: 90px;
+      #attend-form {
+        @include rem ((
+          padding: 0,
+          padding-top: 280px,
+          margin: 0 230px 0 235px,
+        ))
       }
     }
+
+    .deco {
+      @include rem ((
+        position: absolute,
+        left: -50px,
+        bottom: 200px,
+      ))
+    }
+
+    .deco-02 {
+      @include rem ((
+        position:absolute,
+        top: 210px,
+        right: -95px,
+      ))
+    }
   }
-
 }
-
-
 
 /* SPACE BETWEEN SECTION*/
 .section-01 {
@@ -395,6 +432,19 @@
   }
 }
 
+.section-08 {
+  @include rem ((
+    padding-top: 100px,
+    padding-bottom: 100px,
+  ));
+  @include media-breakpoint-up (lg) {
+    @include rem ((
+      padding-top: 210px,
+      padding-bottom: 260px,
+    ))
+  }
+}
+
 
 /* INFO */
 .info {
@@ -433,6 +483,7 @@
          margin-right: 0,
          margin-bottom: 200px,
          max-height: 200px,
+         // dat max-height de fix loi tran column
       ));
     }
   }
@@ -515,18 +566,37 @@
 }
 
 /* FORM */
-.section-07 {
+#attend-form {
+  @include media-breakpoint-up (lg) {
+    .form-group {
+      @include rem ((
+        margin-bottom: -5px,
+      ))
+
+    }
+
+    .control {
+      @include rem ((
+        margin-bottom: 65px,
+      ));
+    }
+
+    .btn-attend {
+      @include rem  ((
+        margin-top: 80px,
+      ));
+    }
+  }
+
   h4 {
     @include rem ((
       font-size: 18px,
       font-weight: 400,
       color: $primary-color,
-
       margin-bottom: 35px,
     ))
   }
 }
-
 /*FORM*/
 
 #attend-form {
@@ -534,22 +604,25 @@
   select,
   textarea,
   input {
-    display: block;
-    width: 100%;
-    padding: 1.1875rem 1.25rem;
-    font-size: 18px;
-    line-height: 1.25;
-    color: $primary-color;
-    background-color: initial;
-    background-image: none;
-    background-clip: padding-box;
-    border: 0px solid #e8e8e8;
-    border-bottom: 1px solid #BCB8BD;
-    border-radius: 0px;
+    @include rem ((
+      display: block,
+      width: 100%,
+      padding: 1.1875rem 0,
+      font-size: 18px,
+      line-height: 1.25,
+      color: $primary-color,
+      background-color: initial,
+      background-image: none,
+      background-clip: padding-box,
+      border: 0px solid #e8e8e8,
+      border-bottom: 1px solid #BCB8BD,
+      border-radius: 0px,
+    ));
 
     //focus
     &:focus {
       box-shadow: none;
+      background-color: rgba(207,192,197,0.8  )
     }
 
     // placeholder
@@ -562,9 +635,17 @@
 .form-bg {
   @extend %container-width;
   background-color: #CFC0C5;
+  background-image: url('../../assets/images-demo/wedding/attend-bg.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position:left bottom;
+  border-radius: 0.5rem;
+
+  position: relative;
+
 }
 
-// custom button style 01
+// custom button attend
 .btn-attend {
   @include rem ((
     font-family: "Italiana",
@@ -574,6 +655,8 @@
     border-radius: 0,
     background-color: initial,
     color: $secondary-color,
+    letter-spacing: 0,
+    padding: 6px,
   ));
 
   &:hover {
@@ -632,14 +715,14 @@
   @include rem ((
     position: relative,
     width: 255px,
-
-    border-bottom: 2px solid $secondary-color,
-    border-top: 2px solid $secondary-color,
   ));
 
   .deco {
     @include rem ((
-      margin-top: 250px,
+      position:absolute,
+      bottom:0,
+      left: -25px,
+
     ));
     img {
       max-width: none;
@@ -649,6 +732,7 @@
   @include media-breakpoint-up (lg) {
     @include rem ((
       width: 500px,
+      height: 550px,
       border: 0,
     ));
   }
@@ -665,6 +749,9 @@
   @include media-breakpoint-up (lg) {
     @include rem ((
       font-size: 300px,
+      line-height: 1.1,
+      top: 0,
+      left: -5px,
     ))
   }
 }
@@ -685,7 +772,6 @@
     text-transform: uppercase,
     color: $text-color,
     line-height: calc(44/40),
-    width: 100px,
   ));
 
   @include media-breakpoint-up (lg) {
@@ -721,8 +807,8 @@
 
   @include media-breakpoint-up (lg) {
     @include rem ((
-      top: 145px,
-      left: 270px,
+      top: 85px,
+      left: 265px,
     ));
   }
 }

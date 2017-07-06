@@ -1,6 +1,8 @@
-<nav class="nav{{navStyleGuide}}">
+    <ul class=" nav navbar-nav mr-auto">
     {% for item in navList %}
+    <li class="nav-item">
         <a href="{{ item.link|default('#') }}" {% if item.class %}class="{{ item.class }}"{% endif %}>{{ item.text|raw }}</a>
+    </li>
     {% endfor %}
-</nav>
+    </ul>
 <!--navigation-->

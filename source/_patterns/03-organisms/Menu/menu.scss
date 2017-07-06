@@ -1,0 +1,39 @@
+.navbar {
+  @include media-breakpoint-up (lg) {
+    @include rem  ((
+      padding: 0 105px,
+      height: 100px,
+    ))
+  }
+
+
+}
+
+.navbar button {
+  float: right;
+
+  @include media-breakpoint-up (lg) {
+    display: none;
+  }
+}
+
+.navbar .navbar-brand {
+
+  @include media-breakpoint-up (lg) {
+    float: initial;
+    position: relative;
+  }
+}
+
+.navbar .collapse {
+  @include media-breakpoint-up (lg) {
+    display: block;
+  }
+}
+
+.navbar-right ul{
+  text-align: left;
+  @include media-breakpoint-up (lg ) {
+    float: right ;
+  }
+}

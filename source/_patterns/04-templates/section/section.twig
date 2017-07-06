@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <header>
-        {% set header = section.header %} {% include "organisms-header" %}
+        {% set header = section.navBar %} {% include "organisms-header" %}
     </header>
     {% set figure = section.header.figure %} {% include "molecules-figure" with { figureStyleModifier:" fig--02"} %}
     <!-- header section-->
@@ -100,7 +100,7 @@
 </div>
 
 
-<div class="section-05">
+<div class="section-05 mx-auto">
     <div class="container-fluid">
         {% include "atoms-sectitle" with {sectitle: section_05.sectitle, sectitleStyleModifier: " sectitle--02" } %}
         <div class="hidden-lg-down">
@@ -131,8 +131,8 @@
         {% import 'form.twig' as form %}
         <div class="form-bg">
             <form id="attend-form" action="#" method="post">
-                <div class="row offset-md-4 pull-md-2">
-                    <fieldset class="form-group">
+                <div class="row">
+                    <fieldset class="form-group group-01">
                         <p class="form__item col-md-6">
                             {{ form.text('attend-form-name',null, 'Your Name ') }}
                         </p>
@@ -142,7 +142,7 @@
                         </p>
                     </fieldset>
 
-                    <fieldset class="form-group form-inline radio-choice col-lg-12">
+                    <fieldset class="form-group form-inline radio-choice col-lg-12 group-02">
                         <h4> Will you attend? </h4>
                         <div class="form-group form-inline">
 
@@ -164,7 +164,7 @@
                         </div>
                     </fieldset>
 
-                    <fieldset class="form-group col-lg-12  ">
+                    <fieldset class="form-group col-lg-12 group-03  ">
                         <p class="form__item col-md-6 form-check">
                             <select class="form-control" name="attend-form-select-choice" id="attend-form-select-choice">
                                 <option selected value="I eat anything">I eat anything</option>
@@ -182,18 +182,21 @@
                     </div>
                 </div>
             </form>
+
+            {% include "atoms-decoration" with {decoration:section_07.decoration} %}
+            {% include "atoms-decoration" with {decoration:section_07.decoration_02} %}
         </div>
     </div>
 </div>
 
 <div class="section-08">
+    <div class="clearfix"></div>
     <div class="wedding mx-auto">
         {% set wedding = section_08.wedding %}
         <div class="wedding__date">{{wedding.date}}</div>
         <div class="wedding__time">{{wedding.time}}
-
         </div>
-        <div class="wedding__couple">{{wedding.couple.bride}}<span>&</span>{{wedding.couple.groom}}</div>
+        <div class="wedding__couple">{{wedding.couple.bride}}<span>&</span></br>{{wedding.couple.groom}}</div>
 
         {% include "atoms-decoration" with {decoration:section_08.decoration} %}
     </div>

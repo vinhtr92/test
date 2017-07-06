@@ -1,6 +1,24 @@
 .title {
   text-align: center;
 
+  h3 {
+    @include rem ((
+      font-size: 80px,
+      font-family: "Italiana",
+      font-weight: 400,
+      text-transform: uppercase,
+      margin-bottom: 0,
+    ))
+  }
+
+  .title__desc {
+    @include rem ((
+      font-size: 20px,
+      color: $primary-color,
+      margin-bottom: 15px,
+    ))
+  }
+
   @include media-breakpoint-up (lg) {
     @include rem ((
         width: 800px,
@@ -8,12 +26,9 @@
 
     h3 {
       @include rem ((
-        font-family: 'Italiana',
         font-size: 180px,
-        font-weight: 400,
         text-transform: uppercase,
         line-height: calc(150/180),
-
         margin-bottom: 55px,
       ));
     }
@@ -21,9 +36,7 @@
     .title__desc {
       @include rem ((
         font-size: 30px,
-        color: $primary-color,
       ))
     }
-
   }
 }
