@@ -1,29 +1,11 @@
-{#<header class="header{{headerStyleModifier}}">
-    <div class="row">
-        <div class="col-lg-4">
-            {% set navList = header.navList %}
-            {% include "molecules-nav" %}
-        </div>
-        <div class="col-lg-4 text-xs-center">
-            {% set item = header.title %}
-            {% include "molecules-title" %}
-        </div>
-        <div class="col-lg-4 text-xs-right">
-            {% set navList = header.navList_02 %}
-            {% include "molecules-nav" %}
-        </div>
-    </div>
-</header>#}
-
 
 <nav class="navbar{{menu.class}}">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#{{menu.id}}" aria-controls="{{menu.id}}" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <!-- Brand-->
-  <div class="text-lg-center">
+
   <a class="navbar-brand" href="#">{{menu.couple}}</a>
-  </div>
   <div class="collapse navbar-collapse row" id="{{menu.id}}">
       <div class="col-sm-6">
         {% set navList = menu.navList %}

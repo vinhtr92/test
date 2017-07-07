@@ -1,6 +1,5 @@
 
 /*  PLACE HOLDER */
-
  %container-width {
   @include rem ((
     width: 1400px,
@@ -68,11 +67,43 @@
 
 /*  SECTION  */
 
+//hero section
+.hero-section {
+  overflow: hidden;
+  background: $primary-color;
+  position: relative;
+
+  figure {
+    position: relative;
+
+    @include media-breakpoint-up (lg) {
+      @include rem ((
+        left: 5.5%,
+        padding-top: 100px,
+      ));
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .navbar {
+    width: 100%;
+
+    @include media-breakpoint-up (lg) {
+      @include rem  ((
+        padding: 0 80px 0 5.5%,
+        height: 100px,
+      ))
+    }
+  }
+}
+
 //section 01
 .section-01 {
   .info {
     @include rem ((
-
       margin-top: -300px,
     ));
   }
@@ -156,7 +187,6 @@
 .section-03 {
   .container-fluid {
     overflow: hidden;
-    //fix loi khoang trang ben ngoai container-fluid
   }
 
   .sectitle {
@@ -305,6 +335,10 @@
   }
 
   @include media-breakpoint-up (xl ){
+    img {
+      width: 100%;
+    }
+
     .sectitle {
       @include rem ((
         margin-left: 240px,

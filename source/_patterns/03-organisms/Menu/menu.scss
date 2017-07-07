@@ -1,39 +1,76 @@
-.navbar {
-  @include media-breakpoint-up (lg) {
-    @include rem  ((
-      padding: 0 105px,
-      height: 100px,
-    ))
-  }
-
-
+.bg-wedding-menu {
+  background: $primary-color;
 }
 
-.navbar button {
-  float: right;
+.main-menu {
+  a {
+    @include rem ((
+      font-size: 18px,
+      font-weight: 400,
+      line-height: initial,
+      color: #C8A3C8,
+      margin-right: 15px,
+    ));
 
-  @include media-breakpoint-up (lg) {
-    display: none;
+    &:hover {
+      color: $default-color;
+    }
+
+    @include media-breakpoint-up (xl) {
+      line-height: 6;
+      margin-right: 30px,
+    }
   }
-}
 
-.navbar .navbar-brand {
+  a.navbar-brand {
+    @include rem ((
+      font-size: 24px,
+      text-transform: uppercase,
+      color: $secondary-color,
+      font-weight: bold,
+      margin-top: 0,
+      padding: 10px 0,
+    ));
+
+    @include media-breakpoint-up (xl) {
+      @include rem ((
+        position: absolute,
+        top: 30px,
+        left: 43%,
+        line-height: 1,
+      ))
+    }
+  }
 
   @include media-breakpoint-up (lg) {
+    .navbar button {
+      float: right;
+      display: none;
+      color: white;
+    }
+  }
+
+  .navbar .navbar-brand {
     float: initial;
     position: relative;
   }
-}
 
-.navbar .collapse {
-  @include media-breakpoint-up (lg) {
-    display: block;
+  .navbar .collapse {
+      display: block;
   }
-}
 
-.navbar-right ul{
-  text-align: left;
-  @include media-breakpoint-up (lg ) {
+  .navbar-right ul{
+    text-align: left;
     float: right ;
+
+  }
+
+  .navbar .nav-item {
+    float: initial;
+    float: left;
+
+    & + .nav-item {
+      margin-left: 0;
+    }
   }
 }

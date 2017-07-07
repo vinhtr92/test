@@ -1,9 +1,15 @@
-<div class="container-fluid">
-    <header>
-        {% set header = section.navBar %} {% include "organisms-header" %}
-    </header>
-    {% set figure = section.header.figure %} {% include "molecules-figure" with { figureStyleModifier:" fig--02"} %}
-    <!-- header section-->
+<div class="hero-section">
+    {% set menu = hero_section.menu %}
+    {% include "organisms-menu" %}
+    <!-- main menu -->
+
+    {% set  navList = hero_section.social_menu %}
+    {% include 'molecules-nav-social' with {socialStyleModifier: " nav-social--02" } %}
+    <!-- social menu -->
+    {% set figure = hero_section.figure %} {% include "molecules-figure" with { figureStyleModifier:" fig--02"} %}
+
+    <!-- figure-->
+
 </div>
 
 </div>
@@ -74,7 +80,7 @@
     <!--section 03-->
 </div>
 
-<div class="section-04">
+<div class="section-04" id="event">
     <div class="w1400px">
         <div class="container-fluid">
             {% include "atoms-sectitle" with {sectitle:section_04.sectitle} %}

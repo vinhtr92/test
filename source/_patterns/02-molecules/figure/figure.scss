@@ -1,5 +1,6 @@
 .fig--02 {
   position: relative;
+  margin: 0;
 
   .fig__cap {
     @include rem ((
@@ -22,7 +23,7 @@
         background-color: inherit,
         position: absolute,
         width: 620px,
-        top: 45%,
+        top: 65%,
         left: 50%,
         transform: translate(-50%, -50%),
       ));
@@ -32,9 +33,9 @@
       @include rem ((
         font-size: 130px,
         line-height: calc(120/130),
-        top: 50%,
-        left: 50%,
-        transform: translate(-50%, -50%),
+        top: 57%,
+        left: 47%,
+//         transform: translate(-50%, -50%),
       ));
     }
   }

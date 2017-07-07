@@ -1,25 +1,36 @@
 ---
-section:
-  header:
+hero_section:
+  figure:
+    img:
+      src: ../../assets/images-demo/hero.jpg
+      alt: love
+    figcaption: I love you more today
+  menu:
+    class: " navbar-toggleable-lg bg-wedding-menu main-menu navbar-fixed-top"
+    id: "main-menu"
+    couple: " Tatiana & Samuel"
+
     navList:
     - text: Couple
     - text: History
-    - text: Groomens & Bridesmaids
-    title:
-      heading: Tatiana & Samuel
+    - text: Groomsmen & Bridesmaids
     navList_02:
     - text: Events
-    - text: Albums
+      link: "#event"
+      class: " page-scroll"
+    - text: Album
+      link: "#album"
     - text: Blogs
-    - text: Twitter
+      link: "#blog"
     - text: RSVP
-    figure:
-      img:
-        src: ../../assets/images-demo/hero.jpg
-        alt: love
-      figcaption: I love you more today
+      link: "#rsvp"
+  social_menu:
+    - text: <i class="fa fa-twitter" aria-hidden="true"></i>
+    - text: <i class="fa fa-facebook" aria-hidden="true"></i>
+    - text: <i class="fa fa-instagram" aria-hidden="true"></i>
 
-# header section
+
+# hero section
 
 section_01:
   count:
@@ -71,8 +82,6 @@ section_01:
       img:
         src: ../../assets/images-demo/decoration/deco_05.png
       class: deco-2
-
-
 # section 02
 
 section_02:
@@ -118,7 +127,7 @@ section_03:
       alt: deco image
   swiper_data:
     perview : 3
-    space: "3%"  #dat %  de co responsive
+    space: "3%"
   swiper:
   - title: Abraham
     imgBottom:
@@ -225,7 +234,8 @@ section_05:
   sectitle:
     text: album
   swiper_data:
-    height: 1000
+    height: 1200
+    space: "12%"
     perview: 1
     perviewMd: 1
     perviewLg: 1

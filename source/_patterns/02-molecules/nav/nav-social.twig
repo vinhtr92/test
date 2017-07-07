@@ -1,0 +1,5 @@
+<nav class="nav-social{{ socialStyleModifier }}">
+    {% for item in navList %}
+    <a href="{{ item.link|default('#') }}" {% if item.class %}class="{{ item.class }}"{% endif %}>{{ item.text|raw }}</a>
+    {% endfor %}
+</nav><!-- .nav-social -->
