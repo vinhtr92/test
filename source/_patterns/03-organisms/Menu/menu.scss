@@ -3,13 +3,115 @@
 }
 
 .main-menu {
+  position: fixed;
+  z-index: 20;
+  border-radius: 0;
+
+  a {
+    @include rem ((
+      font-size: 18px,
+      font-weight: bold,
+      line-height: initial,
+      color: #C8A3C8,
+      margin-right: 10px,
+    ));
+
+    &:hover {
+      color: $default-color;
+    }
+
+    @include media-breakpoint-up (xl) {
+      @include rem ((
+        line-height: 6,
+        margin-right: 30px,
+      ));
+    }
+
+    @include media-breakpoint-down (md) {
+      line-height: 2;
+    }
+  }
+
+  .navbar-brand {
+    @include rem ((
+
+      font-size: 24px,
+      font-weight: bold,
+      text-transform: uppercase,
+      color: $secondary-color,
+      display: inline-block,
+      margin-top: 0,
+      padding: 10px 0,
+    ));
+
+    @include media-breakpoint-up (xl) {
+      @include rem ((
+        position: absolute,
+        top: 30px,
+        left: 43%,
+        line-height: 1,
+      ))
+    }
+  }
+
+  .collapse {
+    @include media-breakpoint-up (lg) {
+      display: block;
+    }
+  }
+
+    button {
+      float: right;
+      // background: $default-color;
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      filter: invert(100%);
+      // opacity: 0.6;
+      top: 15px;
+      position: relative;
+
+      @include media-breakpoint-up (lg) {
+        display: none;
+    }
+  }
+
+  .navbar-right ul {
+    text-align: left;
+    // display: inline;
+    @include media-breakpoint-up (lg) {
+      float: right;
+      display: block;
+    }
+  }
+
+  .nav-item {
+    float: initial;
+    margin-left: 0 !important;
+
+    @include media-breakpoint-up (lg) {
+      float: left;
+    }
+  }
+
+  ul {
+    padding: 15px 0;
+
+    @include media-breakpoint-up (lg) {
+      padding: 0;
+    }
+  }
+}
+
+
+/*
+.main-menu {
   a {
     @include rem ((
       font-size: 18px,
       font-weight: 400,
       line-height: initial,
-      color: #C8A3C8,
-      margin-right: 15px,
+
     ));
 
     &:hover {
@@ -42,14 +144,16 @@
     }
   }
 
-  @include media-breakpoint-up (lg) {
-    .navbar button {
-      float: right;
-      display: none;
-      color: white;
-    }
+
   }
 
+    .navbar button {
+      @include media-breakpoint-up (lg) {
+        float: right;
+        display: none;
+      }
+      color: white;
+    }
   .navbar .navbar-brand {
     float: initial;
     position: relative;
@@ -73,4 +177,5 @@
       margin-left: 0;
     }
   }
-}
+
+*/

@@ -383,6 +383,7 @@
         margin-right: auto,
       ))
     }
+
     .form-bg {
       @include rem ((
         height: 900px,
@@ -559,6 +560,7 @@
     margin-bottom: 40px,
     ))
   }
+
   @include media-breakpoint-up (lg) {
     .sectitle {
       @include rem ((
@@ -606,7 +608,6 @@
       @include rem ((
         margin-bottom: -5px,
       ))
-
     }
 
     .control {
@@ -674,9 +675,7 @@
   background-repeat: no-repeat;
   background-position:left bottom;
   border-radius: 0.5rem;
-
   position: relative;
-
 }
 
 // custom button attend

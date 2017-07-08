@@ -6,7 +6,7 @@ hero_section:
       alt: love
     figcaption: I love you more today
   menu:
-    class: " navbar-toggleable-lg bg-wedding-menu main-menu navbar-fixed-top"
+    class: " navbar-toggleable-lg bg-wedding-menu main-menu navbar-light"
     id: "main-menu"
     couple: " Tatiana & Samuel"
 
