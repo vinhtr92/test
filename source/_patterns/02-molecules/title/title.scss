@@ -3,7 +3,7 @@
 
   h3 {
     @include rem ((
-      font-size: 80px,
+      font-size: 24px,
       font-family: "Italiana",
       font-weight: 400,
       text-transform: uppercase,
@@ -13,30 +13,59 @@
 
   .title__desc {
     @include rem ((
-      font-size: 20px,
+      font-size: 16px,
       color: $primary-color,
-      margin-bottom: 15px,
     ))
   }
 
   @include media-breakpoint-up (lg) {
-    @include rem ((
-        width: 800px,
-    ));
+    width: auto;
 
     h3 {
       @include rem ((
-        font-size: 180px,
+        font-size: 48px,
         text-transform: uppercase,
-        line-height: calc(150/180),
-        margin-bottom: 55px,
       ));
     }
 
     .title__desc {
       @include rem ((
-        font-size: 30px,
+        font-size: 20px,
       ))
+    }
+  }
+}
+
+.title--02 {
+  h3 {
+    @include rem ((
+      font-size: 48px,
+    ))
+  }
+
+  .title__desc {
+    @include rem ((
+      font-size: 20px,
+      margin-bottom: 15px,
+    ))
+
+  }
+
+  @include media-breakpoint-up (lg) {
+    @include rem ((
+      width: 800px,
+    ));
+
+    h3 {
+      @include rem ((
+        font-size: 180px,
+        margin-bottom: 55px,
+        line-height: calc(150/180),
+      ))
+    }
+
+    .title__desc {
+      font-size: 30px,
     }
   }
 }
