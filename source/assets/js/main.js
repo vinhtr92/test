@@ -449,7 +449,7 @@
 
 
 
-// COUNTDOWN TIMER
+// COUNTDOWN + COUNT UP TIMER
 var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
 var countUpTimer = new Date("Jan 5, 2016 15:37:25").getTime();
 

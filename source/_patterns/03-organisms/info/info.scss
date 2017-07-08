@@ -78,7 +78,6 @@
     @include media-breakpoint-up (lg) {
       @include rem ((
         left: 5.5%,
-        padding-top: 100px,
       ));
 
       img {
@@ -416,6 +415,16 @@
 }
 
 /* SPACE BETWEEN SECTION*/
+.hero-section figure {
+  @include rem ((
+    padding-top: 50px,
+  ));
+
+  @include media-breakpoint-up (lg) {
+    padding-top: 100px,
+  }
+}
+
 .section-01 {
   @include media-breakpoint-up (lg) {
     @include rem ((
