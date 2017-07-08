@@ -12,8 +12,11 @@ hero_section:
 
     navList:
     - text: Couple
+      link: "#couple"
     - text: History
+      link: "#history"
     - text: Groomsmen & Bridesmaids
+      link: "#bridemaid"
     navList_02:
     - text: Events
       link: "#event"
@@ -86,7 +89,7 @@ section_01:
 
 section_02:
   sectitle:
-    text: Our Story
+    text: History
 
   swiper_data:
     pagination_02: "true"

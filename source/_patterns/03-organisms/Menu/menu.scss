@@ -34,7 +34,6 @@
 
   .navbar-brand {
     @include rem ((
-
       font-size: 24px,
       font-weight: bold,
       text-transform: uppercase,
@@ -62,12 +61,9 @@
 
     button {
       float: right;
-      // background: $default-color;
-      display: inline-block;
       width: 2.5rem;
       height: 2.5rem;
       filter: invert(100%);
-      // opacity: 0.6;
       top: 15px;
       position: relative;
 
@@ -103,79 +99,3 @@
   }
 }
 
-
-/*
-.main-menu {
-  a {
-    @include rem ((
-      font-size: 18px,
-      font-weight: 400,
-      line-height: initial,
-
-    ));
-
-    &:hover {
-      color: $default-color;
-    }
-
-    @include media-breakpoint-up (xl) {
-      line-height: 6;
-      margin-right: 30px,
-    }
-  }
-
-  a.navbar-brand {
-    @include rem ((
-      font-size: 24px,
-      text-transform: uppercase,
-      color: $secondary-color,
-      font-weight: bold,
-      margin-top: 0,
-      padding: 10px 0,
-    ));
-
-    @include media-breakpoint-up (xl) {
-      @include rem ((
-        position: absolute,
-        top: 30px,
-        left: 43%,
-        line-height: 1,
-      ))
-    }
-  }
-
-
-  }
-
-    .navbar button {
-      @include media-breakpoint-up (lg) {
-        float: right;
-        display: none;
-      }
-      color: white;
-    }
-  .navbar .navbar-brand {
-    float: initial;
-    position: relative;
-  }
-
-  .navbar .collapse {
-      display: block;
-  }
-
-  .navbar-right ul{
-    text-align: left;
-    float: right ;
-
-  }
-
-  .navbar .nav-item {
-    float: initial;
-    float: left;
-
-    & + .nav-item {
-      margin-left: 0;
-    }
-  }
-
-*/

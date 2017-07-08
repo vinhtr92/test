@@ -13,7 +13,7 @@
 </div>
 
 </div>
-<div class="section-01">
+<div class="section-01" id="couple">
     <div class="w1400px">
         <div class="container-fluid">
             <div class="text-xs-center">
@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<div class="section-02">
+<div class="section-02" id="history">
     <div class="w1400px">
         <div class="text-xs-center">
             {% include "atoms-sectitle" with {sectitle: section_02.sectitle } %}
@@ -45,7 +45,7 @@
     </div>
 </div>
 
-<div class="section-03">
+<div class="section-03" id="bridemaid">
     <div class="container-fluid ">
         <div class="text-xs-center">
             {% include "molecules-quote" with {item: section_03.quote} %}
@@ -106,7 +106,7 @@
 </div>
 
 
-<div class="section-05 mx-auto">
+<div class="section-05" id="album">
     <div class="container-fluid">
         {% include "atoms-sectitle" with {sectitle: section_05.sectitle, sectitleStyleModifier: " sectitle--02" } %}
         <div class="hidden-lg-down">
@@ -121,7 +121,7 @@
     <!--section 05-->
 </div>
 
-<div class="section-06">
+<div class="section-06" id="blog">
     <div class="w1400px">
         <div class="container-fluid">
             {% include "atoms-sectitle" with {sectitle:section_06.sectitle} %} {% set info = section_06.info %} {% include "organisms-info"
@@ -131,7 +131,7 @@
     </div>
 </div>
 
-<div class="section-07">
+<div class="section-07" id="rsvp">
     <div class="container-fluid">
         {% include "molecules-title" with {title:section_07.title }%}
         {% import 'form.twig' as form %}
