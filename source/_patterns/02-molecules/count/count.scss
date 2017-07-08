@@ -1,12 +1,20 @@
 .count {
-  display:inline-block;
-  position:relative;
-  // right: 70px;
+  position: relative;
+  display: inline-block;
 
   .count__number {
-    font-weight: 400;
     font-family: 'Italiana',sans-serif;
     color: $secondary-color;
+  }
+
+  .count__text {
+    text-transform:uppercase,
+  }
+}
+
+// Style 02
+.count--02 {
+  .count__number {
     @include rem ((
       font-size: 50px
     ));
@@ -20,7 +28,6 @@
     @include media-breakpoint-up(lg) {
       @include rem ((
       font-size: 180px,
-      left: 40px,
       ));
     }
   }
@@ -29,20 +36,13 @@
     @include media-breakpoint-up(lg){
       @include rem ((
         font-size: 14px,
-        text-transform:uppercase,
-
-        position: relative,
-        bottom: 5px,
-        right: 55px
     ));
     }
   }
 }
 
-//  Style 02
-.count--02 {
-  display: block;
-
+//  Style 03
+.count--03 {
   .count__number {
     font-family: 'Bombshell Pro';
 
@@ -59,10 +59,8 @@
 
   .count__text {
     @include rem ((
-      text-transform: uppercase,
       font-size: 20px,
       font-family: "Italiana",
-      font-weight: 400,
       letter-spacing: .5px,
       display: block,
       position: relative,

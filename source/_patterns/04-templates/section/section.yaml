@@ -37,18 +37,18 @@ hero_section:
 
 section_01:
   count:
-    number: 480
+    id: count-up
     text: days love
   sectitle:
     text: "we'll say yes in :"
   count_02:
-  - number: 07
+  - id: day
     text: days
-  - number: 14
+  - id: hour
     text: hours
-  - number: 19
+  - id: minute
     text: minute
-  - number: 7
+  - id: second
     text: seconds
   info:
   - column: col-lg-6 text-lg-right mt-300

@@ -17,7 +17,7 @@
     <div class="w1400px">
         <div class="container-fluid">
             <div class="text-xs-center">
-                {% set item = section_01.count %} {% include "molecules-count" with { countStyleModifier:" count--02"} %}
+                {% set item = section_01.count %} {% include "molecules-count" with { countStyleModifier:" count--03"} %}
             </div>
 
             {% set info = section_01.info %} {% include "organisms-info" with {infoStyleModifier:" info--03" ,rowStyleModifier: " no-gutters",
@@ -26,7 +26,8 @@
             <div class="text-xs-center">
                 {% include "atoms-sectitle" with {sectitle: section_01.sectitle } %}
                 <div class="count-container">
-                    {% for item in section_01.count_02 %} {% include "molecules-count" %} {% endfor %}
+                    {% for item in section_01.count_02 %} {% include "molecules-count" with {
+  countStyleModifier:" count--02" }%} {% endfor %}
                 </div>
             </div>
             <!-- section 01 -->

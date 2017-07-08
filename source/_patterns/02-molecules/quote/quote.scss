@@ -4,8 +4,8 @@
   h2 {
     @include rem ((
       font-family: 'Italiana',
-      font-weight: 400,
       font-size: 30px,
+      font-weight: 400,
       color: $secondary-color,
       line-height: calc(30/30),
       letter-spacing: .05rem,
@@ -28,6 +28,7 @@
     h2 {
       @include rem ((
         font-size: 80px,
+
         line-height: calc(90/80),
       ))
     }
